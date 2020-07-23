@@ -26,12 +26,13 @@ li.list_item
 .desc {font-family:'Nanum Myeongjo','Noto Serif KR',serif; font-size:21px; letter-spacing:-1px; color:#111}
 
 */
+.content {margin-top: 91px;}
 
-.cont_inner,.foot_inner {margin:0 auto; width:1000px;}
 [class*="main_"]:not(.main_visual) {margin: 100px 0;}
 [class*="main_"] h2.title {margin-bottom:40px; text-align: center; font-family:'notokrLig'; font-size:33px; letter-spacing:-3px; opacity:.8; color:#111;}
 [class*="theme"] > a {font-size:14px; font-family:'notokrR'; letter-spacing: -1px; text-decoration: underline; color:#595959;}
 
+/* main-visual slide */
 .main_visual .slide-wrap {overflow: hidden; position: relative; width: 100%; height: 415px;}
 
 .slide-wrap .slide-overlay {position: absolute; top: 0; width: 150px; height: 100%; background: rgba(0,0,0,.2)}
@@ -45,17 +46,22 @@ li.list_item
 .visual-slide .slick-prev:after {background: url(https://cwstatic.asiae.co.kr/drinkeat/comment/ico_prev02_off.png) no-repeat; background-size: contain;}
 .visual-slide .slick-next {right: 0;}
 .visual-slide .slick-next:after {background: url(https://cwstatic.asiae.co.kr/drinkeat/comment/ico_next02_off.png) no-repeat; background-size: contain;}
-
-
-.visual-slide .item-slide:after {content:'';display: block;clear: both}
-.visual-slide .item-slide .info {float: left; padding: 100px 30px; width: 30%; height: 415px; /*background: #f5f5f5;*/ background: #fcf6f5;}
+.visual-slide .item-slide:after {content:'';display: block;clear: both;}
+.visual-slide .item-slide .info {float: left; padding: 100px 30px; width: 30%; height: 415px; background: #fcf6f5;}
 .visual-slide .item-slide .info .headline { display: inline-block;margin-bottom: 50px;}
 .visual-slide .item-slide .info .headline a {display: inline; font-size:35px; line-height: 43px; font-family:'Nanum Myeongjo','Noto Serif KR',serif; letter-spacing:-1.5px; color: #fff; background-position:left; background-size:100% 100%; background-image: linear-gradient(#ff695c,#ff695c); }
+.visual-slide .item-slide .info .desc {display: inline;font-size: 19px; line-height: 28px; letter-spacing: -1px; color: #fff; background: #1a1a1a;}
 
-.visual-slide .item-slide .info .desc {}
+.visual-slide .item-slide .thumb {float: right; position: relative; width: 70%; height: 415px;}
+.visual-slide .item-slide .thumb img {width: 100%;}
 
-.visual-slide .item-slide .thumb {float: right; width: 70%;}
-.visual-slide .item-slide .thumb > img {width: 100%; }
+/*.visual-slide .item-slide .thumb > img {position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; max-width: 100%; max-height: 100%; width: 100%; height: auto; }*/
+
+/*.visual-slide .item-slide {display: table; width: 100%; height: 100%;}
+.visual-slide .item-slide .thumb {float: right; display: table-cell; text-align: center; vertical-align: middle; width: 70%;}
+.visual-slide .item-slide .thumb img {max-width: 100%; max-height: 100%; margin: auto; display: block;}*/
+
+
 
 .main_theme {overflow: hidden; width: 100%; height:510px; background: #fcf6f5;}
 .main_theme .title {margin-top: 50px;}
@@ -98,7 +104,7 @@ li.list_item
 .main_comment .comment_slide .slick-list {overflow: hidden;}
 .main_comment .comment_slide .slick-list .slick-slide {margin: 0 10px;}
 .main_comment .comment_slide .ct-list { border: 1px solid rgba(0,0,0,.07); }
-.main_comment .comment_slide .slick-arrow {position: absolute; top: 50%; transform: translateY(-50%); z-index: 50; width: 40px; height: 40px;}
+.main_comment .comment_slide .slick-arrow {position: absolute; top: 50%; transform: translateY(-50%); z-index: 30; width: 40px; height: 40px;}
 .main_comment .comment_slide .slick-prev {left: -60px; background: url(https://cwstatic.asiae.co.kr/drinkeat/comment/ico_prev02_off.png) no-repeat; background-size: contain;}
 .main_comment .comment_slide .slick-prev:hover {background: url(https://cwstatic.asiae.co.kr/drinkeat/comment/ico_prev02_on.png) no-repeat; background-size: contain;}
 .main_comment .comment_slide .slick-next {right: -70px; background: url(https://cwstatic.asiae.co.kr/drinkeat/comment/ico_next02_off.png) no-repeat; background-size: contain; }
@@ -133,61 +139,24 @@ li.list_item
 .newsletter .text-box .btn-subscribe {width: 180px; height: 50px; border: 1px solid #fff; font-family: 'notokrR'; font-size: 17px; line-height: 50px; color: #fff; background: rgba(255,255,255,.2); transition: all .3s;}
 .newsletter .text-box .btn-subscribe:hover {border-color: #ff695c; background:#ff695c; }
 
-.footer {padding-bottom: 100px;}
-.footer .notice_area {padding-bottom: 15px; border-bottom: 1px solid #eee;}
-.footer .notice_area:after {content:'';display:block;clear: both;}
-.footer .notice_area .dk_notice {float: left; display: table;}
-.footer .notice_area .dk_sns {float: right;}
 
-.footer .dk_notice .btn_notice {float: left; margin-right: 10px;}
-.footer .dk_notice .btn_notice a {padding: 5px 0; width: 100px; border: 1px solid #ddd; border-radius: 15px; text-align: center; font-size: 15px; letter-spacing: -1px;}
-.footer .dk_notice .info {display: table-cell; vertical-align: middle;}
-.footer .dk_notice .info a {letter-spacing: -1px;}
-.footer .dk_notice .info a:hover {text-decoration: underline;}
-
-.footer .dk_sns li {display: inline-block;}
-.footer .dk_sns li [class*="sns_"] { margin: 0 3px; width: 34px; height: 34px;}
-.footer .dk_sns li .sns_instar {background: url(https://cwstatic.asiae.co.kr/drinkeat/icon_instar01.png) no-repeat; background-size: contain; }
-.footer .dk_sns li .sns_facebk {background: url(https://cwstatic.asiae.co.kr/drinkeat/icon_facebk01.png) no-repeat; background-size: contain;}
-.footer .dk_sns li .sns_blog {margin: 0 10px; background: url(https://cwstatic.asiae.co.kr/drinkeat/blog/blog.png) no-repeat; background-size: contain;}
-.footer .dk_sns li .sns_npost {margin: 0 10px; background: url(https://cwstatic.asiae.co.kr/drinkeat/blog/naver1.png) no-repeat; background-size: contain;}
-
-.footer .dk_sns li .sns_instar:hover {background: url(https://cwstatic.asiae.co.kr/drinkeat/onicon_instar01.png) no-repeat; background-size: contain;}
-.footer .dk_sns li .sns_facebk:hover {background: url(https://cwstatic.asiae.co.kr/drinkeat/onicon_facebk01.png) no-repeat; background-size: contain;}
-.footer .dk_sns li .sns_blog:hover {background: url(https://cwstatic.asiae.co.kr/drinkeat/blog/blog_on.png) no-repeat; background-size: contain;}
-.footer .dk_sns li .sns_npost:hover {background: url(https://cwstatic.asiae.co.kr/drinkeat/blog/naver_on.png) no-repeat; background-size: contain;}
-
-.footer .policy_area {margin-top: 20px;}
-.footer .policy_area:after {content:'';display: block;clear: both}
-.policy_area dl {float: left; }
-.policy_area .family_area {float: right;}
-.policy_area dl dd {display: inline-block; margin-right: 15px;}
-.policy_area dl dd a {font-size: 13px; color: #595959;}
-.policy_area dl dd a.bold {font-weight: bold;}
-.policy_area dl dd a:hover {color: #111;}
-
-.policy_area .family_area {position: relative; margin-right: 20px;}
-.policy_area .family_area .btn-site {padding: 5px 20px; border: 1px solid #ddd; font-size: 13px; font-weight: bold; color: #595959;}
-.policy_area .family_area .site-list {display: none; position: absolute; top: 29px; background-color: #fff;}
-.policy_area .family_area .site-list a {padding-left: 20px; margin-top: -1px; width: 100%; border: 1px solid #ddd; font-size: 13px; line-height: 35px; color: #595959;}
-.policy_area .family_area .site-list.active {display: block;}
-.policy_area .family_area .btn-site:hover, .policy_area .family_area .site-list a:hover {border-color: #ff695c; color: #fff; background-color: #ff695c;}
-
-.footer .corp_area {margin-top: 30px;}
-.footer .corp_area dl {display: inline-block;}
-.footer .corp_area dl dd {}
-.footer .corp_area dl dd span {position: relative; margin-right: 10px; font-size: 13px; line-height: 25px; color: #595959;}
-.footer .corp_area dl dd span:first-child:after {content:''; position: absolute; top: 50%; right: -9px; transform: translateY(-50%); width: 1px; height: 70%; background: #ddd;} 
-.footer .corp_area dl dd .address:after {display: none;}
-.footer .corp_area .warn {margin:20px 0 40px; font-size: 13px; color: #595959;}
-.footer .corp_area .copyright {font-size: 13px; color: #595959;}
-
-@media all and (max-width:1280px){
+@media all and (max-width:1040px){
     .visual-slide .item-slide .info {}
     .visual-slide .item-slide .info .headline {font-size: 30px;}
+    .visual-slide .item-slide .thumb {overflow: hidden; position: relative;}
+    .visual-slide .item-slide .thumb img {position: absolute; left: 0; top: 0; bottom: 0; right: 0; margin: auto; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: cover;}
+    
+    .visual-slide .slick-arrow {width: 100px;}
+    .slide-wrap .slide-overlay {width: 100px;}
+    .main_theme .slide-wrap {width: 100%;}
+    .main_theme .view-slide .cont-slide figure {width: 65%;}
+    .main_theme .view-slide .cont-slide .text_box {padding-left: 3%; width: 35%;}
+    .cont-slide .text_box .author a { }
 }
 
+@media all and (max-width:1280px){
 
+}
 
 
 

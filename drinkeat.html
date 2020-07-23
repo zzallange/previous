@@ -36,16 +36,20 @@
         <script type="text/javascript" src="js/common.js"></script>
         <script>
             $(document).ready(function(){
-                //Same-site:None
-                function launchCrossPlatform(){
-                    document.cookie = 'same-site-cookie=foo; SameSite=Lax';
-                    document.cookie = 'cross-site-cookie:bar; SameSite=None; Secure';
-                }
+                
                 //main-visua-slide
                 $('.visual-slide').slick({
                     centerMode:true,
                     slidesToshow:3,
-                    centerPadding:'150px'
+                    centerPadding:'150px',
+                    responsive: [
+                        {
+                          breakpoint: 1040,
+                          settings: {
+                            centerPadding:'100px'
+                          }
+                        },
+                    ]
                 });
                 //dk-view-slide
                 $('.view-slide').slick({
@@ -62,6 +66,7 @@
                     slidesToShow: 3,
                     dots: true
                 });
+                
             });
         </script>
 	</head>
@@ -74,10 +79,8 @@
         </div>   
         <div class="wrap">
             <header id="header">
-                <div class="header">
-                    <!-- side-nav -->   
+                <div class="header">  
                     <nav class="side-nav"></nav>    
-                    <!-- //side-nav -->   
                     <!-- main-header -->
                     <div class="h-inner">
                         <h1 class="logo"><a href="#none"><span class="a11y">드링킷 로고</span></a></h1>
@@ -92,52 +95,51 @@
                         <a href="#none" class="btn_search"><span class="icon">검색하기</span></a>
                     </div>
                     <!-- //main-header -->
-                    <!-- search-box -->
-                    <div class="search-box">
-                        <div class="sch_box">
-                            <div class="top_head">
-                                <a href="#none" class="sch_logo"></a>
-                                <a href="#none" class="btn_close"></a>
-                            </div>
-                            <!-- search-form -->
-                            <div class="sch_form">
-                                <form action="">
-                                    <label for="search_field"></label>
-                                    <input type="text" class="search_field" type="text" placeholder="검색어를 입력해주세요">
-                                    <button class="search_submit" type="submit">
-                                        <span class="a11y">검색하기</span>
-                                    </button>
-                                </form>
-                            </div>
-                            <!-- //search-form -->
-                            <!-- recommend-tag -->
-                            <div class="recmd_tag">
-                                <p>추천 검색어</p>
-                                <ul class="tag_list">
-                                    <li><a href="#none">#맥주안주</a></li>
-                                    <li><a href="#none">#오감탈탈</a></li>
-                                    <li><a href="#none">#이색칵테일</a></li>
-                                    <li><a href="#none">#초복</a></li>
-                                    <li><a href="#none">#명화</a></li>
-                                </ul>
-                            </div>
-                            <!-- //recommend-tag -->
-                        </div>
-                    </div>
-                    <!-- //search-box -->
                 </div>
+                <!-- search-box -->
+                <div class="sch_box">  
+                    <!-- search-form -->
+                    <form action="" class="sch_form">
+                        <input type="text" class="search_field" placeholder="검색어를 입력하세요.">
+                        <button class="submit_btn" type="submit">
+                            <span>검색하기</span>
+                        </button>
+                        <button class="close_btn">
+                            <span>검색입력취소</span>
+                        </button>
+                    </form>
+                    <!-- //search-form -->
+                    <!-- recommend-tag -->
+                    <div class="recmd_tag">
+                        <p>RECOMMEND WORDS</p>
+                        <ul class="tag_list">
+                            <li><a href="#none">#맥주안주</a></li>
+                            <li><a href="#none">#오감탈탈</a></li>
+                            <li><a href="#none">#이색칵테일</a></li>
+                            <li><a href="#none">#초복</a></li>
+                            <li><a href="#none">#명화</a></li>
+                            <li><a href="#none">#와인추천</a></li>
+                            <li><a href="#none">#드링킷컬처</a></li>
+                            <li><a href="#none">#전주모주</a></li>
+                            <li><a href="#none">#스파클링와인</a></li>
+                        </ul>
+                    </div>
+                    <!-- //recommend-tag -->
+                </div>
+                <!-- //search-box -->
+                <div class="dim"></div>
             </header>
             <main id="container">
                 <div class="content">
                     <section class="main_visual">
                         <div class="slide-wrap">
-                            <ul class="visual-slide">
+                            <ul class="visual-slide">  
                                 <li class="item-slide">
                                     <div class="info">
-                                        <strong class="headline"><a href="#none">하트시그널3 속 데이트 맛집 5곳</a></strong>
+                                        <strong class="headline"><a href="#none">‘완벽한 타인’이 추천하는 맥주</a></strong>
                                         <p class="desc">하트시그널3 속 데이트 맛집 5곳</p>
                                     </div>   
-                                    <a href="#none" class="thumb"><img src="https://cwcontent.asiae.co.kr/asiaresize/260/2020061515371895650_1592203038.jpg" alt="main-visual01"></a>  
+                                    <a href="#none" class="thumb"><img src="https://cwcontent.asiae.co.kr/asiaresize/131/2020051110413728991_1589161297.jpg" alt="main-visual02"></a>   
                                 </li>
                                 <li class="item-slide">
                                     <div class="info">
@@ -1384,6 +1386,36 @@
                     </div>
                 </div>
             </footer>
+            <!-- popup-sns -->
+            <div class="popup-sns">
+                <div class="layer-sns">
+                    <div class="sns_box">
+                        <p>공유하기</p>
+                        <a href="#none" class="close_popup">
+                            <span>닫기</span>
+                        </a>
+                        <div class="sns_list">
+                            <a href="#none">
+                                <span class="icon ico-fb">페이스북</span>   
+                                <em class="ico-text">페이스북</em>
+                            </a>
+                            <a href="#none">
+                                <span class="icon ico-kko">카카오</span>   
+                                <em class="ico-text">카카오</em>
+                            </a>
+                            <a href="#none">
+                                <span class="icon ico-twt">트위터</span>   
+                                <em class="ico-text">트위터</em>
+                            </a>
+                            <a href="#none">
+                                <span class="icon ico-copy">주소복사</span>   
+                                <em class="ico-text">주소복사</em>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //popup-sns -->
         </div>
     </body> 
 </html>
