@@ -21,31 +21,41 @@
 		<meta property="og:description" content="sunny의 naver labs 퍼블리싱 작업입니다.">
 		<meta property="og:image">
 		<style>
-html,body {margin: 0; padding: 0; font-family: 'notokrR';}
-div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
-ul,ol,li {list-style: none;}
-table {border-collapse:collapse;border-spacing:0;vertical-align:top;}
+        html,body {margin: 0; padding: 0; font-family: 'notokrR';}
+        div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+        ul,ol,li {list-style: none;}
+        table {border-collapse:collapse;border-spacing:0;vertical-align:top;}
 
-.guide_wrap {padding: 20px; box-sizing:border-box;}
-header {margin:55px 0 50px; padding-bottom: 20px; border-bottom: 1px solid #111;}
-header h1 {margin-bottom: 25px;}
-header .site {letter-spacing: -1px;}
-header .site p {margin-top: 5px; font-size: 14px; letter-spacing: -1px; font-family: 'notokrR';}
-header .site a {display: inline-block; margin-bottom: 5px; font-weight: bold; letter-spacing: 0; color: #111;}
+        .guide_wrap {padding: 20px; box-sizing:border-box;}
+        header {margin:55px 0 50px; padding-bottom: 20px; border-bottom: 1px solid #111;}
+        header h1 {margin-bottom: 25px;}
+        header .site {letter-spacing: -1px;}
+        header .site p {margin-top: 5px; font-size: 14px; letter-spacing: -1px; font-family: 'notokrR';}
+        header .site a {display: inline-block; margin-bottom: 5px; font-weight: bold; letter-spacing: 0; color: #111;}
 
-/* 퍼블 일정표 */
-.code_info {margin-bottom: 25px; width: 100%; border-collapse: collapse; text-align: center; font-size: 13px;}
-.code_info .title {background: rgba(0,0,0,.05);}
-.code_info .title th {padding: 5px 0; }
-.code_info thead tr {border: 0 none; }
-.code_info tbody tr {border: 1px solid rgba(0,0,0,.07); text-align: left;}
-.code_info tbody tr td {padding: 5px 25px; line-height: 23px;}
-.code_info tr .name {border-right: 1px solid rgba(0,0,0,.07);}
-.code_info tr:hover {background: rgba(0,0,0,.05);}
-.code_info tr.active {background: gold;}
-.code_info td {padding-left: 5%; text-align: left;}
-.code_info td .hover_color {color:#004ddc; }
-.code_info td .bg_color {color: #595959; background: rgba(0,0,0,.03); }
+        .code_info {margin-bottom: 25px; width: 100%; border-collapse: collapse; text-align: center; font-size: 13px;}
+        .code_info .title {background: rgba(0,0,0,.05);}
+        .code_info .title th {padding: 5px 0; }
+        .code_info thead tr {border: 0 none; }
+        .code_info tbody tr {border: 1px solid rgba(0,0,0,.07); text-align: left;}
+        .code_info tbody tr td {padding: 5px 25px; line-height: 23px;}
+        .code_info tr .name {border-right: 1px solid rgba(0,0,0,.07);}
+        .code_info tr:hover {background: rgba(0,0,0,.05);}
+        .code_info tr.active {background: gold;}
+        .code_info td {padding-left: 5%; text-align: left;}
+        .code_info td .hover_color {color:#004ddc; }
+        .code_info td .bg_color {color: #595959; background: rgba(0,0,0,.03); }
+        
+        main {border-bottom: 1px solid rgba(0,0,0,.08);}
+        main:after {content:'';display: block;clear: both;}    
+        main [class*="-code"]{padding:20px; width: 48%;}    
+        main h2 {display: block; width: 100%; height: 30px; font-size: 14px; font-weight: bold; letter-spacing: -1px; line-height: 30px; text-align: center; background:rgba(0,0,0,.08); }
+            main .tit {margin-bottom: 15px; text-align: center; font-family:'notokrR'; font-weight: bold; color: rgba(0,0,0,.7);}
+        main .ie-code {float: left; border-right: 1px solid rgba(0,0,0,.08);}    
+        main .chrom-code {float: right;}    
+        main p {font-family: 'notokrR'; font-size: 15px;}
+        main p strong {margin-top: 5px;display: block;}
+        main p .change {color: #1e88e5;}
         </style>
 	</head>
 
@@ -119,6 +129,30 @@ header .site a {display: inline-block; margin-bottom: 5px; font-weight: bold; le
                     <a href="http://dcode.asiae.co.kr/m_newasiae/test/darkmode/darkmode_mobile.html">http://dcode.asiae.co.kr/m_newasiae/test/darkmode/darkmode_mobile.html</a>
                 </div>
             </header>
+            <main>
+                <h2>다크모드 코드적용</h2>   
+                <div class="ie-code">
+                    <div class="tit">IE 적용</div>   
+                    <p>-a링크로 btn-darkmode 버튼</p>
+                    <p>-버튼클릭시 body에 dark-theme클래스 적용</p>
+                    <p>-body의 클래스가 dark-theme 추가시 각각의 color 적용
+                        <strong class="first">.title {color:#000}</strong>   
+                        <strong class="change">body.dark-theme .title {color:#fff}</strong>
+                    </p>
+                </div>
+                <div class="chrom-code">
+                    <div class="tit">최신 CSS3적용</div>   
+                    <p>-input:checked를 활용한 toggle 버튼</p>
+                    <p>-data-theme: dark / light</p>
+                    <p>-변수를 정의한 상위요소 :root css3적용
+                        <strong class="first">:root{ --title-color:#000 }</strong>
+                        <strong class="first">
+                            [data-theme="dark"]{ --title-color:#fff }
+                        </strong>
+                        <strong class="change">.title {color: var(--title-color)}</strong>
+                    </p>
+                </div>
+            </main>
         </div>
 	</body>
 	
