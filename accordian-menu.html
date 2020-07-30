@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Accordian Menu</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<style>
+            * {margin: 0; padding: 0; box-sizing: border-box;}
+            a {display: block;text-decoration: none; color: #111;}
+            .nav {overflow-y: scroll; margin: 50px auto; padding: 20px; width: 400px; height: 500px; background: #fff; border: 1px solid rgba(0,0,0,.05); }
+            .nav .tabmenu {position: relative; border-bottom: 1px solid rgba(0,0,0,.05); height: 40px; font-size: 15px; line-height: 40px; letter-spacing: -1px; }
+            .nav .tabmenu.on,.nav .tabmenu:hover {color: #0082fa;}
+            
+            .nav .menu-wrap .tabmenu:after {content:''; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); width: 10px; height: 5px; background: url(https://cwstatic.asiae.co.kr/def_v2/main/menu_dw.png) no-repeat; background-size: contain;}
+            .nav .menu-wrap .tabmenu.on:after {background: url(https://cwstatic.asiae.co.kr/def_v2/main/menu_up.png) no-repeat; background-size: contain;}
+            .nav .menu-wrap .tabcont {display: none; padding: 10px 0; }
+            .nav .menu-wrap .tabcont a {font-size: 14px; line-height: 25px; letter-spacing: -1px; color: rgba(0,0,0,.6);}
+            .nav .menu-wrap .tabcont a:hover {color: #111;}
+        </style>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	</head>
+
+	<body>
+        <div class="nav">
+            <div class="menu-wrap">   
+                <a href="#none" class="tabmenu">뉴스 ZONE</a>
+                <div class="tabcont">
+                    <a href="#">전체</a>
+                    <a href="#">리얼타임 국방뉴스</a>
+                    <a href="#">집중탐구</a>
+                    <a href="#">전투부대 독한 훈련기</a>
+                    <a href="#">군사 전문가 칼럼</a>
+                </div>
+            </div>
+            <div class="menu-wrap">
+                <a href="#none" class="tabmenu">방산기업 ZONE</a>
+                <div class="tabcont">
+                    <a href="#">전체</a>
+                    <a href="#">방산기업 헤드라인</a>
+                    <a href="#">방산기업 현장보고서</a>
+                    <a href="#">프리미엄 방산기업</a>
+                </div>
+            </div>
+            <a href="#none" class="tabmenu">피플 ZONE</a>
+            <a href="#none" class="tabmenu">최신무기 해부학</a>
+            <div class="menu-wrap">
+                <a href="#none" class="tabmenu">멀티미디어 ZONE</a>
+                <div class="tabcont">
+                    <a href="#">전체</a>
+                    <a href="#">밀리터리 포토</a>
+                    <a href="#">디펜스클럽 동영상</a>
+                </div>
+            </div>
+            <a href="#none" class="tabmenu">팟캐스트</a>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.tabmenu').on('click',function(){
+                    function slideDown(target){
+                    slideUp();
+                    $(target).addClass('on').next('.tabcont').slideDown();
+                }
+                function slideUp(){
+                    $('.tabmenu').removeClass('on').next('.tabcont').slideUp();
+                }
+                $(this).hasClass('on') ? slideUp () : slideDown(this);    
+                });
+                
+
+            });//end
+            
+           
+        </script>
+	</body>
+</html>
