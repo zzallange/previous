@@ -1,0 +1,189 @@
+
+$font:'Noto Sans KR', sans-serif;
+$black: #000;
+$sky: #3E87F8;
+$link: #b9b9b9;
+$lightGray: #ccc;
+$subColor: #3b3b3b;
+$darkGray: #323232;
+
+.content { margin:0 auto; width: 1000px;
+    header { margin: 100px 0 50px; text-align: center;
+        h1 { font-family: $font; font-size: 40px;}
+        .site-link { font-size: 20px; letter-spacing: 1px; color: $link;
+            &:hover {text-decoration: underline;}
+        }
+    }//header
+    article {
+        .title-bx { padding:20px 0 ; border-top: 3px solid #000; border-bottom: 1px solid #ddd;
+            &:after {content: '';display: block;clear: both;}
+            strong { font-size: 16px; line-height: 1; font-weight: bold; color: $sky;}
+            .sub-tit { margin: 20px 0 35px; font-family: $font; font-size: 30px; line-height: 1; }
+            .date { font-size: 15px; color: #a3a3a3;}
+            .description { margin-top: 10px; font-size: 14px; font-weight: bold; line-height: 20px; color: #595959;}
+            .author { float: right; margin-top: 20px; font-weight: bold; color: $lightGray;}
+        }//title-bx
+        .codeGuide { margin-top: 100px; 
+            .pc-monitor { display: block; position: relative; margin: 0 auto; width: 822px; height: 695px; 
+                background: url(../../img/pc-img.png) center no-repeat; 
+                .ico-scroll {display: block; position: absolute; left: 50%; top: 50%; z-index: 60; transform: translate(-50%,-50%);
+                    width: 30px; height: 50px; border: 2px solid #fff; border-radius: 50px; font-size: 0;
+                    &:before {content: ''; position: absolute; top: 10px; left: 50%; margin-left: -3px; width: 6px; height: 6px;
+                        border-radius: 50%; background: #fff; animation: icoScroll 2s infinite;}
+                    @keyframes icoScroll {
+                        0% {opacity: 0;}
+                        40% {opacity: 1;}
+                        80% {opacity: 0; transform: translate(0, 20px);}
+                        100% {opacity: 0;}
+                    }
+                }//ico-scroll
+                .pc-screen { overflow: hidden; overflow-y: scroll; position: absolute; top: 30px; left: 30px; width: 760px; height: 430px;
+                    &::-webkit-scrollbar {background: #ddd;}
+                    &::-webkit-scrollbar-button {background: #595959;}
+                    &::-webkit-scrollbar-thumb { width: 40px; height: 40px; border-radius: 5px;}
+                    figure { position: relative; width: 100%; font-size: 0;
+                        &:before {content: ''; position: absolute; left: 0; top: 0; bottom: 0; right: 0; z-index: 50; 
+                            background: rgba(0,0,0,.5);}
+                    }//figure
+                }//pc-screen
+                &:hover {
+                    .ico-scroll {opacity: 0;}
+                    .pc-screen {
+                        figure { 
+                            &:before {opacity: 0;}
+                        }
+                    }
+                }//pc-monitor:hover시 효과
+            }//pc-monitor
+            .btn-bx { margin: 15px 0 20px; font-family: $font; font-size: 22px; line-height: 1; font-weight: bold;
+                [class*="btn"] {
+                    &:hover {text-decoration: underline;}
+                }
+                .btn-home { position: relative; padding-left: 30px;
+                    &:before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; 
+                        background: url(../img/ico/left-arrow.png) no-repeat; background-size: contain;}
+                }
+                .btn-source { position: relative; float: right; padding-right: 30px;
+                    &:after {content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); 
+                        width: 16px; height: 16px; background: url(../img/ico/right-arrow.png) no-repeat; background-size: contain;}
+                }
+            }//btn-bx
+            //table-common
+            [class*="table"]{ margin: 0 auto 50px; width: 100%; border: 1px solid #ddd; background: #fff;
+                caption {font-size: 0; line-height: 0; text-indent: -999px; color: transparent;}
+                thead { width: 100%; 
+                    tr {
+                        th { height: 30px; font-family: $font; font-size: 16px; letter-spacing: 2px; color: #fff; }
+                    }
+                }//thead
+                tbody {  font-family: $font;
+                    th { font-size: 16px; line-height: 1; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+                    td {padding: 10px 20px; height: 50px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; text-align: left; font-size: 14px; color: $darkGray;
+                        em { font-weight: bold; color: $black;}
+                        .query {color: green;}
+                        .desc {margin-left: 5px; font-size: 13px; color: $sky;}
+                    }
+                }//tbdoy
+            }//table-common
+            .table-code {
+                tbody { 
+                    td { 
+                        ul {
+                            li { margin: 5px 0;}
+                            .co-style { background: #ffe7e7; }
+                            .co-style2 { background:#ffb6b6; }
+                            .co-style3 { background:#fcdfb4; }
+                            .co-style4 { background:#a0fda8; }
+                            .co-style5 { background:#97fff0; }
+                        }//ul
+                        .color-circle { display: inline-block; margin-left: 5px; width: 15px; height: 15px; border-radius: 50%; vertical-align: middle; font-size: 0; 
+                        }//color-circle
+                    }
+                }//tbody
+            }//table-code
+            .table-file {
+                .file-link {
+                    a { font-family: $font; font-size: 15px; color: $black; text-decoration: underline;
+                        &:hover {color: #ff695c;}
+                    }
+                }//file-link
+                .file-desc { color: $subColor; }
+            }//table-file
+        }//codeGuide
+    }//article
+}//Content
+
+@media only screen and (max-width:1060px) {
+    .content { padding: 0 30px; width: 100%;
+        header {margin: 50px 0;
+            h1 { font-size: 30px; line-height: 1.2;}
+            .site-link {font-size: 19px;}
+        }//header 
+        article {
+            .codeGuide { 
+                .pc-monitor { width: 100%; height: auto; background: none;
+                    .ico-scroll {display: none;}
+                    .pc-screen { overflow: hidden; position: relative; top: 0; left: 0; width: 100%; height: 500px;
+                        border: 1px solid #ddd; box-shadow: 3px 4px 5px #ddd;
+                        figure { overflow: hidden; height: 100%;
+                            &:before {display: none;}
+                        }
+                    }//pc-screen
+                }//pc-monitor
+                .btn-bx { margin: 50px 0 30px; font-size: 20px;}//btn-bx
+                [class*="table"] {
+                    tbody {
+                        td {padding: 10px;}
+                    }
+                }//table-code
+            }//codeGuide
+        }//article
+    }//content
+}// screen 1060
+@media only screen and (max-width:480px) {
+    .content { padding: 0 20px;
+        header {margin: 50px 0 20px;
+            h1 {font-size: 26px;}
+        }//header 
+        article {
+            .title-bx {
+                strong {font-size: 14px;}
+                .sub-tit { margin: 10px 0 20px; font-size: 25px;}
+                .date {font-size: 14px;}
+                .author { margin-top: 5px; display: block; float: none;}
+            }//title-bx
+            .codeGuide { margin-top: 50px;
+                .btn-bx { margin: 50px 0 20px; font-size: 18px;
+                    .btn-home {padding-left: 20px;}
+                    .btn-source {padding-right: 20px;}
+                }//btn-bx
+                //table-common
+                [class*="table"] {
+                    tbody {
+                        th {font-size: 13px;}
+                        td {font-size: 13px;}
+                    }
+                }//table-common
+                .table-file {
+                    tbody {
+                        .file-link {
+                            a { width: 100%; font-size: 13px;}
+                        }//file-link
+                        .file-desc { color: $subColor; }
+                    }
+                }//tabel-file
+            }//codeGuide
+        }//article
+    }//content
+}// screen 480
+
+
+
+
+
+
+
+
+
+
+

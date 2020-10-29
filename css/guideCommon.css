@@ -1,0 +1,459 @@
+.content {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.content header {
+  margin: 100px 0 50px;
+  text-align: center;
+}
+
+.content header h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 40px;
+}
+
+.content header .site-link {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #b9b9b9;
+}
+
+.content header .site-link:hover {
+  text-decoration: underline;
+}
+
+.content article .title-bx {
+  padding: 20px 0;
+  border-top: 3px solid #000;
+  border-bottom: 1px solid #ddd;
+}
+
+.content article .title-bx:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content article .title-bx strong {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  color: #3E87F8;
+}
+
+.content article .title-bx .sub-tit {
+  margin: 20px 0 35px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.content article .title-bx .date {
+  font-size: 15px;
+  color: #a3a3a3;
+}
+
+.content article .title-bx .description {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #595959;
+}
+
+.content article .title-bx .author {
+  float: right;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.content article .codeGuide {
+  margin-top: 100px;
+}
+
+.content article .codeGuide .pc-monitor {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 822px;
+  height: 695px;
+  background: url(../../img/pc-img.png) center no-repeat;
+}
+
+.content article .codeGuide .pc-monitor .ico-scroll {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 60;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-size: 0;
+}
+
+.content article .codeGuide .pc-monitor .ico-scroll:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-animation: icoScroll 2s infinite;
+          animation: icoScroll 2s infinite;
+}
+
+@-webkit-keyframes icoScroll {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes icoScroll {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.content article .codeGuide .pc-monitor .pc-screen {
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 760px;
+  height: 430px;
+}
+
+.content article .codeGuide .pc-monitor .pc-screen::-webkit-scrollbar {
+  background: #ddd;
+}
+
+.content article .codeGuide .pc-monitor .pc-screen::-webkit-scrollbar-button {
+  background: #595959;
+}
+
+.content article .codeGuide .pc-monitor .pc-screen::-webkit-scrollbar-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.content article .codeGuide .pc-monitor .pc-screen figure {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+}
+
+.content article .codeGuide .pc-monitor .pc-screen figure:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content article .codeGuide .pc-monitor:hover .ico-scroll {
+  opacity: 0;
+}
+
+.content article .codeGuide .pc-monitor:hover .pc-screen figure:before {
+  opacity: 0;
+}
+
+.content article .codeGuide .btn-bx {
+  margin: 15px 0 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.content article .codeGuide .btn-bx [class*="btn"]:hover {
+  text-decoration: underline;
+}
+
+.content article .codeGuide .btn-bx .btn-home {
+  position: relative;
+  padding-left: 30px;
+}
+
+.content article .codeGuide .btn-bx .btn-home:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: url(../img/ico/left-arrow.png) no-repeat;
+  background-size: contain;
+}
+
+.content article .codeGuide .btn-bx .btn-source {
+  position: relative;
+  float: right;
+  padding-right: 30px;
+}
+
+.content article .codeGuide .btn-bx .btn-source:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: url(../img/ico/right-arrow.png) no-repeat;
+  background-size: contain;
+}
+
+.content article .codeGuide [class*="table"] {
+  margin: 0 auto 50px;
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.content article .codeGuide [class*="table"] caption {
+  font-size: 0;
+  line-height: 0;
+  text-indent: -999px;
+  color: transparent;
+}
+
+.content article .codeGuide [class*="table"] thead {
+  width: 100%;
+}
+
+.content article .codeGuide [class*="table"] thead tr th {
+  height: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.content article .codeGuide [class*="table"] tbody {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.content article .codeGuide [class*="table"] tbody th {
+  font-size: 16px;
+  line-height: 1;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.content article .codeGuide [class*="table"] tbody td {
+  padding: 10px 20px;
+  height: 50px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+  color: #323232;
+}
+
+.content article .codeGuide [class*="table"] tbody td em {
+  font-weight: bold;
+  color: #000;
+}
+
+.content article .codeGuide [class*="table"] tbody td .query {
+  color: green;
+}
+
+.content article .codeGuide [class*="table"] tbody td .desc {
+  margin-left: 5px;
+  font-size: 13px;
+  color: #3E87F8;
+}
+
+.content article .codeGuide .table-code tbody td ul li {
+  margin: 5px 0;
+}
+
+.content article .codeGuide .table-code tbody td ul .co-style {
+  background: #ffe7e7;
+}
+
+.content article .codeGuide .table-code tbody td ul .co-style2 {
+  background: #ffb6b6;
+}
+
+.content article .codeGuide .table-code tbody td ul .co-style3 {
+  background: #fcdfb4;
+}
+
+.content article .codeGuide .table-code tbody td ul .co-style4 {
+  background: #a0fda8;
+}
+
+.content article .codeGuide .table-code tbody td ul .co-style5 {
+  background: #97fff0;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle {
+  display: inline-block;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.content article .codeGuide .table-file .file-link a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  color: #000;
+  text-decoration: underline;
+}
+
+.content article .codeGuide .table-file .file-link a:hover {
+  color: #ff695c;
+}
+
+.content article .codeGuide .table-file .file-desc {
+  color: #3b3b3b;
+}
+
+@media only screen and (max-width: 1060px) {
+  .content {
+    padding: 0 30px;
+    width: 100%;
+  }
+  .content header {
+    margin: 50px 0;
+  }
+  .content header h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .content header .site-link {
+    font-size: 19px;
+  }
+  .content article .codeGuide .pc-monitor {
+    width: 100%;
+    height: auto;
+    background: none;
+  }
+  .content article .codeGuide .pc-monitor .ico-scroll {
+    display: none;
+  }
+  .content article .codeGuide .pc-monitor .pc-screen {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 3px 4px 5px #ddd;
+            box-shadow: 3px 4px 5px #ddd;
+  }
+  .content article .codeGuide .pc-monitor .pc-screen figure {
+    overflow: hidden;
+    height: 100%;
+  }
+  .content article .codeGuide .pc-monitor .pc-screen figure:before {
+    display: none;
+  }
+  .content article .codeGuide .btn-bx {
+    margin: 50px 0 30px;
+    font-size: 20px;
+  }
+  .content article .codeGuide [class*="table"] tbody td {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content {
+    padding: 0 20px;
+  }
+  .content header {
+    margin: 50px 0 20px;
+  }
+  .content header h1 {
+    font-size: 26px;
+  }
+  .content article .title-bx strong {
+    font-size: 14px;
+  }
+  .content article .title-bx .sub-tit {
+    margin: 10px 0 20px;
+    font-size: 25px;
+  }
+  .content article .title-bx .date {
+    font-size: 14px;
+  }
+  .content article .title-bx .author {
+    margin-top: 5px;
+    display: block;
+    float: none;
+  }
+  .content article .codeGuide {
+    margin-top: 50px;
+  }
+  .content article .codeGuide .btn-bx {
+    margin: 50px 0 20px;
+    font-size: 18px;
+  }
+  .content article .codeGuide .btn-bx .btn-home {
+    padding-left: 20px;
+  }
+  .content article .codeGuide .btn-bx .btn-source {
+    padding-right: 20px;
+  }
+  .content article .codeGuide [class*="table"] tbody th {
+    font-size: 13px;
+  }
+  .content article .codeGuide [class*="table"] tbody td {
+    font-size: 13px;
+  }
+  .content article .codeGuide .table-file tbody .file-link a {
+    width: 100%;
+    font-size: 13px;
+  }
+  .content article .codeGuide .table-file tbody .file-desc {
+    color: #3b3b3b;
+  }
+}
+/*# sourceMappingURL=guideCommon.css.map */

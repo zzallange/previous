@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.header .logo_mbox {display:none;}
+
+.wd300 {width:300px !important; min-width:300px !important; text-align:center; max-height:500px; }
+.wd300 img {max-width:300px !important; text-align:center; max-height:500px; overflow:hidden;}
+
+/* article */
+.def_at {padding: 60px 0 100px; box-sizing: border-box; margin: 0 auto; width: 800px; background: #fff;}
+.def_at .at_hd {width: 100%;}
+.def_at .at_hd:after {content:''; display: block; clear: both;}
+.at_hd .title {margin-bottom: 50px; font-size: 36px; line-height: 45px; letter-spacing: -1px; font-family: 'notokrR'; font-weight: bold;}
+
+.at_hd .at_data {float: left;}
+.at_hd .at_data p {color: #9c9c9c; font-size: 13px;}
+.at_hd .at_data strong { letter-spacing: -1px;}
+.at_hd .at_data .date {margin-left: 10px; display: inline-block; position: relative;}
+.at_hd .at_data .date:before {content:''; position: absolute; left: -7px; top: 6px; width: 1px; height: 7px; background: #e5e5e5;}
+
+.at_hd .at_sns {float: right;margin-top: -7px; }
+.at_hd .at_sns a {display: inline-block;  width: 30px; height: 30px; border-radius: 50%; background: #eee; text-align: center;}
+.at_hd .at_sns .sns_fb span {width: 9px; line-height: 33px;}
+.at_hd .at_sns .sns_twt span {width: 16px; line-height: 30px;}
+.at_hd .at_sns .sns_sh span {width: 16px; line-height: 30px;}
+
+.def_at .at_ct {margin: 50px 0; }
+.at_ct .at_pt {margin: 0 auto; min-width: 600px; max-width:100%; border-bottom: 1px solid #e5e5e5; box-sizing: border-box; }
+.at_ct .at_pt img {width: 100%;}
+.at_ct .at_pt:after {content:''; display: block; }
+.at_ct .at_pt .pt_txt {display: block; width: 100%; font-size: 13px; letter-spacing: -1px; line-height: 18px; margin:6px 0; color: #9c9c9c; }
+
+.at_ct .at_view {width: 100%;}
+.at_ct .at_view span {display:inline;}
+.at_ct p {font-size: 17px; line-height: 30px; letter-spacing: -1px; color: #111;}
+.at_ct .kywrd {margin-top: 60px;}
+.at_ct .kywrd a {font-size: 17px; color:#0083fb; }
+.at_ct .copyrt { margin-top: 40px; text-align: center;}
+.at_ct .copyrt p {margin-bottom: 60px; font-size: 15px; line-height: 25px; letter-spacing: -1px; color: #111;}
+.at_ct .copyrt p span {display: block; font-size: 13px; color: #9c9c9c;}
+
+.video_wrap {position:relative;max-width:100%;height:0;padding:28%;box-sizing:border-box;}
+.video_wrap iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
+
+.at_ct .at_more {position: relative; margin-bottom: 40px;overflow: hidden;}
+.at_ct .more_ct .arrow {position: absolute; top: 50%; transform: translateY(-50%); height: 30px; }
+.at_ct .at_more .preview .arr_p {left:20px; width: 20px; background: url(https://cwstatic.asiae.co.kr/def_v2/article/pre.png) no-repeat; background-size: contain;}
+.at_ct .at_more .preview:hover .arr_p {background: url(https://cwstatic.asiae.co.kr/def_v2/article/pre_on.png) no-repeat; background-size: contain;}
+.at_ct .at_more .next .arr_n {right: 20px; width: 20px; background: url(https://cwstatic.asiae.co.kr/def_v2/article/next.png) no-repeat;background-size: contain;}
+.at_ct .at_more .next:hover .arr_n {background: url(https://cwstatic.asiae.co.kr/def_v2/article/next_on.png) no-repeat;background-size: contain;}
+.at_ct .at_more .more_ct {position: relative; float: left; width: 50%; height: 105px; border: 1px solid #ddd; box-sizing: border-box;}
+.at_ct .at_more .more_ct:hover {border: 1px solid #4c4c4c;}
+
+.at_ct .at_more .preview {padding: 23px 60px 0; z-index: 5;}
+.at_ct .at_more .preview:hover {z-index: 66;}
+.at_ct .at_more .next {padding: 23px 60px 0; text-align: right;margin-left: -1px; z-index: 6;}
+.at_ct .at_more .next:hover {z-index: 55;}
+
+.at_ct .at_more .preview span, .at_ct .at_more .next span {font-size: 14px;letter-spacing: -1px; color: #595959;}
+.at_ct .at_more .preview p, .at_more .next p {margin:8px 0 0 0; font-family:'notokrR'; font-weight:bold; font-size: 18px;line-height: 25px;letter-spacing: -1px; color: #111; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.at_ct .at_more .preview:hover p, .at_ct .at_inmore .next:hover p { color: #000;}
+
+/* 이전글 다음글이 없을때 */
+.at_ct .at_more .no_ct {display: none;}
+.at_ct .at_more .have_ct {width: 100%; margin-left: 0; }
+.at_ct .at_more .have_ct.next p {position: absolute; right: 60px;}
+/* //이전글 다음글이 없을때 */
+
+/* 프리미엄 방산기업 뷰 */
+.def_comp {padding: 60px 0 160px; box-sizing: border-box; margin: 0 auto; width: 800px; background: #fff;}
+.def_comp .comp_hd {width: 100%;}
+
+.comp_hd .comp_bx {width: 100%;}
+.comp_hd .comp_bx:after {content:''; display: block; clear: both;}
+.comp_hd .comp_bx > div {float: left;}
+.comp_hd .comp_bx .thumb {position: relative; margin-right: 60px; width: 300px; height: 200px; font-size: 0; overflow: hidden;}
+.comp_hd .comp_bx .thumb:after {content:''; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 1px solid rgba(0,0,0,.05);}
+.comp_hd .comp_bx .thumb > img {position: absolute; left: 50%; top: 50%; width: auto; transform: translate(-50%,-50%);}
+
+.comp_hd .comp_bx .info {width: 440px;}
+.comp_hd .comp_bx .info .comp_tit {padding-bottom: 20px; width: 100%; border-bottom: 2px solid #111; font-size: 22px; font-family: 'notokrR'; font-weight: bold; line-height: 1; box-sizing: border-box;}
+.comp_hd .comp_bx .info .comp_tit span {margin-left: 5px; font-size: 18px; font-weight: normal;}
+.comp_hd .comp_bx .info .comp_tit span .down {position: relative; margin-right: 10px; color: #0082fa;}
+.comp_hd .comp_bx .info .comp_tit span .down:after {content: '';display:inline-block;position: absolute; right: -10px; top: 10px; width: 8px; height: 7px; background: url(https://cwstatic.asiae.co.kr/asiae_v2/seo/down.png) no-repeat;}
+
+.comp_hd .comp_bx .info table {margin-top: 20px;}
+.comp_hd .comp_bx .info tr {width: 100%; height: 33px;}
+.comp_hd .comp_bx .info th {width: 90px; text-align: left;font-size: 15px; font-family: 'notokrR'; font-weight: bold; color: #111;}
+.comp_hd .comp_bx .info td {font-size: 15px; color: #9c9c9c;}
+
+.def_comp .comp_hd .comp_intr {margin-top: 40px;}
+.def_comp .comp_hd .comp_intr .c_tit {font-family: 'notokrR'; font-weight: bold; font-size: 17px; letter-spacing: -1px; font-style: italic; line-height: 1; margin-bottom: 20px;}
+.def_comp .comp_hd .comp_intr p {font-size: 15px; line-height:24px; letter-spacing: -1px; color: #9c9c9c;}
+
+.def_comp .comp_ct {margin: 60px 0;}
+.def_comp .comp_ct .c_tit {font-family: 'notokrR'; font-weight: bold; font-size: 17px; letter-spacing: -1px; font-style: italic; line-height: 1; margin-bottom: 20px;}
+.def_comp .comp_ct .at_lst {width: 100%;}
+.def_comp .comp_ct .at_lst li {margin-bottom: 20px; padding-top: 20px; display: table; width: 100%; table-layout: fixed; border-top: 1px solid #e5e5e5; box-sizing: border-box;}
+.def_comp .comp_ct .at_lst li:first-child {padding-top: 0; border-top: none;}
+.def_comp .comp_ct .at_lst li:after {content:'';display: block;clear: both;}
+.def_comp .comp_ct .at_lst li .thumb { position: relative; display: table-cell; width: 160px; height: 100px; }
+.def_comp .comp_ct .at_lst li .thumb a {position: relative; display: block; width: 100%; overflow: hidden; font-size: 0;}
+.def_comp .comp_ct .at_lst li .thumb a:after {content:''; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 1px solid rgba(0,0,0,.05);}
+.def_comp .comp_ct .at_lst li .txt_bx {padding-left: 20px; display: table-cell;vertical-align: middle; width: 100%; box-sizing: border-box;}
+.def_comp .comp_ct .at_lst li .s_tit {width: 90%; overflow: hidden;}
+.def_comp .comp_ct .at_lst li .s_tit a {width: 100%; font-size: 18px; letter-spacing: -1px; line-height: 25px; font-family: 'notokrR'; font-weight: bold; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.def_comp .comp_ct .at_lst li .s_tit a:hover {text-decoration: underline;}
+.def_comp .comp_ct .at_lst li .s_txt {width: 100%; font-size: 15px; letter-spacing: -1px; line-height: 20px; height:38px; text-overflow: ellipsis; overflow: hidden; color: #9c9c9c;}
+.def_comp .comp_ct .at_lst li .date {margin-top: 5px; display: block;font-size: 13px; color: #9c9c9c;}
+
+@media only screen and (max-width:1024px){ 
+	.header .def_logo {display:none;}
+	.header .sch_bx {display:none;}
+	.header .logo_mbox {display:block; float:left; }
+	.header .logo_mbox a.logo_m {width:40px; height:45px; vertical-align:top; margin-top:6px; background:url(https://cwstatic.asiae.co.kr/def_v2/logo_sub3.png) no-repeat 0 0; background-size:cover;}
+	.header .logo_mbox a.logo_mtxt {font-family: 'notokrR'; font-size:20px; line-height:60px;letter-spacing:-1px;margin-left:6px; font-weight:bold;}
+	.header .def_logo a {width: 400px; height: 93px; background: url(https://cwstatic.asiae.co.kr/def_v2/logo.png) no-repeat;}
+
+    .def_at {width: 100%; padding:40px 0 50px;}
+    /* padding */
+    .def_at .at_hd,.def_at .at_ct .at_view {padding: 0 20px; box-sizing: border-box;}
+    .def_at .at_ct .at_pt {min-width: 100%;}
+    .def_at .at_ct .at_pt .pt_txt {text-indent: 20px;}
+	.def_at .at_ct {margin: 30px 0;}
+	.at_ct .kywrd {margin-top: 30px;}
+	.at_ct .copyrt p {margin-bottom: 30px;}
+    
+    /* 프리미엄 방산기업 뷰 */
+    .def_comp {width: 100%;padding: 40px 20px; box-sizing: border-box;}
+    .comp_hd .comp_bx .thumb {width: 100%; height: 250px; }
+    .comp_hd .comp_bx .info {margin-top: 40px; width: 100%;}
+    .comp_hd .comp_bx .info table {width: 100%;}
+}
+
+@media only screen and (max-width:500px){ 
+    .def_at {padding: 40px 0 50px;}
+    .def_at .at_hd .at_data {float: none;}
+    .def_at .at_hd .at_sns {margin-top: 15px; float: none; display: inline-block;}
+    .def_at .at_hd .title {margin-bottom: 20px; font-size: 26px; line-height: 33px;}
+    .def_at .at_ct {margin-top: 35px;}
+    .def_at .at_ct .at_more .more_ct {width: 100%; height:auto; }
+    .def_at .at_ct .at_more .next {margin: -1px 0 0 0;}
+	.at_ct .at_more .preview {padding: 13px 60px;}
+	.at_ct .at_more .next {padding: 13px 60px;}
+    
+    /* 프리미엄 방산기업 뷰 */
+    .def_comp .comp_ct .at_lst li .thumb { width: 120px; height: 80px;}
+}

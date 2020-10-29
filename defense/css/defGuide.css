@@ -1,0 +1,480 @@
+@charset "UTF-8";
+/* pc, tablet ,mobile 3단 반응형구조 
+   퍼블리싱 100% ( 디자인 수정사항 요소, 헤드 및 메뉴 스크립트 제외 ) 
+*/
+/* Common */
+.common [class*="inner"] {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.common [class*="ct_def"] .h_tit {
+  margin-bottom: 20px;
+  font-family: "notokrR";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 22px;
+}
+
+.common [class*="ct_def"] .more {
+  font-size: 13px;
+  color: #9c9c9c;
+}
+
+.common .header .def_logo {
+  width: 252px;
+  height: 70px;
+}
+
+.common .header .gnb .depth1 {
+  margin-right: 40px;
+  padding: 20px 0;
+  height: 60px;
+  font-family: "notokrR";
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: #111;
+}
+
+.common .header .gnb .depth2 {
+  font-size: 15px;
+  color: #9c9c9c;
+}
+
+.common .header .gnb_bg {
+  height: 50px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #f9f9f9;
+}
+
+.common .header .btn_all {
+  width: 22px;
+  height: 17px;
+}
+
+.common .header .visual_menu .visu_nav .tab_btn {
+  font-family: "notokrR";
+  font-size: 17px;
+  letter-spacing: -1px;
+  border-bottom: 1px solid #ddd;
+}
+
+.common .header .visual_menu .visu_nav .tab_cont a {
+  font-family: "notokrR";
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 30px;
+}
+
+.common .header .btn_asiae {
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #fff;
+  background: #111;
+}
+
+.common .content [class*="def_news"] .s_tit {
+  font-family: "notokrR";
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+.common .content [class*="def_news"] .s_txt {
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 20px;
+  color: #9c9c9c;
+}
+
+.common .content main {
+  /* 전투부대 독한 훈련기 */
+  /* 집중탐구 · 최신무기 해부학 */
+  /* Defense Company Club */
+}
+
+.common .content main .main-thumb {
+  width: 480px;
+  height: 385px;
+}
+
+.common .content main .main-thumb .h-tit {
+  padding: 0 15px;
+  font-family: "notokrR";
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 27px;
+  color: #fff;
+  background: #111;
+}
+
+.common .content main .headline a {
+  font-family: "notokrR";
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  line-height: 42px;
+}
+
+.common .content main .top_list .real-ns p {
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -1px;
+  color: #fff;
+  background: #eb1829;
+}
+
+.common .content main .ct_def05 ul li {
+  margin-left: 20px;
+  width: 235px;
+}
+
+.common .content main .ct_def02 .focus_ns {
+  float: left;
+  width: 480px;
+}
+
+.common .content main .ct_def02 .wp_ns {
+  float: right;
+  width: 480px;
+}
+
+.common .content main [class*="_ns"] ul li {
+  display: table;
+  table-layout: fixed;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.common .content main [class*="_ns"] ul li .thumb {
+  display: table-cell;
+  padding-right: 20px;
+  width: 120px;
+  height: 80px;
+}
+
+.common .content main [class*="_ns"] ul li .txt_bx {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.common .content main .ct_def03 .c_tit a {
+  font-family: "notokrR";
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #fff;
+}
+
+.common .content main .ct_def03 .def_comp {
+  height: 225px;
+}
+
+.common .content .zone .thumb {
+  width: 320px;
+  height: 250px;
+}
+
+.common .content .zone .thumb .txt {
+  padding: 15px 30px;
+  font-family: "notokrR";
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -1px;
+  color: #fff;
+  background: rgba(38, 39, 43, 0.9);
+}
+
+.common .content .mult_photo .multi_pt ul li {
+  margin-bottom: 20px;
+  width: 253px;
+  border: 1px solid #e5e5e5;
+}
+
+.common .content .mult_photo .multi_pt ul li.first {
+  margin-left: 0;
+}
+
+.common .content .mult_photo .multi_pt ul li.second {
+  margin: 0 20px;
+}
+
+.common .footer {
+  font-size: 13px;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  color: #595959;
+}
+
+.common .footer .ft .outlink li {
+  margin: 0 20px;
+}
+
+/* Font */
+.font [class*="ct_def"] .h_tit {
+  font-family: "notokrR";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 22px;
+}
+
+.font [class*="ct_def"] .more {
+  font-size: 13px;
+}
+
+.font .header .gnb .depth1 {
+  font-family: "notokrR";
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+
+.font .header .gnb .depth2 {
+  font-size: 15px;
+}
+
+.font .header .visual_menu .visu_nav .tab_btn {
+  font-family: "notokrR";
+  font-size: 17px;
+  letter-spacing: -1px;
+}
+
+.font .header .visual_menu .visu_nav .tab_cont a {
+  font-family: "notokrR";
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 30px;
+}
+
+.font .header .btn_asiae {
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+
+.font .content [class*="def_news"] .s_tit {
+  font-family: "notokrR";
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+.font .content [class*="def_news"] .s_txt {
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 20px;
+}
+
+.font .content main .main-thumb .h-tit {
+  font-family: "notokrR";
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 27px;
+}
+
+.font .content main .headline a {
+  font-family: "notokrR";
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  line-height: 42px;
+}
+
+.font .content main .top_list .real-ns p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -1px;
+}
+
+.font .content .zone .thumb .txt {
+  font-family: "notokrR";
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -1px;
+}
+
+.font .content .ct_def03 .c_tit a {
+  font-family: "notokrR";
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.font .footer {
+  font-size: 13px;
+  letter-spacing: -1.5px;
+  line-height: 1;
+}
+
+/* Color */
+.color [class*="ct_def"] .more {
+  color: #9c9c9c;
+}
+
+.color .header .gnb .depth1 {
+  color: #111;
+}
+
+.color .header .gnb .depth2 {
+  color: #9c9c9c;
+}
+
+.color .header .gnb_bg {
+  background: #f9f9f9;
+}
+
+.color .header .btn_asiae {
+  color: #fff;
+  background: #111;
+}
+
+.color .content [class*="def_news"] .s_txt {
+  color: #9c9c9c;
+}
+
+.color .content main .main-thumb .h-tit {
+  color: #fff;
+  background: #111;
+}
+
+.color .content main .top_list .real-ns p {
+  color: #fff;
+  background: #eb1829;
+}
+
+.color .content .zone .thumb .txt {
+  color: #fff;
+  background: rgba(38, 39, 43, 0.9);
+}
+
+.color .content .ct_def03 .c_tit a {
+  color: #fff;
+}
+
+.color .footer {
+  color: #595959;
+}
+
+/* mediaquery */
+@media only screen and (max-width: 1024px) {
+  .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .content main {
+    /* 전투부대 독한 훈련기 */
+    /* Defense Company Club */
+  }
+  .content main .main-thumb {
+    width: 100%;
+    height: auto;
+  }
+  .content main .headline a {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .content main .ct_def05 ul li {
+    width: 49%;
+  }
+  .content main .ct_def05 ul li.od {
+    margin: 0 2% 0 0;
+  }
+  .content main .ct_def03 .def_comp {
+    height: 220px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* 집중탐구 · 최신무기 해부학 */
+  .ct_def02 .focus_ns {
+    float: none;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .ct_def02 .wp_ns {
+    float: none;
+    width: 100%;
+  }
+  [class*="_ns"] ul li {
+    display: table;
+    table-layout: fixed;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  [class*="_ns"] ul li .thumb {
+    display: table-cell;
+    padding-right: 20px;
+    width: 120px;
+    height: 80px;
+  }
+  [class*="_ns"] ul li .txt_bx {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* Defense Company Club */
+}
+
+/* JS */
+.Js .gnb {
+  /* menu-wrap:hover .subnav-cont {display:block} */
+}
+
+.Js .all-menu {
+  /*
+        $('.btn_all').click(function(){
+            $(".visual_sch").addClass("visual_sch_open");
+        });
+        */
+}
+
+.Js .search {
+  /*
+        $('.btn_sch').click(function(){
+            $('.visual_sch_open').show(),5000;
+        });
+        $('.schbtn_x').click(function(){
+            $(".visual_sch").removeClass("visual_sch_open");
+        });
+        */
+}
+
+.Js .btn_top {
+  /*
+        $(window).scroll(function() {
+            if($(window).scrollTop() > $('header').height()){
+                $('.btn_top').addClass('on');
+            } else {
+                $('.btn_top').removeClass('on');
+            }
+        });
+        $(function(){
+            $('.btn_top').click(function(){
+                $('html, body').animate({scrollTop: 0}, 300);
+            });
+        });
+        */
+}
+
+.Js .Defense-Club .def_comp {
+  /* SlidesPerView:4, loop:true 
+            breakpoint: 1024 { sliedsPerView:2 }
+            breakpoint: 425 { sliedsPerView:1 }
+            */
+}
+/*# sourceMappingURL=defGuide.css.map */

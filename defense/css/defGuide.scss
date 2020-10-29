@@ -1,0 +1,233 @@
+
+.defense {
+    .main {}//매인
+    .article {}//기사뷰
+    .article_pre {}//기사뷰02
+    .list {}//zone 리스트페이지
+    .colum_list {}//메뉴별 리스트페이지
+    .multi_list {}//포토형 리스트페이지
+    .multizone {}//멀티미디어ZONE
+    .newszone {}//뉴스ZONE
+    .peoplezone {}//피플ZONE
+    .potcast {}//팟캐스트
+    .premium {}//프리미엄 방산기업
+    .weapon {}//최신예무기 해부학
+}//defense
+
+//Code Guide
+/* pc, tablet ,mobile 3단 반응형구조 
+   퍼블리싱 100% ( 디자인 수정사항 요소, 헤드 및 메뉴 스크립트 제외 ) 
+*/
+
+/* Common */
+$font: 'notokrR';
+
+.common {
+    [class*="inner"] {margin: 0 auto; width: 1000px;}
+    [class*="ct_def"] .h_tit { margin-bottom: 20px; font-family: $font; font-weight: bold; font-style: italic; 
+        font-size: 22px; letter-spacing: -1px; line-height: 22px; } //섹션별 타이틀
+    [class*="ct_def"] .more {font-size: 13px; color: #9c9c9c;} //더보기 버튼
+    .header {
+        .def_logo { width: 252px; height: 70px; }
+        .gnb .depth1 { margin-right: 40px; padding: 20px 0; height: 60px; 
+            font-family: $font; font-size: 15px; letter-spacing: -1px; color: #111;}
+        .gnb .depth2 { font-size: 15px; color: #9c9c9c; }       
+        .gnb_bg { height: 50px; border-bottom: 1px solid #e5e5e5; background: #f9f9f9;} 
+        .btn_all { width: 22px; height: 17px; }
+        .visual_menu {
+            .visu_nav {
+                .tab_btn {font-family: $font; font-size: 17px; letter-spacing: -1px; border-bottom: 1px solid #ddd;}
+                .tab_cont a { font-family: $font; font-size: 16px; letter-spacing: -1px; line-height: 30px;}
+            }
+        }//visual_menu
+        .btn_asiae { width: 200px; height: 40px; font-size: 15px; line-height: 40px; letter-spacing: -1px; 
+            color: #fff; background: #111;}
+    }//header
+    .content {
+        [class*="def_news"] .s_tit { font-family: $font; font-weight: bold; font-size: 18px; letter-spacing: -1px; }
+        [class*="def_news"] .s_txt { font-size: 15px; letter-spacing: -1px; line-height: 20px; color: #9c9c9c; }
+        main {
+            .main-thumb { width: 480px; height: 385px; } //ct_def01 > .top_news .thumb
+            .main-thumb .h-tit {padding: 0 15px; font-family: $font; font-style: italic;
+                font-size: 18px; letter-spacing: -1px; line-height: 27px; color: #fff; background: #111;}
+            .headline a { font-family: $font; font-weight: bold; font-size: 36px; letter-spacing: -1.5px; line-height: 42px; }
+            
+            .top_list .real-ns p { padding: 0 10px; font-weight: bold; font-size: 14px; line-height: 25px; letter-spacing: -1px; 
+                color: #fff; background: #eb1829; }
+
+            /* 전투부대 독한 훈련기 */    
+            .ct_def05 ul li { margin-left: 20px; width: 235px; } 
+            .ct_def05 ul li.od {}
+
+            /* 집중탐구 · 최신무기 해부학 */
+            .ct_def02 .focus_ns {float: left; width: 480px;} //집중탐구
+            .ct_def02 .wp_ns {float: right; width: 480px;} //집중탐구
+            [class*="_ns"] ul li { display: table; table-layout: fixed; margin-bottom: 10px; width: 100%; }
+            [class*="_ns"] ul li .thumb {display: table-cell; padding-right: 20px; width: 120px; height: 80px;}
+            [class*="_ns"] ul li .txt_bx {display: table-cell; vertical-align: middle;}
+
+            /* Defense Company Club */
+            .ct_def03 .c_tit a { font-family: $font; font-weight: bold; font-size: 22px; letter-spacing: -1px; line-height: 1; color: #fff; }
+            .ct_def03 .def_comp { height: 225px; } //defense company -swiper container
+            .ct_def03 .def_comp .club {} //swiper-slide 4개씩
+        }//main.html
+        .zone {
+            .thumb {width: 320px; height: 250px;} //큰 썸네일 top_h1 : top-headline
+            .thumb .txt {padding: 15px 30px; font-family: $font; font-size: 18px; line-height: 25px; letter-spacing: -1px;
+                color:#fff; background: rgba(38,39,43,.9);}
+        }//ZONE
+        .mult_photo {
+            .multi_pt ul li { margin-bottom: 20px; width: 253px; border: 1px solid #e5e5e5;}
+            .multi_pt ul li.first { margin-left: 0; }
+            .multi_pt ul li.second { margin: 0 20px;}
+        }//Photo-list
+    }//content
+    .footer { font-size: 13px; letter-spacing: -1.5px; line-height: 1; color: #595959;
+        .ft .outlink li {margin: 0 20px; } //foot-top
+        .fb {} //foot-bottom
+    }//footer
+}//common
+
+/* Font */
+.font {
+    $font: 'notokrR';
+    [class*="ct_def"] .h_tit { font-family: $font; font-weight: bold; font-style: italic; 
+        font-size: 22px; letter-spacing: -1px; line-height: 22px; } //섹션별 타이틀
+    [class*="ct_def"] .more {font-size: 13px; } //더보기 버튼
+    .header {
+        .gnb .depth1 { font-family: $font; font-size: 15px; letter-spacing: -1px;}
+        .gnb .depth2 { font-size: 15px;}       
+        .visual_menu {
+            .visu_nav {
+                .tab_btn {font-family: $font; font-size: 17px; letter-spacing: -1px;}
+                .tab_cont a { font-family: $font; font-size: 16px; letter-spacing: -1px; line-height: 30px;}
+            }
+        }//visual_menu
+        .btn_asiae {font-size: 15px; line-height: 40px; letter-spacing: -1px;}
+    }//header
+    .content {
+        [class*="def_news"] .s_tit { font-family: $font; font-weight: bold; font-size: 18px; letter-spacing: -1px; }
+        [class*="def_news"] .s_txt { font-size: 15px; letter-spacing: -1px; line-height: 20px;}
+        main {
+            .main-thumb .h-tit {font-family: $font; font-style: italic; font-size: 18px; letter-spacing: -1px; line-height: 27px;}
+            .headline a { font-family: $font; font-weight: bold; font-size: 36px; letter-spacing: -1.5px; line-height: 42px; }
+            .top_list .real-ns p { font-weight: bold; font-size: 14px; line-height: 25px; letter-spacing: -1px;}
+        }//main.html
+        .zone {
+            .thumb .txt { font-family: $font; font-size: 18px; line-height: 25px; letter-spacing: -1px;}
+        }//ZONE
+        .ct_def03 .c_tit a { font-family: $font; font-weight: bold; font-size: 22px; letter-spacing: -1px; line-height: 1;}
+    }//content
+    .footer { font-size: 13px; letter-spacing: -1.5px; line-height: 1;
+    }//footer
+}//font
+
+/* Color */
+.color {
+    [class*="ct_def"] .more {color: #9c9c9c;} //더보기 버튼
+    .header {
+        .gnb .depth1 { color: #111;}
+        .gnb .depth2 { color: #9c9c9c; }       
+        .gnb_bg { background: #f9f9f9;} 
+        .btn_asiae { color: #fff; background: #111;}
+    }//header
+    .content {
+        [class*="def_news"] .s_txt { color: #9c9c9c; }
+        main {
+            .main-thumb .h-tit {color: #fff; background: #111;}
+            .top_list .real-ns p {color: #fff; background: #eb1829; }
+        }//main.html
+        .zone {
+            .thumb .txt {color:#fff; background: rgba(38,39,43,.9);}
+        }//ZONE
+        .ct_def03 .c_tit a { color: #fff; }
+    }//content
+    .footer {color: #595959;}
+}//color
+
+/* mediaquery */
+@media only screen and (max-width:1024px){
+    .header {
+
+    }//header 
+    .content { padding: 0 20px; width: 100%;
+        main {
+            .main-thumb { width: 100%; height: auto; } //ct_def01 > .top_news .thumb
+            .headline a { font-size: 24px; line-height: 28px; }
+
+            /* 전투부대 독한 훈련기 */ 
+            .ct_def05 ul li { width: 49%; } 
+            .ct_def05 ul li.od { margin: 0 2% 0 0; }
+            /* Defense Company Club */
+            .ct_def03 .def_comp { height: 220px; } //defense company -swiper container
+            .ct_def03 .def_comp .club {} //swiper-slide 2개씩
+        }//main.html
+    }//content
+    .footer {
+
+    }//footer
+}
+@media only screen and (max-width:768px){
+    /* 집중탐구 · 최신무기 해부학 */
+    .ct_def02 .focus_ns {float: none; margin-bottom: 30px; width: 100%;} //집중탐구
+    .ct_def02 .wp_ns {float: none; width: 100%;} //집중탐구
+    [class*="_ns"] ul li { display: table; table-layout: fixed; margin-bottom: 10px; width: 100%; }
+    [class*="_ns"] ul li .thumb {display: table-cell; padding-right: 20px; width: 120px; height: 80px;}
+    [class*="_ns"] ul li .txt_bx {display: table-cell; vertical-align: middle;}
+}
+@media only screen and (max-width:425px){
+    /* Defense Company Club */
+    .ct_def03 .def_comp { } //defense company -swiper container
+    .ct_def03 .def_comp .club {} //swiper-slide 1개씩
+}
+
+/* JS */
+
+.Js {
+    .gnb {
+        /* menu-wrap:hover .subnav-cont {display:block} */
+    } //depth1-2 :hover시 block
+    .all-menu {
+        /*
+        $('.btn_all').click(function(){
+            $(".visual_sch").addClass("visual_sch_open");
+        });
+        */
+    } //햄버거메뉴 Slide-left: block
+    .search {
+        /*
+        $('.btn_sch').click(function(){
+            $('.visual_sch_open').show(),5000;
+        });
+        $('.schbtn_x').click(function(){
+            $(".visual_sch").removeClass("visual_sch_open");
+        });
+        */
+    } //검색창 fadeInOut
+    .btn_top {
+        /*
+        $(window).scroll(function() {
+            if($(window).scrollTop() > $('header').height()){
+                $('.btn_top').addClass('on');
+            } else {
+                $('.btn_top').removeClass('on');
+            }
+        });
+        $(function(){
+            $('.btn_top').click(function(){
+                $('html, body').animate({scrollTop: 0}, 300);
+            });
+        });
+        */
+    } //처음으로 상단버튼
+    .Defense-Club {
+        .def_comp { /* SlidesPerView:4, loop:true 
+            breakpoint: 1024 { sliedsPerView:2 }
+            breakpoint: 425 { sliedsPerView:1 }
+            */ }
+    } //Swiper-slide autoplay:1
+}//스크립트
+
+
+
+

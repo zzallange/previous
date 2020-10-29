@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+body,html {margin: 0; padding: 0; position: relative; width: 100%; font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,'Noto Sans','Roboto-Light','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif; color:#111;}
+div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,textarea,input,legend,table,th,td,button,figure,span {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal; }
+ul,li,ol,dl,dt,dd {list-style: none;}
+address,caption,cite,code,dfn,em,th {font-style:normal; font-weight:normal;}
+a {display:inline-block; text-decoration: none; color: #111;-webkit-tap-highlight-color: rgba(0,0,0,0); }
+a::after, a::before {-webkit-tap-highlight-color: rgba(0,0,0,0);} 
+a:link,a:visited,a:active {text-decoration:none;}
+button {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+button::-moz-focus-inner{border:0;padding:0;}
+input:checked[type=checkbox]{-webkit-appearance:checkbox;}
+input[type=button],input[type=email],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=url],textarea,select{appearance:none; -webkit-appearance:none; -moz-appearance:none; border-radius:0; border:0 none;}
+input:focus,textarea:focus{outline:none;}
+span {display: inline-block;}
+img {width: 100%;}
+fieldset, img, abbr, acronym,button {border:0 none;}
+button{border:0 none;background-color:transparent;cursor:pointer;outline:none;}
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+table {border:0 none; border-collapse:collapse; border-spacing:0; vertical-align:top;}
+/* 읽기 전용 레이블 숨김*/
+legend, .ir {font-size: 0; line-height: 0; color: transparent;}
+/* 대체텍스트 숨김 */
+.skip {font-size: 0; line-height: 0; color: transparent;width: 0;height: 0;}
+
+/* clear */
+.header:after,.header .header .sch_bx ul:after,.header .gnb_wrap .menu:after,#container:after, .section:after, .footer:after ,.footer .ft .outlink:after, .ct_inner:after {content:'';display: block;clear: both;}
+
+/* 사이여백 영역 줄이기 font-size:0 */
+.header .h_inner,.header .def_logo a,.header .gnb_wrap {font-size: 0;}
+.hide, legend, caption {position: absolute !important;width: 0;height: 0;font-size: 0;line-height: 0;overflow: hidden;visibility: hidden;}
+
+/* Layout */
+#wrap [class*="_inner"]{position: relative; margin: 0 auto; width: 1000px;}
+#header,#container,#footer {width: 100%; background: #fff; position:relative;}
+
+/* common */
+.thumb a {position: relative; display: block;width: 100%; height: 100%; overflow: hidden; font-size: 0;}
+.thumb a:after {content:''; display: block; position: absolute; left: 0; top: 0;right: 0; bottom: 0; z-index: 2; border: 1px solid rgba(0,0,0,.05);  box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box;}
+.thumb img {transform: scale(1);-webkit-transform: scale(1); -moz-transform: scale(1);-ms-transform-origin: scale(1);-ms-transform: scale(1);-o-transform: scale(1);transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;}
+.thumb:hover img {transform: scale(1.2);-webkit-transform: scale(1.2);-moz-transform: scale(1.2);-ms-transform-origin: scale(1.2);-ms-transform: scale(1.2);-o-transform: scale(1.2);}
+
+[class*="def_news"] .h_tit {display:inline-block; margin-bottom: 20px; font-size: 22px; font-weight: bold; font-family: 'notokrR'; letter-spacing: -1px; line-height: 1; font-style: italic;}
+[class*="def_news"] .s_tit {width: 100%; height:24px; overflow: hidden; display: inline-block;}
+[class*="def_news"] .s_tit a {display: block; width: 95%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-size: 18px; font-family: 'notokrR'; font-weight: bold; letter-spacing: -1px; }
+[class*="def_news"] .s_tit a:hover {text-decoration: underline;}
+[class*="def_news"] .s_txt {width: 95%; height:38px; font-size: 15px; line-height: 20px; letter-spacing: -1px; text-overflow: ellipsis; color: #9c9c9c; overflow:hidden;}
+
+/* Header */
+.header {width: 100%;text-align: center; height: auto; border-bottom: 1px solid #e5e5e5; box-sizing: border-box;}
+.header .def_logo {height:80px; display: inline-block; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; }
+.header .def_logo a {width: 252px; height: 70px; margin-top:10px; background: url(https://cwstatic.asiae.co.kr/def_v2/logo_01.png) no-repeat;background-size:cover;}
+
+.header .btn_all {float: right; margin-top: 32px; width: 22px; height: 17px;}
+.header .btn_all a {position: relative; width: 100%; height: 100%;}
+.header .btn_all a span {position: relative; width: 100%; height: 3px; background: #111;}
+.header .btn_all a span:before, .header .btn_all a span:after {content: ''; display: block; position: absolute; left: 0; width: 100%; height: 3px; background: #111;}
+.header .btn_all a span:before {top:7px;}
+.header .btn_all a span:after {top: 14px;}
+
+/* allMenu */
+.header .menu_dim, .header .sch_dim {display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 200; background: rgba(0,0,0,.4);}
+.header .visual_menu { position: fixed; right: -500px; top: 0; z-index: 999; padding: 30px 0; width: 400px; height: 100%; background: #fff; overflow-y: scroll;  }
+.header .visual_menu::-webkit-scrollbar {display:none;}
+.header .visual_menu_open {right: 0; transition: all .3s ease-in-out;}
+
+.sear_box {width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+.sear_box fieldset {padding: 40px 50px 0;}
+.sear_box fieldset > div {position: relative;width: 100%;height: 45px;padding: 0 59px 0 0;border-bottom: 2px solid #34393f;box-sizing: border-box;-moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.sear_box fieldset > div input {width: 100%;height: 40px;font-size: 15px;color: #595959;letter-spacing: -1px;line-height: 40px;vertical-align: top;}
+.sear_box fieldset > div .btn_cls span, .sear_box fieldset > div .btn_sear span {display: inline-block;font-size: 0;line-height: 0;color: transparent;vertical-align: top;}
+.sear_box fieldset > div .btn_cls {display: none;top: 7px;right: 28px;width: 31px;height: 31px;text-align: center;}
+.sear_box fieldset > div .btn_cls span {width: 19px;height: 19px;background-position: -191px -191px;}.sear_box fieldset > div .btn_sear {top: 0;right: 0;width: 28px;height: 43px;text-align: right;}
+.sear_box fieldset > div .btn_sear span {width: 20px;height: 20px;background: url(https://cwstatic.asiae.co.kr/def_v2/main/srch.png) no-repeat 0 0; background-size:cover;}
+.sear_box fieldset > div .btn_sear {top: 0;right: 0;width: 28px;height: 40px;text-align: right;}
+.sear_box fieldset > div .btn_cls, .sear_box fieldset > div .btn_sear {position: absolute;vertical-align: top;}
+
+.visual_menu .visu_hd {width: 100%;padding: 0 50px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box;}
+.visual_menu .visu_hd:after {content: ''; display: block; clear: both;}
+.visual_menu .visu_hd .visu_logo {float: left; width: 150px;}
+.visual_menu .visu_hd .btn_x { float: right; width: 48px;height: 48px; }
+.visual_menu .visu_hd .btn_x span{float: right; margin:15px 0 0 20px; width: 16px;}
+.visual_menu .visu_nav .active {color:#0082fa; }
+.visual_menu .visu_nav {position: relative; padding: 20px 50px 0px; background: #fff;}
+.visual_menu .visu_nav:after {content: ''; display: block; clear: both;}
+.visual_menu .visu_nav .tab_btn {padding: 12px 0; display: block; width: 100%; border-bottom: 1px solid #ddd; text-align: left; font-size: 17px; font-family: 'notokrR'; letter-spacing: -1px; cursor: pointer; transition: all 0.2s ease-in-out;}
+.visual_menu .visu_nav .tab_btn:hover {color: #0082fa;}
+.visual_menu .visu_nav .tab_btn .ico {float: right; margin-top: 11px; width: 10px; height: 5px; vertical-align: top; background: url('https://cwstatic.asiae.co.kr/def_v2/main/menu_dw.png') no-repeat;}
+.visual_menu .visu_nav .tab_btn .on {width: 10px; height: 5px;background: url('https://cwstatic.asiae.co.kr/def_v2/main/menu_up.png') no-repeat;}
+
+.visual_menu .visu_nav .tabcont {display: none; padding: 25px 0;}
+.visual_menu .visu_nav .tabcont a {display: block; line-height: 30px; font-size: 16px; letter-spacing: -1px; font-family: 'notokrR'; text-align: left;}
+.visual_menu .visu_nav .tabcont a:hover {color: #0082fa;}
+/* 아시아경제 바로가기 */
+.visual_menu .btn_asiae {display:block;width:200px; height:40px; margin:20px auto 0; font-size: 15px; letter-spacing: -1px; line-height:40px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; background: #111; transition: all .2s ease-in-out; color:#fff;}
+/* //아시아경제 바로가기 */
+.visual_menu .visu_login:after {content: ''; display: block; clear: both;}
+.visual_menu .visu_login {margin-top: 50px; text-align: center;display: inline-block;}
+.visual_menu .visu_login li {float: left;}
+.visual_menu .visu_login li:first-child {margin-right: 20px;}
+.visual_menu .visu_login li:first-child a {position: relative;}
+.visual_menu .visu_login li:first-child a:after {content:''; display: block; position: absolute; right: -12px; top: 3px; width: 1px; height: 75%; background: #e5e5e5;}
+.visual_menu .visu_login li a {font-size: 14px; letter-spacing: -1px; color: #595959;}
+
+/* 검색하기버튼 */
+.header .sch_bx {margin-top: 32px; float: left; }
+.header .sch_bx a {display: inline-block; width: 20px; height: 20px;}
+.header .sch_bx a span {display: inline-block; width: 18px; height: 18px; }
+.header .sch_bx .btn_sch {background: url(https://cwstatic.asiae.co.kr/def_v2/main/srch.png) no-repeat; background-size: contain;}
+.header .sch_bx .btn_login {margin-left: 20px; background: url(https://cwstatic.asiae.co.kr/def_v2/main/lgin.png) no-repeat; background-size: contain;}
+
+/* search */
+.header .visual_sch {position: fixed; left: 0; top: -500px; z-index: 999; width: 100%; height: 160px; background: #fff;transition: all .5s ease-in-out;}
+.header .visual_sch_open {top: 0;transition: all .5s ease-in-out;}
+.visual_sch .sch_hd {padding: 0 50px; position:relative;}
+.visual_sch .sch_hd:after {content: ''; display: block; clear: both;}
+.visual_sch .sch_hd .sch_logo {width: 184px; position:absolute; top:10px; left:50%; -webkit-transform:translate(-50%, 0); -moz-transform:translate(-50%, 0); transform:translate(-50%, 0);}
+.visual_sch .sch_hd .schbtn_x {float: right; margin-top: 10px; width: 48px; height: 51px;}
+.visual_sch .sch_hd .schbtn_x span{float: right;margin:10px 0 0 20px; width: 18px;}
+
+/* search입력창 */
+.visual_sch .sch_txtbx {margin: 0 auto; width: 1000px;}
+.visual_sch .sch_txtbx .sch_form {padding: 10px 0 0;position: relative;}
+.visual_sch .sch_txtbx .sch_form .inserch { padding:10px 0 0 20px; width: 100%; height: 50px; line-height: 50px; font-size: 17px; border: 0 none; border-bottom: 1px solid #111; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; background: #fff; color: rgba(0,0,0,.7);}
+.visual_sch .sch_txtbx .sch_form .inserch::-ms-clear {display:none;}
+.visual_sch .sch_txtbx .sch_form .btn_insch,.visual_sch .sch_txtbx .sch_form .x_icon { width: 48px; height: 48px;text-align: center;}
+.visual_sch .sch_txtbx .sch_form .btn_insch {position: absolute; top: 10px; right: -10px; }
+.visual_sch .sch_txtbx .sch_form .x_icon {display:none; position:absolute; bottom: 0px; right: 40px;}
+.visual_sch .sch_txtbx .sch_form .x_icon > span {margin-top: 12px;}
+.visual_sch .sch_txtbx .sch_form .btn_insch > span {margin-top: 15px;width: 25px;}
+.visual_sch .keyword {margin-top:40px; padding: 0 20px; text-align: center;}
+.visual_sch .keyword p {margin-bottom: 15px;font-size: 24px; letter-spacing: -1px; font-family: "notokrM"}
+.visual_sch .keyword ul {overflow: hidden;display: inline-block;}
+.visual_sch .keyword ul li {/*float: left; */ display: inline; margin: 0 15px 10px 0; text-align: left; }
+.visual_sch .keyword ul li a {font-size: 17px; color: #111; letter-spacing: -1px;}
+.visual_sch .keyword ul li a:hover {font-weight: bold;}
+.visual_sch .keyword ul li a:hover em {display:inline-block; margin-top:0px; color:#111; text-decoration:none; vertical-align:top; box-shadow:inset 0 -5px 0 #ff695c; transition:box-shadow .3s ease-out,background-color .3s ease-out; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box;}
+.visual_sch .keyword ul li a em {line-height:21px; vertical-align:top;font-family: 'notokrR';}
+
+/* GNB - by.ken */
+#header .con_inner{width:1000px;margin:0 auto;overflow:visible;clear:both;}
+#gnb {position:relative;height:60px;background-color:#fff;border-top:1px solid #e5e5e5;}
+#gnb .depth1:after {content:'';display: block;clear: both;}
+#gnb .depth1{display:table-cell; width:770px; position:absolute; top:0; left:50%;  -webkit-transform:translate(-50%, 0); -moz-transform:translate(-50%, 0); transform:translate(-50%, 0); z-index:100;}
+#gnb .depth1 > li{float:left;margin-right:40px;position:relative;}
+#gnb .depth1 > li.last{margin-right:0px;}
+#gnb .depth1 > li > h2{position:relative;}
+#gnb .depth1 > li > h2 a{font-size:15px;letter-spacing: -1px; font-family: 'notokrR'; color:#111111;display:inline-block;box-sizing:border-box;height:60px;padding:20px 0;}
+#gnb .depth1 > li > h2 a:after {content:''; display: block; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background: #0082fa; transition: width .2s ease-in-out;}
+#gnb .depth1 > li:hover > h2 a {color: #0082fa;}
+#gnb .depth1 > li:hover a:after {width: 100%;}
+#gnb .depth2{position:absolute;box-sizing:border-box;top:75px;left:0;width:100%;display:none;z-index:999;}
+#gnb .depth1 > li > h2 a em {display: inline-block;margin: 0 0 2px 5px; width: 10px; height: 5px; background: url(https://cwstatic.asiae.co.kr/def_v2/main/menu_dw.png) no-repeat;}
+#gnb .depth1 > li:hover > h2 a em {display: inline-block;margin: 0 0 2px 5px; width: 10px; height: 5px; background: url(https://cwstatic.asiae.co.kr/def_v2/main/menu_up.png) no-repeat;}
+#gnb .depth1 > li.mul .depth2_list {width:320px;}
+
+#gnb .depth2_list li{float:left;padding-right:20px;}
+#gnb .depth2_list li.last{margin-right:0;}
+#gnb .depth2_list li a{font-size:15px;color:#9c9c9c;}
+#gnb .depth2_list li a:hover, #gnb .depth2_list li a:focus{text-decoration:underline;color:#111111;}
+.depth2_list{width:600px;margin:0 auto;}
+#gnb .depth2_list li.last .depth2_list {width: 290px;}
+.depth2_list ul{float:left;}
+#header .gnb_bg{display:block;width:100%;height:0;position:absolute;top:60px;left:0;background-color:#f9f9f9;border-bottom:1px solid #e5e5e5; z-index:-1;transition-timing-function:ease-in-out;-o-transition-timing-function:ease-in-out;-moz-transition-timing-function:ease-in-out;-webkit-transition-timing-function:ease-in-out;transition-duration:0.1s;-o-transition-duration:0.1s;-moz-transition-duration:0.1s;-webkit-transition-duration:0.1s;z-index:99;}
+#header.gnb_open .gnb_bg{height:50px;border-top:1px solid #e5e5e5;}
+
+.m_gnb {display: none;}
+/* GNB - by.ken */
+
+/* Content */
+.content {position: relative; width: 100%;}
+.content .section {width: 100%; background: #fff; }
+
+[class*="ct_def"] {position: relative; width: 100%;}
+[class*="ct_def"] .tit a {display: inline-block; font-size: 18px; letter-spacing: -1px; font-weight: bold; line-height: 1;}
+/* common:btn_more */
+[class*="ct_def"] .btn_mr {position: absolute; right: 20px; top: 0;}
+[class*="ct_def"] .btn_mr a {font-size: 14px;letter-spacing: -1px;}
+[class*="ct_def"] .btn_mr a em {margin-left: 3px; color: green; vertical-align: top; line-height: 16px;}
+.more {overflow:hidden; font-size:13px; color:#9c9c9c; float:right;}
+.more span {margin-left:4px;width:5px; height:9px; background:url('https://cwstatic.asiae.co.kr/def_v2/ico_more3.png') no-repeat 50% 50%; background-size:contain;}
+.more:hover {text-decoration:underline;}
+/* //common:btn_more */
+
+/* footer */
+.footer {clear: both; position: relative; width: 100%; overflow: hidden; text-align: center;}
+.footer .ft {padding: 20px 0; border-top:1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box;}
+.footer .ft .outlink {display: inline-block;font-size: 0;}
+.footer .ft .outlink li {float: left; margin: 0 20px;}
+.footer .ft .outlink li a {width: 100%;}
+.footer .ft .outlink li a .link_ico {height: 18px;}
+.footer .ft .outlink li a .link_ico img {width: auto; height: 100%;}
+.footer .ft .outlink li a em {display: block; margin-top: 10px; font-size: 13px; letter-spacing: -1.5px; line-height: 1; color: #595959;}
+
+.footer .fb {padding-top: 25px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; font-size: 13px; color: #595959; letter-spacing: -1px; line-height: 1;}
+.footer .fb .f_terms {display: inline-block;}
+.footer .fb .f_terms li {float: left; margin: 0 15px;}
+.footer .fb .f_terms li a {position: relative;}
+.footer .fb .f_terms li a:after {content:''; display: block; position: absolute; left: -15px; top: 7px; width: 1px; height: 10px; background: #e5e5e5;}
+.footer .fb .f_terms li:first-child a:after {display: none;}
+.footer .fb .f_terms li a b {color: #111;}
+.footer .fb .f_info {margin: 25px 0; line-height: 20px;}
+
+/* paginate */
+.paging {overflow:hidden; margin:50px 0 100px; position:relative; width:100%; text-align:center; font-size: 0;}
+.paging .in_page {display:inline-block;}
+.paging .in_page:after {content:''; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.paging .in_page .number {width: 100%;}
+.paging .in_page .number li {float: left; }
+.paging .in_page .number li a {display:block; width: 40px; height: 40px; line-height: 40px; font-size: 13px; font-weight: bold; color: #9c9c9c; border:1px solid #e6e6e6; box-sizing: border-box; }
+.paging .in_page .number li .prev {display:inline-block; background:url('https://cwstatic.asiae.co.kr/def_v2/article/pre_on.png') no-repeat 16px 12px; background-size:8px; font-size: 0;}
+.paging .in_page .number li .next {display:inline-block; background:url('https://cwstatic.asiae.co.kr/def_v2/article/next_on.png') no-repeat 16px 12px; background-size:8px; font-size: 0;}
+.paging .in_page .number li .prev:hover {border:1px solid #111; box-sizing: border-box;}
+.paging .in_page .number li .next:hover {border:1px solid #111; box-sizing: border-box;}
+.paging .in_page .number li .link_on {color: #fff; background: #0083fb; border:1px solid #0083fb; }
+.paging .in_page .number li a:hover {border:1px solid #111; }
+.paging .in_page .number li .link_on:hover {border:1px solid #0083fb; }
+
+/* sns 공유 레이어 팝업 */
+.wrapsns_layer.active {display:block;}
+.wrapsns_layer {display:none; overflow:hidden; position:fixed; top:0; left:0; width:100%; height:100%; z-index:110;}
+.wrapsns_layer:before {content:''; position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0,0.6); z-index:100;}
+
+.sns_layer {display:none; width:100%;}
+.sns_layer .inner {position:relative; width:280px; margin:0 auto; padding:15px 0; background:#fff;}
+.sns_layer h2 {padding:0 0 0 15px; color:#262626; font-size:16px;}
+.sns_layer .btn_close {position:absolute; top:0; right:0; display:block; width:13px; height:14px; padding:15px;}
+.sns_layer .btn_close span {display:inline-block; width:100%; height:100%; font-size:0; line-height:0; color:transparent; vertical-align:top; background:url('https://cwstatic.asiae.co.kr/mdot_2013/v6/ico_sns2019.png') no-repeat 0 0; background-size:412px 45px;}
+
+.sns_layer .sns_list {padding:15px 0 15px;}
+.sns_layer .sns_list ul {overflow:hidden; width:240px; margin:0 auto;}
+.sns_layer .sns_list ul:after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.sns_layer .sns_list ul li {float:left; width:60px; margin:6px 0;}
+.sns_layer .sns_list ul li a {display:block; padding:0; text-align:center; vertical-align:top;}
+.sns_layer .sns_list ul li a .ico, .sns_layer .sns_list ul li a strong {vertical-align:top;}
+.sns_layer .sns_list ul li a .ico {display:inline-block; width:45px; height:45px; font-size:0; line-height:0; color:transparent; vertical-align:top; background:url('https://cwstatic.asiae.co.kr/mdot_2013/v6/ico_sns2019.png') no-repeat 0 0; background-size:412px 45px;}
+.sns_layer .sns_list ul li a strong {display:table; width:100%; height:28px; margin:5px 0 0;}
+.sns_layer .sns_list ul li a strong em {display:table-cell; color:#1a1a1a; font-size:13px; letter-spacing:-1px; text-align:center; vertical-align:middle;}
+
+.sns_layer .sns_list ul li.facebook a .ico {background-position:-17px 0;}
+.sns_layer .sns_list ul li.twitter a .ico {background-position:-67px 0;}
+.sns_layer .sns_list ul li.kakao a .ico {background-position:-117px 0;}
+.sns_layer .sns_list ul li.kakaostory  a .ico {background-position:-167px 0;}
+.sns_layer .sns_list ul li.line a .ico {background-position:-217px 0;}
+.sns_layer .sns_list ul li.band a .ico {background-position:-267px 0;}
+.sns_layer .sns_list ul li.blog a .ico {background-position:-317px 0;}
+.sns_layer .sns_list ul li.url a .ico {background-position:-367px 0;}
+
+.sns_layer .url_copy {overflow:hidden; width:229px; margin:0 auto;}
+.sns_layer .url_copy:after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.sns_layer .url_copy input, .sns_layer .url_copy a  {float:left; display:block; vertical-align:top;}
+.sns_layer .url_copy input {overflow:hidden; width:140px; height:30px; padding:0 10px; font-size:12px; color:#595959; text-overflow:ellipsis; white-space:nowrap; border:1px solid #d9d9d9; border-right:0; background:#fff;}
+.sns_layer .url_copy a {width:66px; height:30px; color:#1a1a1a; font-size:12px; text-align:center; line-height:30px; border:1px solid #d9d9d9; background:#fff;}
+
+.wrapsns_layer .sns_layer {overflow-x:hidden; overflow-y:hidden; display:block; position:absolute; top:50%; left:50%; width:280px; height:300px; -webkit-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); transform:translate(-50%, -50%); box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; z-index:300;}
+.wrapsns_layer .sns_layer .inner {position:relative; margin:0; padding:15px 0 0; background:#fff;}
+
+/* Top 버튼 */
+a.btn_top {position:fixed; bottom:50px; right:16px; width:52px; height:52px; font-size:0; color:transparent; vertical-align:top; cursor:pointer; background:url('https://cwstatic.asiae.co.kr/def_v2/ico_top2.png') no-repeat; background-size: contain; visibility:hidden; opacity:0; -webkit-transition: all .3s;transition: all .3s; z-index:50;}
+a.btn_top, a.btn_top * {display:block; vertical-align:top;}
+a.btn_top.on {visibility:visible; opacity:1;}
+a.btn_top.lay_active {visibility:hidden; opacity:0;}
+html.full_html02 a.btn_top {z-index:30;}
+
+@media only screen and (max-width:1024px){
+	.mobile {display:none;}
+    #wrap [class*="_inner"] {width: 100%;}
+    
+    [class*="ct_def"] .s_txt {font-size: 15px; line-height: 20px;}
+    .header .h_inner {height:60px; padding: 0 20px;box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box;}
+
+    .header {border-bottom: 1px solid #dedede; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; position:fixed; top:0; z-index:9999; background-color:#fff;}
+    .header .def_logo {display: inline-block; height: 60px;}
+	.header .def_logo a {width: 184px; height: 51px; margin-top:10px; background: url(https://cwstatic.asiae.co.kr/def_v2/logo_01.png) no-repeat;background-size:cover;}
+    .header .btn_all {margin-top: 22px;}
+    .header .sch_bx a {width: 21px;}
+    .header .sch_bx .btn_login {display: none;}
+    /* 좌우패딩 padding:0 20px */
+    .visual_sch .sch_hd,.visual_sch .sch_txtbx {padding: 0 20px; width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; }
+    
+    /* search입력창 */
+    .header .sch_bx {margin-top: 22px;}
+    .header .sch_bx ul li:first-child {margin-right: 0;}
+    .header .sch_bx ul .c_login {display: none;}
+    
+    .header #gnb {display: none;}
+
+    .m_gnb {display: block; position:relative; width:100%; height: 51px;background:#fff; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; z-index:30; font-size: 0;}
+    .m_gnb.fix_gnbm {width:100%; padding:0; z-index:100;}
+    .m_gnb .in_sub {position:relative; width:100%; max-width:1100px; margin:0 auto; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+    .m_gnb .nav_slide {position:relative; width:100%; padding: 0 10px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; background:#f9f9f9; z-index:33;}
+
+	.nav_lst:after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+    .nav_lst {width:100%; height:100%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+    .nav_lst .scroll_wrap {overflow:hidden;}
+    .nav_lst .scroller {overflow:hidden; overflow-x:auto; width:100%;}
+    .nav_lst .nav_menu {position:relative; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+    .nav_lst .nav_menu ul {width:100%; height:100%; text-align:left; font-size:0; white-space:nowrap; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+    .nav_lst .nav_menu ul li {display:inline-table; height:100%; }
+    .nav_lst .nav_menu ul li a {position:relative; display:table-cell; position:relative; height:100%; padding:0 15px; text-align:center; font-size:15px; line-height:50px; letter-spacing:-1px; vertical-align:middle; white-space:nowrap;}
+    .nav_lst .nav_menu ul li a span {position:relative; display:block; color:#9c9c9c; letter-spacing: -1px;}
+    .nav_lst .nav_menu ul li a span:before {-webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+        -webkit-transition: opacity .3s, -webkit-transform .3s cubic-bezier(.64, .57, .67, 1.53);
+        transition: opacity .3s, -webkit-transform .3s cubic-bezier(.64, .57, .67, 1.53);
+        -o-transition: transform .3s cubic-bezier(.64, .57, .67, 1.53), opacity .3s;
+        transition: transform .3s cubic-bezier(.64, .57, .67, 1.53), opacity .3s;
+        transition: transform .3s cubic-bezier(.64, .57, .67, 1.53), opacity .3s, -webkit-transform .3s cubic-bezier(.64, .57, .67, 1.53);}
+    .nav_lst .nav_menu ul li.on a:active span:before {-webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1}
+    .nav_lst .nav_menu ul.nav_ul li.on a span {display:inline-block; color:#111; font-weight:bold;}
+    .nav_lst .nav_menu ul.nav_ul li.on a span:before {content:''; position:absolute; bottom:0; left:0; width:100%; height:2px; background-color:#111; -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; z-index:10;}
+
+	.content {padding-top:111px;}    
+    
+    .footer .ft {padding: 20px;border-top:1px solid #EDEDED; }
+    .footer .ft .outlink li {margin: 0 8px; font-size: 11px;}
+    .footer .ft .outlink li .link_ico {display: block; height: 18px;}
+    .footer .ft .outlink li .link_ico >img {width: auto; height: 100%;}
+    .footer .fb .f_terms li a {font-size: 13px; line-height: 23px;}
+}
+
+@media only screen and (max-width:425px){
+	.header .visual_menu {width: 100%;}
+	.visual_menu .visu_hd {padding: 0 30px;}
+	.sear_box fieldset { padding: 20px 30px 0;}
+	.visual_menu .visu_nav {padding: 40px 30px 0px;}
+	.visual_menu .visu_login {margin-top: 20px;}
+	.visual_sch .sch_hd .sch_logo {width: 140px; float:left;}
+    
+	.footer .fb .f_terms {width:70%}
+	.footer .ft .outlink {width:90%}
+	.footer .ft .outlink li {width:33.3333%; margin:4px 0;}
+	.footer .ft .outlink li a em {height:28px;}
+    /* paginate */
+    .paging .in_page .number li a {width: 35px; height: 35px; line-height: 35px;}
+    .paging .in_page .number li .btn_pg {width: 35px; font-size: 0;}
+	.paging .in_page .number li .prev {background:url('https://cwstatic.asiae.co.kr/def_v2/article/pre_on.png') no-repeat 14px 11px; background-size:8px;}
+	.paging .in_page .number li .next {background:url('https://cwstatic.asiae.co.kr/def_v2/article/next_on.png') no-repeat 14px 11px; background-size:8px;}
+    
+    a.btn_top {width: 46px;height:46px;}
+}
+@media only screen and (max-width:345px){
+    /* paginate */
+    .paging .in_page .number li a {width: 30px; height: 30px; line-height: 30px;}
+    .paging .in_page .number li .btn_pg {width: 50px; font-size: 12px;}
+
+}
+
+
+
+
+
+
+
+
+
+

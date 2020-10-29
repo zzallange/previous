@@ -1,0 +1,298 @@
+@charset "UTF-8";
+.content {
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 800px;
+}
+
+.content header {
+  margin: 0 0 100px;
+  padding-bottom: 50px;
+  border-bottom: 3px solid #000;
+  text-align: center;
+}
+
+.content header h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 40px;
+}
+
+.content header .site-link {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #b9b9b9;
+}
+
+.content header .site-link:hover {
+  text-decoration: underline;
+}
+
+.content section figure {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.content section .title {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #595959;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  color: #595959;
+}
+
+.content section .intro {
+  margin-top: 50px;
+}
+
+.content section .intro p {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+}
+
+.content section .intro .sub {
+  font-size: 15px;
+  color: #595959;
+}
+
+.content section .intro strong {
+  display: block;
+  margin-top: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.content section .skill {
+  margin-top: 100px;
+}
+
+.content section .skill .work {
+  margin-top: 50px;
+}
+
+.content section .skill .work li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 16px;
+  color: #111;
+}
+
+.content section .skill .work li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background: #000;
+}
+
+.content section .resume {
+  margin-top: 100px;
+}
+
+.content section .resume .career {
+  margin-top: 50px;
+}
+
+.content section .resume .career > li {
+  margin-bottom: 50px;
+}
+
+.content section .resume .career > li strong {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+}
+
+.content section .resume .career > li .list li {
+  margin-bottom: 10px;
+}
+
+.content section .resume .career > li .list li span {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 16px;
+  color: #37352f;
+}
+
+.content section .resume .career > li .list li span:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background: #000;
+}
+
+.content section .resume .career > li .list li span:hover:not(.link) {
+  padding-right: 20px;
+  color: #fff;
+  background: #000;
+}
+
+.content section .resume .career > li .list li.link {
+  padding-left: 0;
+  font-weight: bold;
+  color: #3E87F8;
+}
+
+.content section .resume .career > li .list li.link:before {
+  display: none;
+}
+
+.content section .resume .career > li .list li.link a {
+  margin-left: 5px;
+  text-decoration: underline;
+  color: #333;
+}
+
+.content section .resume .career > li .desc {
+  margin-top: 30px;
+}
+
+.content section .resume .career > li .desc li {
+  display: inline-block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #595959;
+}
+
+.content section .education {
+  margin-top: 100px;
+}
+
+.content section .education .study {
+  margin-top: 25px;
+}
+
+.content section .education .study li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 16px;
+  color: #111;
+}
+
+.content section .education .study li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background: #000;
+}
+
+.content section .contact {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.content section .contact .title {
+  margin-bottom: 25px;
+}
+
+.content section .contact strong {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 17px;
+}
+
+.content section .contact strong.email {
+  color: #3E87F8;
+}
+
+.content section .contact strong.call {
+  color: #555;
+}
+
+.content section .contact .quest {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/*
+아시아경제PC
+<div class="impression">
+    <span class="headline">Impression</span>
+    <p>기존 아시아경제 pc사이트에서 수정하고싶었던 부분들을 재작업했습니다.
+        특히 전체메뉴 버튼을 클릭했을때 다른페이지가 나오던 부분을 한페이지에 나올 수 있게 작업했고,
+        클래스명 또한 좀 더 모두가 알아볼 수 있게끔 작업해 보았습니다. 다크모드 적용시에
+        이미지로 작업이 되있던 배너가 있어서 그 부분을 제외하고 SCSS로 간편하게 작업해보았습니다.</p>
+    <strong>View Guide</strong>
+</div>
+드링킷
+<div class="impression">
+<span class="headline">Impression</span>
+<p>처음으로 맡게 된 프로젝트가, 신규 서비스 구축 사이트로써 부담감이 조금 있었지만,
+    요구사항에 맞춰 작업을 하다보니 수월하게 진행할 수 있었습니다.
+    디자인이 pc와 다른형태인 mobile 디자인까지 별도로 잡혀있어서, 
+    하나의 사이트에 녹여내기 위해서 최대한 간소화 할 수 있는
+    방법으로 퍼블리싱을 하기 위해서 노력을 하였습니다.
+    그리하여 같이 작업했던 분들께 신입치고 수월하게 잘 하셨다는 칭찬을 들을 수 있어서
+    즐거웠습니다.</p>
+    <strong>View Guide</strong>
+</div>
+라이킷
+<div class="impression">
+    <span class="headline">Impression</span>
+    <p>라이킷은 이전 프로젝트와 비슷한 형태의 디자인으로 잡혀있어서 퍼블리싱 작업하는데 좀 더 수월했습니다.
+        다만, 드링킷 사이트 작업시에 조금 더 탄탄하게 퍼블리싱 했었다면, 하루만에 끝낼 수 있었을텐데하는
+        아쉬움이 남았습니다. 하지만, 공통적으로 들어가는 부분들을 따로 가이드화 시켜서 
+        디자이너분들께서 수정하기 쉽게 작업해 둘 수 있어서 성장한 느낌이 들었습니다.
+    </p>
+    <strong>View Guide</strong>
+</div>
+디펜스클럽
+<div class="impression">
+    <span class="headline">Impression</span>
+    <p>기존의 양낙규의 디펜스클럽이라는 사이트를 리뉴얼해서 이전과 전혀 다른느낌으로 사이트를 진행하였습니다.
+        이전 작업과 달리, 반응형 기반의 디자인으로 작업이 되어서, 퍼블리싱하는데 훨씬 깔끔하게 작업할 수 있었습니다.
+        미디어쿼리 또한 제일 작은 320까지 맞춰서 3단형태로 진행되었고, 전반적으로 공통적인 스타일링 요소가 많아서
+        공통적인 스타일링은 하나의 코드로 묶어서 작업했습니다.</p>
+    <strong>View Guide</strong>
+</div>
+리더스여성 포럼
+<div class="impression">
+    <span class="headline">Impression</span>
+    <p>아시아경제에서 매번 있는 여성리더스포럼 페이지를, 2020년에는 반응형으로 적용하여 사용자들이 편하게
+        볼 수 있게 작업하였고, 메뉴 클릭시 바로 원하는 섹션으로 이동하게끔 작업하였습니다.
+        포럼 형식에 알맞에 프로그램들을 테이블 코드에 적용시켜서 한눈에 알아보기 쉽게 작성하였습니다.
+        기존 형식을 따르면서 반응형으로 작업을 했고, 특히나 세션2에 연사 두사람을 적용시키기 위해 잡는 부분이
+        까다로웠지만 이전과 다르게 클래스명도 간략해지고 작업하는데 정리가 더 잘된 느낌을 받았습니다.</p>
+    <strong>View Guide</strong>
+</div>
+21대 총선특집
+<div class="impression">
+    <span class="headline">Impression</span>
+    <p>총선 특집페이지를 작업하면서 기존 사이트와 다른 새로운 느낌의 디자인 시안으로 진행이되었고,
+        그 과정에서 적용하고자 하는 스크립트 또한 다양해졌습니다.
+        그래서 적용하고자 하는 스크립트들이 겹치는 작업이 생겼고, 그 과정에서 기획자와 디자이너 사이에서 
+        최대한 최적화에 맞출 수 있는 퍼블리싱을 하기위해 조율하는 방법을 배웠습니다.</p>
+    <strong>View Guide</strong>
+</div>
+
+*/
+/*# sourceMappingURL=resume.css.map */
