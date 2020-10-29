@@ -1,0 +1,175 @@
+2020.08.21
+
+
+아시아경제 section 마크업 가이드
+
+--------------1.section 레이아웃3 -----------
+[class*="-section"]
+01 - top-section 상단컨텐츠  -  cont / aside
+02 - cont-section 뉴스컨텐츠 - cont / aside
+03 - article-section 이 시각 주요뉴스
+
+--------------2.top-section 구분 및 태그 정의--------
+
+01. 컨텐츠 구분  
+cont > visual-news / news-box
+
+02. cont > visual-news 태그정의
+visual-news : <div></div>
+visual-news > link-img : <a></a>
+thumb : <figure></figure>
+info : <span></span>
+headline : <strong></strong>
+category : <a></a>
+
+03. news-box 타입별 구분
+news-box > news-type01 / news-type02 / news-type03
+
+news-type01 : 큰 헤드라인, 텍스트
+news-type01 > headline : <strong><a></a></strong>
+
+news-type02 : 썸네일, 헤드라인, 텍스트
+news-type02 > headline : <strong><a></a></strong>
+news-type02 > thumb : <a></a>
+news-type02 > text : <p></p>
+
+news-type03 : 뉴스 타이틀 리스트
+news-type03 > ul li a
+
+headline : <strong></strong>
+text : <p></p>
+breaking-news : <span></span>
+
+
+04. aside 많이 본 뉴스
+aside> best-news > tab-head / tab-rank 
+tab-head > title 많이 본 뉴스 / tab-menu 종합,정치
+tab-head > <h4 class="title"><a></a></h4>
+tab-rank > ul > li > p 기사들 
+( li로 감싸고 p는 말줄임표 먹히게 적용 )
+기사순위별 색상 클래스명 best로 지정.
+<span class="num best">1</span>
+
+---------------3.cont-section 구분 및 태그정의--------
+
+01.컨텐츠 구분
+cont > news-list / issue-box
+aside > gallery-box 인기포토 갤러리 / video-box 아경영상
+
+02.헤딩 정의 title로 통일
+h1 : header - 아시아경제 메뉴
+h2 : header - nav - 주제 빅타이틀
+h3 : content - 아시아경제 기획.이슈 / 아시아경제 포토.영상 / 이시각 주요뉴스
+h4 : aside - 많이 본 뉴스, 인기포토 갤러리, 아시아경제 영상
+
+03.news-list 태그 정의 
+cont > news-list
+
+thumb : <figure></figure>
+text-box : <div></div>
+text-box > title : <p class="title"><a></a></p>
+text-box > desc : <div class="desc"></div>
+text-box > category : <a class="category"></a>
+text-box > date : <span class="date></span>
+
+04.issue-box 태그정의
+cont > issue-box
+
+issue-box > title / left-ct / right-ct
+[class*="-ct"] : subject / text-box
+
+title : <h3><strong>아시아경제</strong>기획·이슈</h3>
+subject : <a class="subject"></a>
+subject > thumb : <span class="thumb"></span>
+subject > em : <em>기획,이슈 주제</em>
+text-box : <div></div>
+text-box > dl : <dl></dl>
+text-box > btn_more : <a class="btn_more">전체보기</a>
+
+05.photo-list 태그정의
+
+cont > photo-list
+photo-list > row-type 세로(포토) / col-type 가로(영상) 
+
+title : <h3><strong></strong></h3>
+[class*="-type"] : <ul></ul>
+[class*="-type"] : ul > li > a
+thumb : <span></span>
+info : <span></span>
+ico-play : <em></em>
+
+--------4.article-area 태그정의-------------
+
+title : <h3><strong></strong></h3>
+img-news : <div></div>
+img-news > inbox : <a></a>
+thumb : <span></span>
+desc : <span></span>
+category : <a></a>
+
+list-news : <ul></ul>
+list-news > ul > li > a
+
+----------5.aside 섹션-----------------
+
+01.gallery-box 태그정의
+
+02.video-box 태그정의
+title-box : <div></div>
+title-box > title : <h4></h4>
+title-box > btn_youtube : <a></a>
+
+video-box ul : 영상리스트
+video-box ul li .video : <a></a>
+video-box ul li .video .ico-play : <em></em>
+video-box ul li .desc : <a></a>
+
+Section CSS 스타일 정의서
+
+Font 정의
+/* Font: nav menu */
+.header .nav-area .gnb-tit a {font-family:'nanumSquareB'; font-weight: 600; font-size: 36px; letter-spacing: -1px; color: #000;}
+.header .nav-area .gnb-list li a { font-family: 'notokrM'; font-weight: 500; font-size: 17px; letter-spacing: -1px; color: #595959;}
+
+/* Font: 소제목 */
+h3[class*="title"] {margin-bottom: 10px; font-size: 16px; letter-spacing: -1px;}
+h3[class*="title"] strong {color: #cf0f16;}
+
+/* Font: top-section */
+.visual-news .link-img .info .headline {font-family: 'notokrR'; font-size: 19px; line-height: 24px; letter-spacing: -2px;}
+.visual-news .category {font-size: 13px; line-height: 26px;}
+
+.news-box [class*="news-type"] .text {font-family: 'notokrR'; font-size: 14px; line-height: 19px; color: #757575;}
+.news-box .news-type01 .headline a {font-family: 'notokrR'; font-size: 27px; line-height: 1; letter-spacing: -3px;}
+.news-box .news-type02 .headline a {font-size: 20px; letter-spacing: -2px;}
+.news-box .news-type03 ul li a {font-size: 15px; letter-spacing: -1.3px; color: #111;}
+
+
+border-color 정의
+
+/* cont / aside 구분선 */
+.top-section .cont {border-right: 1px solid #eee;}
+
+color 정의
+
+.top-section .visual-news .category {color: #fff; background: #1372e7;} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

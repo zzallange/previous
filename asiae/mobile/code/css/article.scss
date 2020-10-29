@@ -1,0 +1,275 @@
+
+header {
+    .top-head { border-bottom: 1px solid #ededed; }
+    .fix-head { display: none; position: fixed; left: 0; top: 0; z-index: 100; width: 100%; height: 50px; border-bottom: 1px solid #ededed; background: #fff;
+        &.active { display: block; }
+        &:after {content: '';display: block; clear: both;}
+        .btn-home { position: absolute; top: 0; left: 5px; padding-top: 12px; width: 50px; height: 50px; text-align: center;
+            span { display: inline-block; vertical-align: top; width: 18px; height: 28px; font-size: 0; background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) 0 -93px no-repeat;
+                background-size: 335px 400px;
+            }
+        }//btn-home
+        .tit { padding-left: 55px;
+            span { display: block; overflow: hidden; width:100%; font-size: 17px; letter-spacing: -1px; line-height: 50px; font-weight: 600; color: #1a1a1a; white-space: nowrap; text-overflow: ellipsis;}
+        }
+        .progress-container { display: block; position: fixed; top: 50px; left: 0; z-index: 100; width: 100%; height: 3px;
+            .progress-bar { max-width: 100%; width: 0; height: 100%; font-size: 0; background: #ed1d25; transition: width .4s ease-out;}
+        }//progress
+    }//fix-head
+}
+.articleWrap {
+    [class*="wide"] {
+        & > div { margin-bottom: 10px; background: #fff;
+            .head { padding: 13px 15px;
+                h4.title { position: relative; padding-left: 10px; height: 100%; font-size: 19px; letter-spacing: -1px;
+                    &:before { content: ''; position: absolute; left: 0; top: 2px; bottom: 2px; width: 4px; background: #ed1d25;}
+                    strong {font-weight: bold;}
+                }
+            }
+        }
+    }//common - wide
+    .wide-left {
+        .articleView { margin-bottom: 10px;
+            //common - shareBox
+            .share-box { margin-top: 25px;
+                &:after {content: ''; display: block; clear: both;}
+                & > ul {
+                    &:after {content: ''; display: block; clear: both;}
+                    li {float: left; width: 35px; height: 35px; font-size: 0;
+                        a {width: 100%; height: 100%;}
+                    }
+                }
+                .sns-lst {float: left;
+                    li {margin-right: 5px;
+                        a { background: url(https://cwstatic.asiae.co.kr/mdot_2013/v6/ico_article.png) no-repeat; background-size: 320px 95px;
+                            &.facebk {background-position: 0 0;}
+                            &.twitter {background-position: -39px 0;}
+                            &.kakao {background-position: -78px 0;}
+                            &.btn-moreSns {background-position: -116px 0;}
+                        }
+                    }//sns-lst > li
+                }//sns-lst
+                .service { float: right;
+                    li {
+                        &:first-child {margin-right: 10px;} 
+                        a { border-radius: 50%; text-align: center; 
+                            span {display: inline-block; margin: 8px auto;}
+                        }
+                        .btn-voice { background: #ff0221; 
+                            span { width: 20px; height: 17px; background: url(https://cwstatic.asiae.co.kr/mdot_2013/v6/ico_190108.png) no-repeat; background-size: 140px 82px;}
+                        }
+                        .btn-font { border: 1px solid #e1e1e1; background: #fff;
+                            span { width: 22px; height: 20px; background: url(https://cwstatic.asiae.co.kr/mdot_2013/v6/img_flag03.png) no-repeat -4px -274px; background-size: 194px 300px;}
+                        }
+                    }//service > li
+                }//service
+            }//share-box
+            //common - shareBox
+            .head { padding: 20px 15px;
+                .newstit { font-size: 16px; letter-spacing: -1px; color: #0658a2; }
+                .headline { margin:10px 0; font-size: 23px; line-height: 29px; letter-spacing: -1px; }
+                .newsInfo { font-size: 12px; color: #595959;
+                    .day {margin-left: 10px;}
+                }//newsInfo
+            }//head
+            .cont {
+                .subTitle { padding: 15px;
+                    h3 { position: relative; padding: 0 10px; height: 100%; font-size: 17px; line-height: 24px; letter-spacing: -1px;
+                        &:before { content: ''; position: absolute; left: 0; top: 5px; bottom: 3px; width: 2px;  background: #000;}
+                    }
+                }//subTitle
+                p {padding: 0 15px; font-size: 17px; line-height: 29px;}
+                .thumb-img {
+                    figcaption { text-align: center; font-size: 14px; color: #595959;}
+                }//thumb-img
+                .share-box { padding: 0 15px 40px;
+                    .comment { float:right;
+                        li { width: auto; text-align: center;
+                            a { height: 35px; border: 1px solid #ddd; border-radius: 17px; font-size: 14px; line-height: 32px; letter-spacing: -1px;}
+                            .btn-scrap {position: relative; margin-right: 5px; padding-left: 15px; width: 80px; 
+                                &:before {content: ''; position: absolute; left: 10px; top: 24%; width: 15px; height: 16px;
+                                    background: url(https://cwstatic.asiae.co.kr/mdot_2013/v5/icon_all_20180718.png) no-repeat; background-position: -285px -37px; background-size: 325px 105px;
+                                }
+                            }
+                            .btn-cmt { width: 70px; 
+                                span {margin-left: 3px;}
+                            }
+                        }//comment > li
+                    }//comment
+                }//share-box
+            }//cont
+        }//articleView
+        .today-topic { 
+            .cont {
+                ul { padding: 0 13px;
+                    &:after {content: ''; display: block; clear: both;}
+                    li { float: left; width: 50%;
+                        .thumb { padding: 0 5px;
+                            span { display: inline-block; height: 45px; font-size: 17px;}
+                        }//thumb
+                    }//cont > ul > li
+                }//cont > ul
+            }//cont
+        }//today-topic
+        .hot-news {
+            .cont {padding: 0 13px;
+                .thumb-lst { 
+                    &:after {content: ''; display: block; clear: both;}
+                    li { float: left; width: 50%;
+                        .thumb { margin: 0 1px;
+                            .desc {
+                                span {}
+                            }//desc
+                        }//thumb
+                    }
+                }//thumb-lst
+                .news-lst { padding: 0 15px 15px;
+                    li { border-top: 1px solid #eee;
+                        &:first-child {border-top: none;}
+                        a { padding: 10px 0; font-size: 17px; letter-spacing: -1px;}
+                    }
+                }//news-lst
+            }//cont
+        }//hot-news
+        
+    }//Wide-left
+    .wide-right {
+        //common
+        .cont { padding: 0 13px;
+            .thumb-img { position: relative; width: 100%; font-size: 0;
+                .desc { position: absolute; left: 0; bottom: 0; z-index: 50;   
+                    width: 100%; height: 70px; background: linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,.75) 100%);
+                    span { display: block; position: relative; overflow: hidden; padding: 0 20px; width: 100%; letter-spacing: -1px; white-space: nowrap; text-overflow: ellipsis; color: #fff; }
+                }//desc
+            }//thumb-img
+        }
+        //common
+        .custom-news {
+            .head { position: relative; padding: 13px 15px 60px; width: 100%; background: #3f63bf;
+                .title {color: #fff;}
+            }//head
+            .cont { padding: 0 13px 15px;
+                .thumb-img { margin-top: -40px;
+                    .desc { height: 100px;
+                        span { top: 50px; font-size: 21px; font-weight: 400;}
+                    }//desc
+                }//thumb-img
+                .news-lst01 {
+                    li { border-top: 1px solid #ededed;
+                        &:first-child {border: none;}
+                        a { display: block; overflow: hidden; padding: 12px 0; font-size: 16px; letter-spacing: -1px; white-space: nowrap; text-overflow: ellipsis; }
+                    }
+                }//news-lst01
+                .news-lst02 { margin-top: 10px;
+                    li { margin-bottom: 10px;
+                        a { display: table; table-layout: fixed; width: 100%;
+                            figure { display: table-cell; width: 125px; font-size: 0;}
+                            .desc { display: table-cell; vertical-align: middle; padding-left: 15px;
+                                span {}
+                            }
+                        }
+                    }
+                }//news-lst02
+            }//cont
+        }//custom-news
+        .photo-lst {
+            .cont { padding: 0 13px 25px;
+                ul {
+                    &:after {content: ''; display: block; clear: both;}
+                    li { float: left; overflow: hidden; width: 50%; font-size: 0;
+                        .thumb-img { margin: .5px 1px;  
+                            .desc {
+                                span {top: 35px; font-size: 16px; font-weight: bold; }
+                            }//desc
+                        }//thumb-img
+                    }//cont > ul > li
+                }//cont > ul
+            }//cont
+        }//photo-lst
+        .video-box {
+            .cont { padding: 0 13px 15px;
+                .video-lst {
+                    li { margin-bottom: 5px;
+                        a { display: table; table-layout: fixed; width: 100%; 
+                            figure { display: table-cell; width: 125px; font-size: 0;}
+                            .desc { display: table-cell; vertical-align: middle; padding-left: 15px;
+                                span { display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp:2; max-height: 48px;
+                                    font-size: 16px; letter-spacing: -1px; line-height: 1.5;
+                                }
+                            }//desc
+                        }//video-lst > li > a
+                    }//video-lst > li
+                }//video-lst
+            }//cont
+        }//video-box
+        //Mode-common
+        [class*="mod"] {
+            .head { padding: 15px;
+                .title { padding-left: 25px; font-size: 19px; line-height: 1; font-weight: bold;
+                    &:before {display: none;}
+                }//title
+            }//head
+            .cont { padding: 0 13px 5px;
+                ul {
+                    li { border-top: 1px solid #ededed;
+                        &:first-child {border: none;}
+                        a { padding: 12px 0; width: 100%; font-size: 16px; letter-spacing: -1px;}
+                    }//cont > ul > li
+                }//cont > ul
+            }//cont
+        }
+        //Mode-common
+        .mod-newsCulture {
+            .head {
+                .title { background: url(https://cwstatic.asiae.co.kr/mdot_2013/v5/as_culture2.png) no-repeat; background-size: 17px auto;
+                    a { position: relative; 
+                        &:after {content: ''; position: absolute; right: -15px; top: 50%; transform: translateY(-50%); 
+                            width: 7px; height: 18px; background: url(https://cwstatic.asiae.co.kr/mdot_2013/icon_01_default.png) -80px -175px no-repeat;}
+                    }
+                }//title
+            }//head
+            .cont {
+                ul {
+                    li {
+                        a {
+                            em { margin-right: 5px; padding: 2px 5px; font-size: 12px; color: #fff;
+                                &.nanrina { background: #d44230;}
+                                &.likit { background: #256510;}
+                            }
+                        }
+                    }
+                }
+            }//cont
+        }//mod-newsCulture 
+        .mod-Drinkeat {
+            .head {
+                .title { background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/dk_logo_ico_20200102.png) no-repeat; background-size: 17px auto;
+                }//title
+            }//head
+            .cont {
+                .thumb-img {
+                    .desc { height: 100px;
+                        span {top: 55px;font-size: 19px;}
+                    }//desc
+                }//thumb-img
+                ul {
+                    li {
+                        a {
+                            em { padding-right: 10px; font-size: 17px; color: #D92B0D; }
+                        }
+                    }
+                }
+            }//cont
+        }//mod-Drinkeat
+    }//Wide-right
+}//End
+
+
+
+
+
+
+
+
+
+

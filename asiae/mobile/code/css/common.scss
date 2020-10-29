@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* sunny:) */
+html,body {margin: 0; padding: 0;}
+body {font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,'Noto Sans','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif;}
+div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+
+h1,h2,h3,h4,h5,h6 {font-size: inherit; vertical-align:baseline; font-weight: normal}
+address,caption,cite,code,dfn,em,th,strong,i {font-style:normal;font-weight:normal;}
+
+ul,ol,dl,dt,dd,li {list-style: none}
+
+a {display: inline-block; text-decoration: none; color: #111; -webkit-tap-highlight-color: rgba(0,0,0,0); outline: 0 none; font-family: 'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;}
+a::after,a::before {-webkit-tap-highlight-color: rgba(0,0,0,0);} 
+a:link,a:visited,a:active {text-decoration:none;}
+button {padding: 0; background: rgba(0,0,0,0); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+button {-webkit-tap-highlight-color: rgba(0,0,0,0); border: 0 none; outline: 0 none; cursor: pointer;}
+button::-moz-focus-inner{border:0;padding:0;}
+input[type=button],input[type=email],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=url],textarea,select{appearance:none; -webkit-appearance:none; -moz-appearance:none; border-radius:0; border:0 none;}
+input:focus,textarea:focus{outline:none;}
+
+img,fieldset,button,table {border: 0 none;}
+img {width: 100%;}
+
+table {border-collapse:collapse;border-spacing:0;vertical-align:top;}
+legend {font-size: 0; line-height: 0; color: transparent;}
+.skip_nav {position:absolute;top:0;left:0; width:1px;height:1px; font-size:0; line-height:0; overflow:hidden;}
+.skip_nav a,.ir {font-size:0; line-height:0; color: transparent; text-indent: -999px;}
+
+.a11y {position: absolute; left: 0; width: 0; height: 0; clip:rect(1px,1px,1px,1px)}
+.blind {position: absolute; overflow: hidden; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px;}
+
+h1,h2,h3,h4,h5,h6 {overflow: hidden; color: #000;}
+
+.thumb {font-size: 0;}
+
+.wrap {background:#f5f5f5;}
+header { background: #fff;
+    .top-head { position: relative; height: 50px; text-align: center;
+        .btn-sch { position: absolute; left: 0; top: 0; padding-bottom: 5px; width: 50px; height: 50px;
+            span {display: inline-block; vertical-align: top; margin: 15px auto; width: 20px; height: 20px; 
+                background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) no-repeat 0 -3px; background-size: 335px 400px; font-size: 0;}
+        }//Btn-search
+        .logo { display: inline-block;
+            a { display: block; padding: 12px 0;
+                span { display: inline-block; width: 115px; height: 25px; vertical-align: top;
+                    background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) no-repeat 0 -188px;
+                    background-size: 335px 400px;
+                }
+            }
+        }//Logo
+        .all-menu { position: absolute; top: 0; right: 0; padding-top: 12px; width: 50px; height: 50px; text-align: center;
+            span { display: inline-block; position: relative; width: 20px; height: 1px; vertical-align: top;  font-size: 0; background: #111;
+                &:before,&:after {content: ''; display: block; position: absolute; left: 0; width: 100%; height: 1px; background: #111;}
+                &:before {top: -6px;}
+                &:after {top: 6px;}
+            }
+        }//All-menu
+    }//Top-head
+        .main-navi { position: relative; margin: 0 auto; max-width: 1100px; height: 40px; text-align: center;
+            .nav-ul { display: inline-block; width: 100%;
+                &:after {content: ''; display: block; clear: both;}
+                li { float: left; width: 25%; height: 40px; line-height: 40px;
+                    &.on { 
+                        a {
+                            position: relative; color: #b11112;
+                            &:after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #b11112;}
+                        }
+                    }
+                    a { font-size: 17px; font-weight: bold; letter-spacing: -1px; color: #595959; }
+                }
+            }
+        }//main-navi
+}//header
+
+#container {position: relative; margin:0 auto; max-width:1100px; width: 100%; }
+
+.content {
+    [class*="Wrap"] { position: relative; overflow: hidden; padding-top: 10px;
+        &:after {content: ''; display: block; clear: both;}
+        [class*="wide-"] { float: left; width: 50%;
+            article {background: #fff;}
+        }
+        .wide-left {padding-right: 4px;}
+        .wide-right {padding-left: 4px;}
+        .head { padding: 13px 20px;}
+        h2.title { font-size: 18px; letter-spacing: -1px; font-weight: 600; color: #000;
+            a { position: relative; width: 100%;
+                &:after {content:''; position: absolute; top: 5px; right: 0; 
+                    width: 9px; height: 16px; background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) no-repeat -280px -286px;
+                    background-size: 335px 400px;} 
+            }
+        }//title
+        .best-news { background: #fff;
+            .head { border-top: 1px solid #f5f5f5; }
+            .cont { padding: 0 20px;
+                .rank-news {
+                    li { display: table; padding: 13px 0; width: 100%; border-top:1px solid #f5f5f5 ;
+                        .num { display: table-cell; vertical-align: middle; width: 25px; font-size: 19px; font-weight: 600; font-style: italic; color: #0076DB; }
+                        .text { display: table-cell; vertical-align: middle;
+                            a { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+                                max-height: 45px; font-size: 17px; letter-spacing: -1px; color: #1a1a1a;
+                            }
+                        }//text
+                    }
+                }//rank-news
+            }//cont
+        }//best-news
+    }//Wrap
+}//Content
+footer { text-align: center;
+    .sns-area { padding: 30px 0; width: 100%; background: #3d3f45;
+        .info-tit { font-size: 16px; letter-spacing: -1px; color: #fff; }
+        .sns-link { display: inline-block;
+            &:after {content: ''; display: block; clear: both;}
+            li { float: left;
+                a { margin: 0 7px; width: 46px; height: 46px; font-size: 0;
+                    background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) no-repeat;
+                    background-size: 335px 400px; 
+                }
+                .btn-ytb { background-position: 0 -38px; }
+                .btn-facebk { background-position: -60px -38px; }
+                .btn-twitter { background-position: -120px -38px; }
+                .btn-kakao { background-position: -180px -38px; }
+                .btn-naver { background-position: -240px -38px; }
+            }//sns-link > li
+        }//sns-link
+    }//sns-area
+    .foot-link {
+        ul { display: inline-block; padding: 20px 0;
+            &:after {content:''; display: block; clear: both;}
+            li { float: left;
+                a { position: relative; padding: 15px 20px; font-size: 12px; letter-spacing: -1px; color: #595959;
+                    &:after { content: ''; position:absolute; left: 0; top: 50%; transform: translateY(-50%);
+                        width: 1px; height: 12px; background: #e4e4e4;
+                    }
+                }
+                &:first-child > a:after {display: none;}
+            }
+        }//foot-link > ul
+    }//foot-link
+    .copyright {padding-bottom: 100px; font-size: 11px; color: #595959;}
+}//Footer
+
+//상단버튼 btn-top
+.btn-top { opacity: 0; position: fixed; right: 20px; bottom: 50px; z-index: 55; width: 50px; height: 50px;
+    background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/ico_top_off01.png) no-repeat; transition: .4s ease-in-out;
+    &.on {opacity: 1;}
+    span {font-size: 0;}
+}
+
+@media only screen and (max-width:640px) {
+    .content {
+        [class*="Wrap"] { padding-top: 0;
+            [class*="wide-"] { float: none; padding: 0; width: 100%;
+                article {background: #fff;}
+            }//Wide-left·right
+        }//Wrap
+    }//Content
+
+}//End
+
+
+
+
+

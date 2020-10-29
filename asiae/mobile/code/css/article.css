@@ -1,0 +1,648 @@
+header .top-head {
+  border-bottom: 1px solid #ededed;
+}
+
+header .fix-head {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ededed;
+  background: #fff;
+}
+
+header .fix-head.active {
+  display: block;
+}
+
+header .fix-head:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+header .fix-head .btn-home {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  padding-top: 12px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+header .fix-head .btn-home span {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 28px;
+  font-size: 0;
+  background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) 0 -93px no-repeat;
+  background-size: 335px 400px;
+}
+
+header .fix-head .tit {
+  padding-left: 55px;
+}
+
+header .fix-head .tit span {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: -1px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+header .fix-head .progress-container {
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 3px;
+}
+
+header .fix-head .progress-container .progress-bar {
+  max-width: 100%;
+  width: 0;
+  height: 100%;
+  font-size: 0;
+  background: #ed1d25;
+  -webkit-transition: width .4s ease-out;
+  transition: width .4s ease-out;
+}
+
+.articleWrap [class*="wide"] > div {
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.articleWrap [class*="wide"] > div .head {
+  padding: 13px 15px;
+}
+
+.articleWrap [class*="wide"] > div .head h4.title {
+  position: relative;
+  padding-left: 10px;
+  height: 100%;
+  font-size: 19px;
+  letter-spacing: -1px;
+}
+
+.articleWrap [class*="wide"] > div .head h4.title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  bottom: 2px;
+  width: 4px;
+  background: #ed1d25;
+}
+
+.articleWrap [class*="wide"] > div .head h4.title strong {
+  font-weight: bold;
+}
+
+.articleWrap .wide-left .articleView {
+  margin-bottom: 10px;
+}
+
+.articleWrap .wide-left .articleView .share-box {
+  margin-top: 25px;
+}
+
+.articleWrap .wide-left .articleView .share-box:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.articleWrap .wide-left .articleView .share-box > ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.articleWrap .wide-left .articleView .share-box > ul li {
+  float: left;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+}
+
+.articleWrap .wide-left .articleView .share-box > ul li a {
+  width: 100%;
+  height: 100%;
+}
+
+.articleWrap .wide-left .articleView .share-box .sns-lst {
+  float: left;
+}
+
+.articleWrap .wide-left .articleView .share-box .sns-lst li {
+  margin-right: 5px;
+}
+
+.articleWrap .wide-left .articleView .share-box .sns-lst li a {
+  background: url(https://cwstatic.asiae.co.kr/mdot_2013/v6/ico_article.png) no-repeat;
+  background-size: 320px 95px;
+}
+
+.articleWrap .wide-left .articleView .share-box .sns-lst li a.facebk {
+  background-position: 0 0;
+}
+
+.articleWrap .wide-left .articleView .share-box .sns-lst li a.twitter {
+  background-position: -39px 0;
+}
+
+.articleWrap .wide-left .articleView .share-box .sns-lst li a.kakao {
+  background-position: -78px 0;
+}
+
+.articleWrap .wide-left .articleView .share-box .sns-lst li a.btn-moreSns {
+  background-position: -116px 0;
+}
+
+.articleWrap .wide-left .articleView .share-box .service {
+  float: right;
+}
+
+.articleWrap .wide-left .articleView .share-box .service li:first-child {
+  margin-right: 10px;
+}
+
+.articleWrap .wide-left .articleView .share-box .service li a {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.articleWrap .wide-left .articleView .share-box .service li a span {
+  display: inline-block;
+  margin: 8px auto;
+}
+
+.articleWrap .wide-left .articleView .share-box .service li .btn-voice {
+  background: #ff0221;
+}
+
+.articleWrap .wide-left .articleView .share-box .service li .btn-voice span {
+  width: 20px;
+  height: 17px;
+  background: url(https://cwstatic.asiae.co.kr/mdot_2013/v6/ico_190108.png) no-repeat;
+  background-size: 140px 82px;
+}
+
+.articleWrap .wide-left .articleView .share-box .service li .btn-font {
+  border: 1px solid #e1e1e1;
+  background: #fff;
+}
+
+.articleWrap .wide-left .articleView .share-box .service li .btn-font span {
+  width: 22px;
+  height: 20px;
+  background: url(https://cwstatic.asiae.co.kr/mdot_2013/v6/img_flag03.png) no-repeat -4px -274px;
+  background-size: 194px 300px;
+}
+
+.articleWrap .wide-left .articleView .head {
+  padding: 20px 15px;
+}
+
+.articleWrap .wide-left .articleView .head .newstit {
+  font-size: 16px;
+  letter-spacing: -1px;
+  color: #0658a2;
+}
+
+.articleWrap .wide-left .articleView .head .headline {
+  margin: 10px 0;
+  font-size: 23px;
+  line-height: 29px;
+  letter-spacing: -1px;
+}
+
+.articleWrap .wide-left .articleView .head .newsInfo {
+  font-size: 12px;
+  color: #595959;
+}
+
+.articleWrap .wide-left .articleView .head .newsInfo .day {
+  margin-left: 10px;
+}
+
+.articleWrap .wide-left .articleView .cont .subTitle {
+  padding: 15px;
+}
+
+.articleWrap .wide-left .articleView .cont .subTitle h3 {
+  position: relative;
+  padding: 0 10px;
+  height: 100%;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.articleWrap .wide-left .articleView .cont .subTitle h3:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 3px;
+  width: 2px;
+  background: #000;
+}
+
+.articleWrap .wide-left .articleView .cont p {
+  padding: 0 15px;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.articleWrap .wide-left .articleView .cont .thumb-img figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: #595959;
+}
+
+.articleWrap .wide-left .articleView .cont .share-box {
+  padding: 0 15px 40px;
+}
+
+.articleWrap .wide-left .articleView .cont .share-box .comment {
+  float: right;
+}
+
+.articleWrap .wide-left .articleView .cont .share-box .comment li {
+  width: auto;
+  text-align: center;
+}
+
+.articleWrap .wide-left .articleView .cont .share-box .comment li a {
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 17px;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: -1px;
+}
+
+.articleWrap .wide-left .articleView .cont .share-box .comment li .btn-scrap {
+  position: relative;
+  margin-right: 5px;
+  padding-left: 15px;
+  width: 80px;
+}
+
+.articleWrap .wide-left .articleView .cont .share-box .comment li .btn-scrap:before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 24%;
+  width: 15px;
+  height: 16px;
+  background: url(https://cwstatic.asiae.co.kr/mdot_2013/v5/icon_all_20180718.png) no-repeat;
+  background-position: -285px -37px;
+  background-size: 325px 105px;
+}
+
+.articleWrap .wide-left .articleView .cont .share-box .comment li .btn-cmt {
+  width: 70px;
+}
+
+.articleWrap .wide-left .articleView .cont .share-box .comment li .btn-cmt span {
+  margin-left: 3px;
+}
+
+.articleWrap .wide-left .today-topic .cont ul {
+  padding: 0 13px;
+}
+
+.articleWrap .wide-left .today-topic .cont ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.articleWrap .wide-left .today-topic .cont ul li {
+  float: left;
+  width: 50%;
+}
+
+.articleWrap .wide-left .today-topic .cont ul li .thumb {
+  padding: 0 5px;
+}
+
+.articleWrap .wide-left .today-topic .cont ul li .thumb span {
+  display: inline-block;
+  height: 45px;
+  font-size: 17px;
+}
+
+.articleWrap .wide-left .hot-news .cont {
+  padding: 0 13px;
+}
+
+.articleWrap .wide-left .hot-news .cont .thumb-lst:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.articleWrap .wide-left .hot-news .cont .thumb-lst li {
+  float: left;
+  width: 50%;
+}
+
+.articleWrap .wide-left .hot-news .cont .thumb-lst li .thumb {
+  margin: 0 1px;
+}
+
+.articleWrap .wide-left .hot-news .cont .news-lst {
+  padding: 0 15px 15px;
+}
+
+.articleWrap .wide-left .hot-news .cont .news-lst li {
+  border-top: 1px solid #eee;
+}
+
+.articleWrap .wide-left .hot-news .cont .news-lst li:first-child {
+  border-top: none;
+}
+
+.articleWrap .wide-left .hot-news .cont .news-lst li a {
+  padding: 10px 0;
+  font-size: 17px;
+  letter-spacing: -1px;
+}
+
+.articleWrap .wide-right .cont {
+  padding: 0 13px;
+}
+
+.articleWrap .wide-right .cont .thumb-img {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+}
+
+.articleWrap .wide-right .cont .thumb-img .desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  width: 100%;
+  height: 70px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.articleWrap .wide-right .cont .thumb-img .desc span {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+  width: 100%;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.articleWrap .wide-right .custom-news .head {
+  position: relative;
+  padding: 13px 15px 60px;
+  width: 100%;
+  background: #3f63bf;
+}
+
+.articleWrap .wide-right .custom-news .head .title {
+  color: #fff;
+}
+
+.articleWrap .wide-right .custom-news .cont {
+  padding: 0 13px 15px;
+}
+
+.articleWrap .wide-right .custom-news .cont .thumb-img {
+  margin-top: -40px;
+}
+
+.articleWrap .wide-right .custom-news .cont .thumb-img .desc {
+  height: 100px;
+}
+
+.articleWrap .wide-right .custom-news .cont .thumb-img .desc span {
+  top: 50px;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.articleWrap .wide-right .custom-news .cont .news-lst01 li {
+  border-top: 1px solid #ededed;
+}
+
+.articleWrap .wide-right .custom-news .cont .news-lst01 li:first-child {
+  border: none;
+}
+
+.articleWrap .wide-right .custom-news .cont .news-lst01 li a {
+  display: block;
+  overflow: hidden;
+  padding: 12px 0;
+  font-size: 16px;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.articleWrap .wide-right .custom-news .cont .news-lst02 {
+  margin-top: 10px;
+}
+
+.articleWrap .wide-right .custom-news .cont .news-lst02 li {
+  margin-bottom: 10px;
+}
+
+.articleWrap .wide-right .custom-news .cont .news-lst02 li a {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.articleWrap .wide-right .custom-news .cont .news-lst02 li a figure {
+  display: table-cell;
+  width: 125px;
+  font-size: 0;
+}
+
+.articleWrap .wide-right .custom-news .cont .news-lst02 li a .desc {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 15px;
+}
+
+.articleWrap .wide-right .photo-lst .cont {
+  padding: 0 13px 25px;
+}
+
+.articleWrap .wide-right .photo-lst .cont ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.articleWrap .wide-right .photo-lst .cont ul li {
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  font-size: 0;
+}
+
+.articleWrap .wide-right .photo-lst .cont ul li .thumb-img {
+  margin: .5px 1px;
+}
+
+.articleWrap .wide-right .photo-lst .cont ul li .thumb-img .desc span {
+  top: 35px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.articleWrap .wide-right .video-box .cont {
+  padding: 0 13px 15px;
+}
+
+.articleWrap .wide-right .video-box .cont .video-lst li {
+  margin-bottom: 5px;
+}
+
+.articleWrap .wide-right .video-box .cont .video-lst li a {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.articleWrap .wide-right .video-box .cont .video-lst li a figure {
+  display: table-cell;
+  width: 125px;
+  font-size: 0;
+}
+
+.articleWrap .wide-right .video-box .cont .video-lst li a .desc {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 15px;
+}
+
+.articleWrap .wide-right .video-box .cont .video-lst li a .desc span {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 48px;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
+.articleWrap .wide-right [class*="mod"] .head {
+  padding: 15px;
+}
+
+.articleWrap .wide-right [class*="mod"] .head .title {
+  padding-left: 25px;
+  font-size: 19px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.articleWrap .wide-right [class*="mod"] .head .title:before {
+  display: none;
+}
+
+.articleWrap .wide-right [class*="mod"] .cont {
+  padding: 0 13px 5px;
+}
+
+.articleWrap .wide-right [class*="mod"] .cont ul li {
+  border-top: 1px solid #ededed;
+}
+
+.articleWrap .wide-right [class*="mod"] .cont ul li:first-child {
+  border: none;
+}
+
+.articleWrap .wide-right [class*="mod"] .cont ul li a {
+  padding: 12px 0;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+
+.articleWrap .wide-right .mod-newsCulture .head .title {
+  background: url(https://cwstatic.asiae.co.kr/mdot_2013/v5/as_culture2.png) no-repeat;
+  background-size: 17px auto;
+}
+
+.articleWrap .wide-right .mod-newsCulture .head .title a {
+  position: relative;
+}
+
+.articleWrap .wide-right .mod-newsCulture .head .title a:after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 7px;
+  height: 18px;
+  background: url(https://cwstatic.asiae.co.kr/mdot_2013/icon_01_default.png) -80px -175px no-repeat;
+}
+
+.articleWrap .wide-right .mod-newsCulture .cont ul li a em {
+  margin-right: 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.articleWrap .wide-right .mod-newsCulture .cont ul li a em.nanrina {
+  background: #d44230;
+}
+
+.articleWrap .wide-right .mod-newsCulture .cont ul li a em.likit {
+  background: #256510;
+}
+
+.articleWrap .wide-right .mod-Drinkeat .head .title {
+  background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/dk_logo_ico_20200102.png) no-repeat;
+  background-size: 17px auto;
+}
+
+.articleWrap .wide-right .mod-Drinkeat .cont .thumb-img .desc {
+  height: 100px;
+}
+
+.articleWrap .wide-right .mod-Drinkeat .cont .thumb-img .desc span {
+  top: 55px;
+  font-size: 19px;
+}
+
+.articleWrap .wide-right .mod-Drinkeat .cont ul li a em {
+  padding-right: 10px;
+  font-size: 17px;
+  color: #D92B0D;
+}
+/*# sourceMappingURL=article.css.map */

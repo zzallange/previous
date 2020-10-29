@@ -1,0 +1,243 @@
+
+/* 1. 시맨틱태그 정의
+<h1> : logo
+<h2> : title
+<strong> : headline
+<ol> : rank-news
+<button> : 최소 핑거포인트 영역에 맞춤 50 * 50 통일
+
+<section> : 주제별로 구분되는 문서
+            .ct-main / .ct-rank / .ct-issue / .ct-photo
+<article> : 글, 뉴스 기사등을 묶는 문서
+            .news-type01 / .news-type02
+*/
+
+/* 2. 마크업 구조 및 CSS */
+
+.wrap { background: #f5f5f5; }
+
+header { background: #fff;
+    .top-head { height: 50px;
+        .btn-sch { width: 50px; height: 50px; }
+        .logo { width: 115px; height: 25px; }
+        .all-menu { width: 50px; height: 50px; }
+    }//top-head
+    .main-navi { height: 40px;
+        .nav-ul {
+            li {
+                &.on { text-decoration: underline; color: #b11112; } //활성화 된 메뉴 컬러 
+                a { font-size: 17px; letter-spacing: -1px; font-weight: bold; color: #595959; }
+            }
+        }
+    }//main-navi
+}//Header
+
+#container { max-width:1100px; width: 100%;
+    .content {
+        .section {
+            &.ct-main {}
+            &.ct-rank {}
+            &.ct-issue {}
+            &.ct-photo {}
+            //1. 각 섹션별 구조
+            &.[class*="ct-"] {
+                [class*="wide"] { float: left; width: 50%; 
+                    article { background: #fff; }
+                }//common
+                .wide-left { padding-right: 4px; }    
+                .wide-right { padding-left: 4px; }    
+            }
+            //섹션 별 헤더, 컨텐츠
+            &.[class*="ct-"] {
+                [class*="wide"] {
+                    .head {
+                        .title { font-size: 18px; letter-spacing: -1px; font-weight: 600; color: #000; }
+                    }
+                    .cont {}
+                }
+            }
+        }//Section
+    }
+}//Container
+
+//큰 이미지의 썸네일 기사
+.news-type01 {
+    figure {
+        .thumb { width: 100%; }
+        figcaption {
+            .desc {
+                span { font-size: 20px; letter-spacing: -1px; color: #1a1a1a; }
+            }
+            .btn-share { width: 50px; height: 50px; }
+            .timeline { font-size: 12px; }
+        }
+    }
+}//news-type01
+
+//썸네일 기사 및 리스트 기사
+.news-type02 {
+    .news-lst {
+        li {
+            .thumb-news {
+                .thumb { width: 130px; }
+                .desc {
+                    span { font-size: 17px; letter-spacing: -1px; color: #1a1a1a;}
+                }
+            }//thumb-news 썸네일 기사
+            .related-news {
+                li {
+                    a { font-size: 16px; letter-spacing: -1px; color: #595959; }
+                }
+            }//related-news 썸네일 관련 기사
+        }
+    }
+}//news-type02
+
+//많이 본 뉴스
+.best-news {
+    ol.rank-news {
+        li {
+            em.num { font-style: italic; font-size: 19px; font-weight: 600; color: #0076DB; }
+            p.text {
+                a { font-size: 17px; letter-spacing: -1px; color: #1a1a1a; }
+            }
+        }
+    }
+}//best-news
+
+//기획·이슈
+.cont {
+    .top-issue { padding: 0 20px;
+        figure {
+            .thumb { width: 100%; }
+            figcaption {
+                .desc {
+                    em.topic { font-size: 13px; letter-spacing: -1px; color: #1439f5; background: #fff; }
+                    strong.headline { font-size: 20px; letter-spacing: -1px; color: #fff; }
+                }
+            }
+        }
+    }//top-issue
+    .issue-lst {
+        li {
+            .thumb {width: 120px;}
+            .desc {
+                em.topic {//위와 동일함}
+                strong.headline {//위와 동일함}
+            }
+        }
+    }//issue-lst
+}//기획·이슈 END
+
+//Section : 랭킹
+.ct-rank {
+    .best-news {
+        .head { border-bottom: 1px solid #ededed;
+            .date { font-size: 18px; color: #1a1a1a; }
+        }//head
+        .cont {
+            .rank-news {}
+            .btn-more {
+                span { font-size: 15px; letter-spacing: -1px; color: #595959; }
+            }
+        }//cont
+    }
+}//Ct-rank
+
+//Section: 이슈+
+.ct-issue {
+    //wide-left 주제별 기사
+    .visual-lst01 {
+        .thumbnail {
+            figure {
+                a { position: relative; width: 100%;
+                    &:after {background: rgba(31,40,72,0.7);}
+                    figcaption {
+                        .title { font-size: 19px; font-weight: bold; letter-spacing: -1px; color: #fff; 
+                            box-shadow: inset 0 -12px 0 rgba(37,161,253,.7);
+                            &:before { width: 18px; height: 3px; background: #fff; }
+                        }//title
+                    }
+                }
+            }
+        }//thumbnail
+    }//visual-lst01
+
+    //wide-right 아경기획
+    .visual-lst02 {
+        .photo-lst {
+            li {
+                a {
+                    figure { float: left; padding: 0 2px; width: 50%;
+                        img {}
+                        figcaption {
+                            strong.headline { font-size: 16px; letter-spacing: -1px; color: #1a1a1a; }
+                            em.more-article { font-size: 12px; color: #0055ad; }
+                        }
+                    }
+                }
+            }
+        }//photo-lst
+    }//visual-lst02
+}//Ct-issue
+
+footer { background: #3d3f45;
+    .sns-area {
+        .info-tit { font-size: 16px; letter-spacing: -1px; color: #fff; }
+        .sns-link {
+            li {
+                a { width: 46px; height: 46px; }//sns 아이콘
+                .btn-ytb {}
+                .btn-facebk {}
+                .btn-twitter {}
+                .btn-kakao {}
+                .btn-naver {}
+            }
+        }
+    }//sns-area
+    .foot-link {
+        ul {
+            li {
+                a { font-size: 12px; letter-spacing: -1px; color: #595959; }
+            }
+        }
+    }//foot-link
+    .copyright { font-size: 11px; color: #595959; }
+}//Footer
+
+
+
+/* 3.Js 스크립트 적용 */
+
+/*
+01. 포토·영상 gallery-news 슬라이드
+    01-1. swiper.min.css / swiper.min.js 링크 가져오기
+    01-2. 3단 구조 마크업
+    :   <div class="gallery-news swiper-container">
+            <div class ="swiper-wrapper">
+                <div class="item swiper-slide">
+                <div class="item swiper-slide">
+                <div class="item swiper-slide">
+            </div>
+        </div>   
+    01-3. 버튼, 페이지네이션 추가 (container안에)
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-pagination"></div>
+
+    01-4. 슬라이드 무한반복 설정 = loop:true
+    01-5. var 변수이름 지정 = new Swiper('.gallery-news', {
+        loop: true, //무한반복
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev', //화살표 추가
+        },
+        pagination: {
+            el: '.swiper-pagination' //페이지네이션 추가
+        }
+    });
+
+02. 연예·포토 grab 스크롤바 swiper 
+03. 탑버튼 적용
+*/

@@ -1,0 +1,532 @@
+@charset "UTF-8";
+/* sunny:) */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,'Noto Sans','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif;
+}
+
+div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  vertical-align: baseline;
+  font-weight: normal;
+}
+
+address, caption, cite, code, dfn, em, th, strong, i {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul, ol, dl, dt, dd, li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: 0 none;
+  font-family: 'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif;
+}
+
+a::after, a::before {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border: 0 none;
+  outline: 0 none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type=button], input[type=email], input[type=password], input[type=reset], input[type=search], input[type=submit], input[type=tel], input[type=text], input[type=url], textarea, select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border: 0 none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+img, fieldset, button, table {
+  border: 0 none;
+}
+
+img {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: top;
+}
+
+legend {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+.skip_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.skip_nav a, .ir {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  text-indent: -999px;
+}
+
+.a11y {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow: hidden;
+  color: #000;
+}
+
+.thumb {
+  font-size: 0;
+}
+
+.wrap {
+  background: #f5f5f5;
+}
+
+header {
+  background: #fff;
+}
+
+header .top-head {
+  position: relative;
+  height: 50px;
+  text-align: center;
+}
+
+header .top-head .btn-sch {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-bottom: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+header .top-head .btn-sch span {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px auto;
+  width: 20px;
+  height: 20px;
+  background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) no-repeat 0 -3px;
+  background-size: 335px 400px;
+  font-size: 0;
+}
+
+header .top-head .logo {
+  display: inline-block;
+}
+
+header .top-head .logo a {
+  display: block;
+  padding: 12px 0;
+}
+
+header .top-head .logo a span {
+  display: inline-block;
+  width: 115px;
+  height: 25px;
+  vertical-align: top;
+  background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) no-repeat 0 -188px;
+  background-size: 335px 400px;
+}
+
+header .top-head .all-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 12px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+header .top-head .all-menu span {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 1px;
+  vertical-align: top;
+  font-size: 0;
+  background: #111;
+}
+
+header .top-head .all-menu span:before, header .top-head .all-menu span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #111;
+}
+
+header .top-head .all-menu span:before {
+  top: -6px;
+}
+
+header .top-head .all-menu span:after {
+  top: 6px;
+}
+
+header .main-navi {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 40px;
+  text-align: center;
+}
+
+header .main-navi .nav-ul {
+  display: inline-block;
+  width: 100%;
+}
+
+header .main-navi .nav-ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+header .main-navi .nav-ul li {
+  float: left;
+  width: 25%;
+  height: 40px;
+  line-height: 40px;
+}
+
+header .main-navi .nav-ul li.on a {
+  position: relative;
+  color: #b11112;
+}
+
+header .main-navi .nav-ul li.on a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #b11112;
+}
+
+header .main-navi .nav-ul li a {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #595959;
+}
+
+#container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.content [class*="Wrap"] {
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.content [class*="Wrap"]:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content [class*="Wrap"] [class*="wide-"] {
+  float: left;
+  width: 50%;
+}
+
+.content [class*="Wrap"] [class*="wide-"] article {
+  background: #fff;
+}
+
+.content [class*="Wrap"] .wide-left {
+  padding-right: 4px;
+}
+
+.content [class*="Wrap"] .wide-right {
+  padding-left: 4px;
+}
+
+.content [class*="Wrap"] .head {
+  padding: 13px 20px;
+}
+
+.content [class*="Wrap"] h2.title {
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: #000;
+}
+
+.content [class*="Wrap"] h2.title a {
+  position: relative;
+  width: 100%;
+}
+
+.content [class*="Wrap"] h2.title a:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 9px;
+  height: 16px;
+  background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) no-repeat -280px -286px;
+  background-size: 335px 400px;
+}
+
+.content [class*="Wrap"] .best-news {
+  background: #fff;
+}
+
+.content [class*="Wrap"] .best-news .head {
+  border-top: 1px solid #f5f5f5;
+}
+
+.content [class*="Wrap"] .best-news .cont {
+  padding: 0 20px;
+}
+
+.content [class*="Wrap"] .best-news .cont .rank-news li {
+  display: table;
+  padding: 13px 0;
+  width: 100%;
+  border-top: 1px solid #f5f5f5;
+}
+
+.content [class*="Wrap"] .best-news .cont .rank-news li .num {
+  display: table-cell;
+  vertical-align: middle;
+  width: 25px;
+  font-size: 19px;
+  font-weight: 600;
+  font-style: italic;
+  color: #0076DB;
+}
+
+.content [class*="Wrap"] .best-news .cont .rank-news li .text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.content [class*="Wrap"] .best-news .cont .rank-news li .text a {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 45px;
+  font-size: 17px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .sns-area {
+  padding: 30px 0;
+  width: 100%;
+  background: #3d3f45;
+}
+
+footer .sns-area .info-tit {
+  font-size: 16px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+footer .sns-area .sns-link {
+  display: inline-block;
+}
+
+footer .sns-area .sns-link:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+footer .sns-area .sns-link li {
+  float: left;
+}
+
+footer .sns-area .sns-link li a {
+  margin: 0 7px;
+  width: 46px;
+  height: 46px;
+  font-size: 0;
+  background: url(https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png) no-repeat;
+  background-size: 335px 400px;
+}
+
+footer .sns-area .sns-link li .btn-ytb {
+  background-position: 0 -38px;
+}
+
+footer .sns-area .sns-link li .btn-facebk {
+  background-position: -60px -38px;
+}
+
+footer .sns-area .sns-link li .btn-twitter {
+  background-position: -120px -38px;
+}
+
+footer .sns-area .sns-link li .btn-kakao {
+  background-position: -180px -38px;
+}
+
+footer .sns-area .sns-link li .btn-naver {
+  background-position: -240px -38px;
+}
+
+footer .foot-link ul {
+  display: inline-block;
+  padding: 20px 0;
+}
+
+footer .foot-link ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+footer .foot-link ul li {
+  float: left;
+}
+
+footer .foot-link ul li a {
+  position: relative;
+  padding: 15px 20px;
+  font-size: 12px;
+  letter-spacing: -1px;
+  color: #595959;
+}
+
+footer .foot-link ul li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background: #e4e4e4;
+}
+
+footer .foot-link ul li:first-child > a:after {
+  display: none;
+}
+
+footer .copyright {
+  padding-bottom: 100px;
+  font-size: 11px;
+  color: #595959;
+}
+
+.btn-top {
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 55;
+  width: 50px;
+  height: 50px;
+  background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/ico_top_off01.png) no-repeat;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.btn-top.on {
+  opacity: 1;
+}
+
+.btn-top span {
+  font-size: 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .content [class*="Wrap"] {
+    padding-top: 0;
+  }
+  .content [class*="Wrap"] [class*="wide-"] {
+    float: none;
+    padding: 0;
+    width: 100%;
+  }
+  .content [class*="Wrap"] [class*="wide-"] article {
+    background: #fff;
+  }
+}
+/*# sourceMappingURL=common.css.map */

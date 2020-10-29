@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/* 이중 스크롤 생성시 : body - overflow:hidden */
+
+/* all_menu_wrap */
+.header .top-head .all_menu_wrap {display: none; position: fixed; left: 0; top:75px; right: 0; bottom: 0; z-index: 50; overflow-y: auto; width: 100%; background: #fff;}
+.header .top-head .all_menu_wrap.on {display: block;}
+/* //all_menu_wrap */
+/* article, section menu-wrap */
+.all_menu_wrap {display: none; padding: 100px 0; position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 50; overflow-y: auto; background: #fff;}
+.all_menu_wrap.on {display: block;}
+/* //article, section menu-wrap */
+
+[class*="section"] {width: 100%;}
+[class*="section"]:after {content:''; display: block;clear: both;}
+[class*="section"] .cont {float:left; width: 770px;}
+[class*="section"] .aside {float:right; width: 300px;}
+
+h3[class*="title"] {margin-bottom: 15px; font-size: 16px; letter-spacing: -1px; line-height: 1;}
+h3[class*="title"] strong {color: #cf0f16;}
+
+.aside h3[class*="title"] a {position: relative; padding-right: 15px; font-family: 'notokrM'; font-size: 16px; letter-spacing: -1px; line-height: 1.1;} 
+.aside h3[class*="title"] a:after {content:''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width:6px; height: 10px; background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/icon_arr08.png) no-repeat;} 
+.aside h3[class*="title"] a:hover {text-decoration: underline;}
+.aside h3[class*="title"] a strong {color: #ff000b;} 
+
+/* top-section : cont */
+.top-section {margin:40px 0; padding-bottom: 40px; border-bottom: 2px solid #111;}
+.top-section .cont {border-right: 1px solid #eee;}
+.top-section .cont:after {content:''; display: block;clear: both}
+
+/* Left: visual-news */
+.top-section .visual-news {overflow: hidden; position: relative; float: left; width: 295px; height: 340px; border: 1px solid rgba(0,0,0,.1);}
+.top-section .visual-news .category {position: absolute; bottom: 90px; left: 20px; padding: 0 10px; font-size: 13px; line-height: 26px; color: #fff; background: #1372e7;} 
+.top-section .visual-news .link-img {width: 100%; height: 340px; }
+.visual-news .link-img .thumb {overflow: hidden; height: 240px; font-size: 0;}
+.visual-news .link-img .thumb img {width: auto; height: 240px; transition: all .3s ease-in-out;}
+.visual-news .link-img:hover .thumb img {transform: scale(1.1);}
+.visual-news .link-img .info {position: relative; display: block; width: 100%; height: 100px; background: #1d1e23;}
+.visual-news .link-img .info .headline {overflow: hidden; position: absolute; left: 50%; top: 55%; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; padding: 0 20px; width: 100%; height: 50px; font-family: 'notokrR'; font-size: 19px; line-height: 24px; letter-spacing: -2px; text-overflow: ellipsis; color: #fff; transform: translate(-50%,-50%);}
+.visual-news .link-img:hover .info .headline {text-decoration: underline;}
+
+/* Right: news-box */
+.top-section .news-box {float: right; padding: 0 30px 0 0; width: 440px;}
+.news-box [class*="news-type"] {overflow: hidden; width: 100%;}
+.news-box [class*="news-type"] .text {overflow: hidden; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; height: 38px; font-family: 'notokrR'; font-size: 14px; line-height: 19px; color: #757575;}
+
+.news-box .news-type01 {padding-bottom: 15px; border-bottom: 1px solid #ddd;}
+.news-box .news-type01 .headline {overflow: hidden; display: block; margin-bottom: 7px;}
+.news-box .news-type01 .headline a {overflow: hidden; width: 100%; font-family: 'notokrR'; font-size: 27px; line-height: 1; letter-spacing: -3px; white-space: nowrap; text-overflow: ellipsis;}
+.news-box .news-type01 .headline:hover a {text-decoration: underline;}
+
+.news-box .news-type02 {padding: 20px 0; border-bottom: 1px solid #ddd;}
+.news-box .news-type02 .thumb {overflow: hidden; float: right; margin-left: 15px; width: 75px; height: 65px; border: 1px solid rgba(0,0,0,.1); }
+
+.news-box .news-type02 .headline {overflow: hidden; display: block;}
+.news-box .news-type02 .headline a {overflow: hidden; display: block; font-size: 20px; letter-spacing: -2px; white-space: nowrap; text-overflow: ellipsis;}
+.news-box .news-type02 .headline:hover a {text-decoration: underline;}
+
+.news-box .news-type03 ul {margin-top: 15px;}
+.news-box .news-type03 ul li {width: 100%; line-height: 1;}
+.news-box .news-type03 ul li a {overflow: hidden; padding: 8px 0; width: 100%; font-size: 15px; letter-spacing: -1.3px; white-space: nowrap; text-overflow: ellipsis; color: #111;}
+.news-box .news-type03 ul li a:hover {text-decoration: underline;}
+.news-box .news-type03 ul li a .breaking-news {}
+/* //top-section : cont */
+
+/* top-section : aside */
+.top-section .aside {}
+.top-section .aside .best-news {}
+.best-news .tab-head {}
+
+
+/* //top-section */
+
+/* cont-section */
+.cont-section {}
+.cont-section .cont {}
+.cont-section .cont .news-list {}
+.cont-section .cont .issue-list {}
+.cont-section .cont .photo-list {}
+
+.news-list:first-child {padding-bottom: 30px; border-bottom: 1px solid #ddd;}
+.news-list ul {overflow: hidden; width: 100%;}
+.news-list ul li {margin-bottom: 25px;}
+.news-list ul li .thumb {float: left; margin-right: 20px; width: 110px; height: 80px;}
+.news-list ul li .thumb a {overflow: hidden; border: 1px solid rgba(0,0,0,.01);}
+.news-list ul li .text-box {}
+.news-list ul li .text-box .title {overflow: hidden; display: block; margin-top: 5px;}
+.news-list ul li .text-box .title a {overflow: hidden; display: block; font-family: 'notokrR'; font-size: 19px; white-space: nowrap; text-overflow: ellipsis;}
+.news-list ul li .text-box .title:hover a {text-decoration: underline;}
+.news-list ul li .text-box .desc {overflow: hidden; margin: 5px 0 8px; font-family: 'notokrR'; font-size: 14px; line-height: 1; white-space: nowrap; text-overflow: ellipsis; color: #757575; }
+.news-list ul li .text-box .category {position: relative; margin-right: 15px; font-size: 14px; color:#396dbb }
+.news-list ul li .text-box .category:after {content:''; position: absolute; right: -10px; top: 5px; width: 1px; height: 10px; background: rgba(0,0,0,.1); }
+.news-list ul li .text-box .category:hover {text-decoration: underline;}
+.news-list ul li .text-box .date {font-size: 13px; color: #757575;}
+.news-list .btn_more {margin-top: 20px; width: 100%; border: 1px solid #ddd; text-align: center;}
+.news-list .btn_more span {position: relative;  font-size: 14px;letter-spacing: -1px;line-height: 45px;}
+.news-list .btn_more span:after {content:''; position: absolute; right: -25px; top: 6px; width: 11px; height: 7px; background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/icon_arr_sup02.png) no-repeat;}
+.news-list .btn_more:hover span {text-decoration: underline;}
+
+.issue-box {margin:40px 0; padding-bottom: 30px; border-bottom: 1px solid #ddd;}
+.issue-box:after {content:''; display: block; clear: both;}
+.issue-box [class*="-ct"] {position: relative; float: left; overflow: hidden; width: 360px; border: 1px solid #eee;}
+.issue-box [class*="-ct"] .subject {position: relative; width: 100%; text-align: center;}
+.issue-box [class*="-ct"] .subject .thumb {overflow: hidden; position: relative; width: 100%; height: 120px;}
+.issue-box [class*="-ct"] .subject .thumb:after {content:''; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: rgba(57,109,187,.7);}
+.issue-box [class*="-ct"] .subject em {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; font-size: 21px; font-family: 'notokrR'; color: #fff;} 
+.issue-box [class*="-ct"] .subject:hover em {text-decoration: underline; }
+
+.issue-box [class*="-ct"] .text-box {position: relative; padding: 20px 25px 35px; height: 160px;}
+.issue-box [class*="-ct"] .text-box dl {}
+.issue-box [class*="-ct"] .text-box dl dd {}
+.issue-box [class*="-ct"] .text-box dl dd a {overflow: hidden; padding: 3px 0; width: 100%; font-size: 16px; letter-spacing: -2px; white-space: nowrap; text-overflow: ellipsis;}
+.issue-box [class*="-ct"] .text-box dl dd a:hover {text-decoration: underline;}
+.issue-box [class*="-ct"] .text-box .btn_more {position: absolute; right: 25px; bottom: 20px; font-size: 14px; letter-spacing: -1px; color: #396dbd;}
+.issue-box [class*="-ct"] .text-box .btn_more:hover {text-decoration: underline;}
+
+.issue-box .left-ct {margin-right: 25px;}
+.issue-box .right-ct {}
+
+.photo-list {margin: 50px 0;}
+.photo-list:after {content:''; display: block; clear: both}
+.photo-list [class*="-type"]:after {content:''; display: block; clear: both;}
+.photo-list [class*="-type"] li .thumb {overflow: hidden; position: relative; width: 100%; height: 100%; }
+.photo-list [class*="-type"] li .thumb:after {content: ''; position: absolute; left: 0; top: 0; right: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,.35) 100%);}
+.photo-list [class*="-type"] li .thumb .info {position: absolute; left: 0; bottom: 20px; z-index: 5; display: block; padding: 0 20px; width: 100%; font-size: 17px; line-height: 20px; color: #fff; }
+.photo-list [class*="-type"] li .thumb:hover .info {text-decoration: underline;}
+
+.photo-list .row-type {float: left; width: 65.7%;}
+.photo-list .row-type li {float: left; width: 49.8%; height: 310px;}
+.photo-list .row-type li:first-child {margin: 0 1px 0 0;}
+
+.photo-list .col-type {float: left; width: 34.1%;}
+.photo-list .col-type li {float: left; height: 155px;}
+.photo-list .col-type li .thumb .ico-play {position: absolute; top: 0; right: 0; width: 30px; height: 29px; font-size: 0; background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/icon_visualnews.png) no-repeat -86px 0;}
+
+.cont-section .aside {}
+.cont-section .aside .gallery-box {}
+.cont-section .aside .video-box {}
+
+.aside .video-box {}
+.aside .video-box .title-box {border-bottom: 2px solid #111;}
+.aside .video-box .title-box:after {content:'';display: block;clear: both}
+.aside .video-box .title-box .title {display: inline-block;}
+.aside .video-box .title-box .title a {}
+.aside .video-box .title-box .title a strong {color: #ff000b;}
+.aside .video-box .title-box .btn_youtube {float: right; width: 119px; height: 15px; background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/txt_youtube.png) no-repeat;}
+
+.aside .video-box ul {} 
+.aside .video-box ul li {display: table; padding: 10px 0; border-bottom: 1px solid #ddd;} 
+.aside .video-box ul li:after {content:''; display: block; clear: both} 
+.aside .video-box ul li .video {overflow: hidden; float: right; margin-left: 20px; width: 120px; height: 90px;} 
+.aside .video-box ul li .video .thumb {position: relative; width: 100%; height: 100%;} 
+.aside .video-box ul li .video .thumb .ico-play {position: absolute; right: 0; bottom: 0; font-size: 0; width: 30px; height: 29px; background: url(https://cwstatic.asiae.co.kr/asiae_v2/common/icon_play.png) no-repeat;}
+.aside .video-box ul li .desc {display: table-cell; vertical-align: middle; font-size: 15px; line-height: 19px; letter-spacing: -1px;}
+.aside .video-box ul li .desc span {overflow: hidden; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; height: 38px; text-overflow: ellipsis;}
+.aside .video-box ul li .desc:hover span {text-decoration: underline;}
+
+
+
+
+/* //cont-section */
+
+/* article-section */
+.article-section {padding: 45px 0; background: #fafafa;}
+.article-section:after {content:''; display: block; clear: both;}
+.article-section .img-news {float: left;}
+.article-section .list-news {float: left;}
+
+.img-news {position: relative; }
+.img-news .category {position: absolute; right: 10px; bottom: 10px; color: #396dbb;}
+.img-news .category:hover {text-decoration: underline;}
+.img-news .inbox {width: 328px; height: 300px; background: #fff;}
+.img-news .inbox .thumb {overflow: hidden; position: relative; width: 100%; height: 240px;}
+.img-news .inbox .desc {position: absolute; left: 0; bottom: 0; display: block; padding: 15px 20px 20px; width: 282px; height: 80px; background: #fff;}
+.img-news .inbox .desc em {font-family: 'notokrR'; font-size: 24px; line-height: 27px; letter-spacing: -2px; color: #111;}
+.img-news .inbox:hover .desc em {text-decoration: underline;}
+
+.list-news {margin: 0 40px; width: 364px;}
+.list-news li {font-size: 0; border-bottom: 1px solid #ddd;}
+.list-news li a {overflow: hidden; width: 100%; padding: 15px 0; font-size: 16px; letter-spacing: -2px; white-space: nowrap; text-overflow: ellipsis;}
+.list-news li:first-child a {padding: 3px 0 15px;}
+.list-news li a:hover {text-decoration: underline;}
+/* //article-section */
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+.content { 
+    article {
+        .codeGuide {
+            .pc-monitor { 
+                .pc-screen { 
+                    &::-webkit-scrollbar-thumb { background: #ed1c24;}
+                }//pc-screen
+            }//pc-monitor
+            //table-common
+            [class*="table"]{ 
+                thead { background: #ed1c24; }//thead
+            }//table-common
+            .table-code {
+                tbody { 
+                    td { 
+                        ul {
+                            .co-style { background: #ffe7e7; }
+                        }//ul
+                        .color-circle { 
+                            &.basic {background: #111;}
+                            &.highlihgt {background:#ed1c24;}
+                            &.sub {background: #1a1a1a;}
+                            &.sub2 {background: #595959;}
+                        }//color-circle
+                    }
+                }//tbody
+            }//table-code
+            .table-file {
+                .file-link {
+                    a { 
+                        &:hover {color:#ed1c24;}
+                    }
+                }//file-link
+            }//table-file
+        }//codeGuide
+    }//article
+}//Content
+
+
+
+
+
+
