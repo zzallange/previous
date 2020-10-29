@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* sitemap */
+.container {margin-top: 60px;}
+.drk_fttop {display: none;}
+
+.map_cont {margin: 0 auto; width: 1000px;}
+.map_cont:after,.map_cont .article_year .month ul:after {content:'';display: block;clear: both;}
+.map_cont .subtit {border-top: 2px solid #4d4d4d; padding: 30px 0;box-sizing: border-box;}
+.map_cont .subtit h3 {display: inline-block;font-size: 21px;font-family: 'Nanum Myeongjo','Noto Serif KR',serif; letter-spacing: -2px;}
+
+.map_cont .article_year {padding: 50px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box;}
+.map_cont .article_year dl {width: 100%; margin-bottom: 10px;}
+.map_cont .article_year dl.y_last {margin-bottom: 0;}
+.map_cont .article_year dl:after {content:'';display: block;clear: both;}
+.map_cont .article_year dl .year { width: 5%;font-size: 15px; line-height: 35px; color: #018075;}
+ {content: }
+.map_cont .article_year dl .year,.map_cont .article_year .month {float: left;}
+.map_cont .article_year dd.month {width: 95%;}
+.map_cont .article_year .month ul{width: 100%;}
+.map_cont .article_year .month ul li {float: left; margin: 0 5px 5px 0; width: 7.7%; border: 1px solid #ddd; box-sizing: border-box;}
+.map_cont .article_year .month ul li:hover {border-color:#111;}
+.map_cont .article_year .month a {width: 100%;font-size: 14px; letter-spacing: -1px; line-height:33px; text-align: center;}
+
+.map_cont .sitemap {padding: 30px 0 50px;box-sizing: border-box;width: 100%;text-align: center; /*border-bottom: 1px solid #ddd;*/}
+.map_cont .sitemap:after {content:''; display: block; clear: both;}
+.map_cont .sitemap dl {float: left;width: 25%;}
+.map_cont .sitemap dt {margin-bottom: 5px;}
+.map_cont .sitemap dt a {padding: 20px 0; margin-left: -10px; font-size: 21px; /*letter-spacing: -1px;*/ line-height: 1;}
+.map_cont .sitemap dt a span {margin-right: 5px; width: 22px; height: 22px;vertical-align: top;}
+.map_cont .sitemap dd a {padding: 20px 0 15px;font-size: 16px; line-height: 1; letter-spacing: -1px; color: #595959;}
+.map_cont .sitemap dd:hover a {text-decoration: underline;}
+
+.map_cont .area_nt {padding: 20px 0;border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;box-sizing: border-box;}
+.map_cont .area_nt a {position: relative; padding:0 20px; font-size: 16px; line-height: 1; letter-spacing: -1px;}
+.map_cont .area_nt a:before,.drk_sitemap .map_cont .area_nt a:after {position: absolute; top: 0; content:'';}
+.map_cont .area_nt a.notic {left: 0; background: url('https://cwstatic.asiae.co.kr/drinkeat/sitemap/i_notice.png') no-repeat; background-size: 16px;}
+.map_cont .area_nt a.notic:after {right: 8px; display: none; width: 1px; height: 100%; background: #ddd;}
+.map_cont .area_nt a.event {left:0;background: url('https://cwstatic.asiae.co.kr/drinkeat/sitemap/i_event.png') no-repeat; background-size: 16px;}
+
+@media only screen and (max-width:1040px){
+    .drk_sitemap .map_cont {width: 100%;}
+}
+@media only screen and (max-width:886px){
+    .map_cont .article_year dl .year {width: 6%;}
+    .map_cont .article_year dd.month {width: 94%;}
+    .map_cont .article_year .month ul li {width: 15.7%;}
+}
+@media only screen and (max-width:768px){
+    .map_cont .subtit {padding:  20px 0;}
+    .map_cont .article_year dl .year {width: 7%;}
+    .map_cont .article_year dd.month {width: 93%;}
+    .map_cont .article_year .month ul li {width: 15.5%;}
+}
+@media only screen and (max-width:639px){
+    .map_cont .article_year dl .year, .map_cont .article_year .month {float: none;}
+    .map_cont .article_year dl .year {width: 100%;}
+    .map_cont .article_year dd.month {width: 100%;}
+    .map_cont .article_year .month ul li {width: 15.5%;}
+    
+    .map_cont .subtit {padding: 15px 0;}
+    .map_cont .subtit h3 {font-size: 17px;}
+    .map_cont .article_year {padding: 25px 0;}
+    .map_cont .article_year dl .year {line-height: 1; margin-bottom: 10px;}
+    
+    .map_cont .sitemap dl {width: 50%;}
+    .map_cont .sitemap dl.enjoy,.drk_sitemap .map_cont .sitemap dl.well {margin:30px 0 15px;}
+    .map_cont .sitemap dt {margin-bottom: 10px;}
+    .map_cont .sitemap dd {margin-bottom: 5px;}
+    
+    .drk_sitemap .map_cont .area_nt {text-align: center;}
+}
+@media only screen and (max-width:484px){
+    .map_cont .article_year .month ul li {width: 23%;}
+}
+@media only screen and (max-width:425px){
+    .map_cont .area_nt a.commu {padding-right: 0;}
+    .map_cont .area_nt a {padding: 0 15px 0 20px; font-size: 13px; }
+    .map_cont .area_nt a.notic {background-size: 13px;}
+    .map_cont .area_nt a.event {background-size: 14px;}
+    .map_cont .area_nt a.commu {background-size: 14px;}
+    .map_cont .area_nt a.notic:after{right: 4px;}
+}
+@media only screen and (max-width:372px){
+    .map_cont .article_year .month ul li {width: 23%;}
+}
+@media only screen and (max-width:320px){
+    .map_cont .sitemap dl.enjoy, .drk_sitemap .map_cont .sitemap dl.well {margin: 20px 0 15px;}
+}
+/* //sitemap */
+
+/* sitemap Contents */
+.map_cont .subtit .year_active, .map_cont .subtit span {font-size: 21px;letter-spacing: -1px;line-height: 1;}
+.map_cont .subtit em {display: inline-block; padding: 3px 0 0 5px;vertical-align: top;}
+.map_cont .article_cont {padding: 50px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box;}
+
+/* 한단일때 */
+.map_cont .article_cont li {position: relative; padding-left: 15px; font-size: 0; line-height: 1;}
+.map_cont .article_cont li:before {content:''; position: absolute;top: 17px;left: 0; width: 4px;height: 4px; background:#f2b0aa;}
+.map_cont .article_cont li strong {display: inline-block; font-weight: normal;font-size: 0;}
+.map_cont .article_cont li a {padding: 10px 0; font-size: 18px;letter-spacing: -2px;/*text-overflow: ellipsis; white-space: nowrap;overflow: hidden;*/}
+.map_cont .article_cont li a:hover {text-decoration: underline;}
+
+@media only screen and (max-width:768px){
+    .map_cont .article_cont li strong {width: 100%;}
+    .map_cont .article_cont li a {width: 100%;}
+}
+@media only screen and (max-width:425px){
+    .map_cont .article_cont {padding: 20px 0;}
+    .map_cont .article_cont li a {font-size: 16px; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;}
+    .map_cont .subtit .year_active, .map_cont .subtit span {font-size: 17px;}
+    .map_cont .subtit em {padding: 0 0 0 5px;}
+}
+/* //sitemap Contents */

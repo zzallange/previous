@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+.content {margin-top: 60px;}
+/* 스크랩 한 글 있을때 */
+.mypage_wrap {padding-top: 90px; width: 100%; box-sizing: border-box;}
+.mypage_wrap:after {content:'';display: block;clear: both;}
+.mypage_wrap h2 {margin-bottom: 45px; font-family: 'notokrLig'; font-size: 33px; letter-spacing: -1px; color: #111;}
+.mypage_wrap h2 span {position: relative; margin-left: 20px; font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,'Noto Sans','Roboto-Light','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif;  font-size: 21px; color: #595959; letter-spacing: -2px; }
+.mypage_wrap h2 span:after {content:'';position: absolute;left: -13px; top: -3px; width: 2px; height: 28px; background: #111;}
+.pg_snb {float: left;width: 160px;}
+.pg_snb ul {}
+/*.pg_snb ul li {border: 1px solid #D9D9D9; border-top: 0; box-sizing: border-box;}*/
+/*.pg_snb ul li:first-child {border-top: 1px solid #D9D9D9;}*/
+.pg_snb ul li a {width: 100%; line-height: 60px; text-indent: 20px; border: 1px solid #D9D9D9; border-top: 0; box-sizing: border-box;}
+.pg_snb ul li:first-child a {border-top: 1px solid #D9D9D9;}
+.pg_snb ul li a span {position: relative; display: inline; font-family: 'notokrR'; line-height: 0; font-size: 15px; letter-spacing: -1px; }
+.pg_snb ul li a span:after {content:''; position: absolute; top: 5px; right: -13px; width: 6px; height: 12px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/arr_tab.png) no-repeat; background-size: contain;}
+.pg_snb ul li a.on { background:#FF695C; color: #fff; border: 1px solid #FF695C;}
+.pg_snb ul li a.on span:after {background: url(https://cwstatic.asiae.co.kr/drinkeat/join/arr_tabon.png) no-repeat; background-size: contain;}
+
+.pg_cont {position: relative; float: right; margin-bottom: 70px; width: 800px;}
+.pg_cont > p {margin-bottom: 10px; padding-bottom: 5px; border-bottom: 2px solid #707070; font-size: 21px; line-height: 30px; font-family: 'notokrR'; color: #111; letter-spacing: -1px; box-sizing: border-box;}
+.pg_cont > p span {margin: 0 15px 0 10px; font-size: 15px; color: #FF695C;}
+.pg_cont > p b {font-weight: normal; letter-spacing: -1px; font-size: 15px; color: #999;}
+.pg_cont .btn_quit {position: absolute; right: 1px; top: 10px; color: #707070; text-align: center; line-height: 1; letter-spacing: -1px; font-family: 'notokrR'; font-size: 13px;}
+.pg_cont .btn_quit:hover {text-decoration: underline; }
+.pg_cont em.sns_txt {font-size: 13px; color: #595959; line-height: 1;}
+.pg_cont > fieldset {margin-top: 25px;}
+
+.pg_cont .my_list {}
+.pg_cont .my_list li {margin-bottom: 15px; position: relative; display: table; table-layout: fixed; width: 100%; font-size: 0;}
+.pg_cont .my_list li:after {content:'';display: block;clear: both;}
+.pg_cont .my_list li > div {display: table-cell; vertical-align: middle;}
+.pg_cont .my_list li .thumb {padding-right: 20px; width: 160px; box-sizing: border-box;}
+.pg_cont .my_list li .thumb a {position: relative; width: 100%; font-size: 0;}
+.pg_cont .my_list li .thumb a:after {content:'';position: absolute; top: 0; left: 0; bottom: 0;right: 0; border: 1px solid rgba(0,0,0,.05);}
+.pg_cont .my_list li .txt_bx {width: 420px;}
+.pg_cont .my_list li .txt_bx:hover .tit {text-decoration: underline;}
+.pg_cont .my_list li .txt_bx a {width: 100%; overflow: hidden;}
+.pg_cont .my_list li .txt_bx a .tit {width: 95%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 8px; font-size: 21px; letter-spacing: -1px;font-family: 'NanumMyeongjo';}
+.pg_cont .my_list li .txt_bx a .txt {font-size: 14px; color: #595959;letter-spacing: -1px;}
+
+/* 2020.05.13 날짜 -> 공유하기 수정 */
+.pg_cont .my_list li .date {display: none; padding-left: 50px; box-sizing: border-box; font-size: 13px; font-family: 'notokrR'; color: #999;}
+.pg_cont .my_list li .new_date {display: table-cell !important; padding-left: 50px; box-sizing: border-box; font-size: 13px; font-family: 'notokrR'; color: #999;}
+
+/*.pg_cont .my_list li .btn_wrap {float: right; margin-top: 30px; padding-right: 20px; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}*/
+.pg_cont .my_list li .btn_wrap {position: absolute; right: 20px; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); transform: translateY(-50%); }
+
+.pg_cont .my_list li .snspop {margin-right: 50px; width: 18px; height: 18px; }
+.pg_cont .my_list li .more_ico {width: 18px; height: 18px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/my_share_ico.png) no-repeat; background-size: contain;}
+
+.pg_cont .my_list li .btn_close {/*position: absolute;right: 20px; top: 50%; transform: translateY(-50%); */width: 17px; height: 17px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/close.png) no-repeat; background-size: contain;}
+
+/* 스크랩 한 글 없을때 */
+.not_cont {text-align: center;}
+.not_cont h3 {margin:50px 0 5px; font-size: 30px; letter-spacing: -1px; font-family: 'notokrR';}
+.not_cont p {font-size: 16px; color: #595959; letter-spacing: -1px; font-family: 'notokrR';}
+
+.not_cont .list_wrap {margin-top: 60px; width: 100%;overflow: hidden;}
+.not_cont .list_wrap ul {}
+.not_cont .list_wrap ul:after {content: '';display: block;clear: both;}
+.not_cont .list_wrap ul li {float: left; margin-bottom: 2%; width: 32%; border: 1px solid rgba(0,0,0,.05); box-sizing: border-box;}
+.not_cont .list_wrap ul li.second {margin: 0 2%;}
+.not_cont .list_wrap ul li a {width: 100%;}
+.not_cont .list_wrap ul li a .thumb {display: block; font-size: 0;}
+.not_cont .list_wrap ul li a .txt_bx {padding: 20px 20px; width: 100%; height: 130px; text-align: left; box-sizing: border-box;}
+.not_cont .list_wrap ul li a .txt_bx .cate {display:block; font-size: 14px; line-height: 20px; letter-spacing: -1px; color: #595959; font-family: 'notokrR'; text-decoration: underline;}
+.not_cont .list_wrap ul li a .txt_bx span {margin-top: 15px; overflow: hidden; text-overflow: ellipsis; font-size: 19px; letter-spacing: -1px; line-height: 1.32em; font-family:'Nanum Myeongjo','Noto Serif KR',serif; }
+.not_cont .list_wrap ul li a:hover .txt_bx span {text-decoration: underline;}
+
+/* 개인정보수정 */
+.privacy_edit {width: 100%;}
+.privacy_edit .em_tit {display: inline-block; width: 140px; height:40px; line-height:40px; font-size: 15px; font-family: 'notokrR'; letter-spacing: -1px; float:left;}
+.privacy_edit .em_tit02 {display: inline-block; width: 140px; height:40px; font-size: 15px; font-family: 'notokrR'; letter-spacing: -1px;padding:8px 0; box-sizing:border-box; float:left;}
+.privacy_edit .em_tit03 {display: inline-block; width: 140px; height:40px; font-size: 15px; font-family: 'notokrR'; letter-spacing: -1px; float:left;}
+.privacy_edit .em_div {display: inline; height:40px; line-height:40px; vertical-align:top; font-size:14px; float:left;}
+
+.table_privacy {margin:40px auto 10px;}
+.table_privacy th {text-align:left; font-size:15px; font-family:'notokrR'; letter-spacing:-1px; padding:14px 10px; border-bottom:1px solid #eee; box-sizing:border-box;}
+.table_privacy td {text-align:left; font-size:14px; padding:14px 0; border-bottom: 1px solid #eee; box-sizing:border-box;}
+.table_privacy td input {width: 100%; height: 40px; border: 1px solid #eee; box-sizing: border-box; font-size: 15px; letter-spacing: -1px; text-indent: 20px; float:left;}
+.table_privacy td input::placeholder {font-size: 13px; letter-spacing: -1px;}
+.table_privacy td input[type="password"] {letter-spacing: 1px;}
+.table_privacy td input.in_box {width:76%; margin:0 1% 0 0;}
+.table_privacy td .btn_edit01 {width:23%; text-align:center; font-size:12px; color:#747478; height:40px; line-height:40px; padding:0 10px; border: 1px solid #eee; background-color:#f9f9f9; box-sizing:border-box;}
+.table_privacy td .btn_edit02 {font-size:12px; color:#747478; height:40px; line-height:40px; padding:0 10px; border: 1px solid #eee; background-color:#f9f9f9; box-sizing:border-box;}
+.table_privacy td .news_check {display: inline-block; vertical-align:top;}
+.table_privacy td .news_check li {display: inline-block; height:20px; width:90px; vertical-align:middle; float:left; }
+.table_privacy td .news_check li:first-child {margin-right: 25px;}
+.table_privacy td .txt {margin:0 20px 0 0;}
+
+.privacy_edit .edit_inpt {padding:4px 0;}
+.privacy_edit .edit_inpt::after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.privacy_edit .edit_inpt label {display: inline-block; width: 140px; height:40px; line-height:40px; font-size: 15px; letter-spacing: -1px; font-family: 'notokrR'; float:left;}
+.privacy_edit .edit_inpt input {width: 650px; height: 40px; border: 1px solid #eee; box-sizing: border-box; font-size: 15px; letter-spacing: -1px; text-indent: 20px; float:left;}
+.privacy_edit .edit_inpt input::placeholder {font-size: 13px; letter-spacing: -1px;}
+.privacy_edit .edit_inpt input[type="password"] {letter-spacing: 1px;}
+
+.infochk_wrap1 {display:block; vertical-align:top;}
+.infochk_wrap1 input[type=checkbox] {display: none;}
+.infochk_wrap1 input[type=checkbox]:checked + .check_list .ck_ico {background: url('https://cwstatic.asiae.co.kr/drinkeat/join/chk_on.png') no-repeat 0 0; background-size: contain;}
+.infochk_wrap1 .check_list {display: block; cursor: pointer;}
+.infochk_wrap1 .check_list::after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.infochk_wrap1 .check_list .ck_ico {display: block; float:left; width: 18px; height: 18px; background: url('https://cwstatic.asiae.co.kr/drinkeat/join/chk.png') no-repeat 0 0; background-size: contain;}
+.infochk_wrap1 .check_list .ck_txt {float:left; padding-left: 5px; display: inline-block; vertical-align: top; line-height: 18px; letter-spacing: -1px;}
+.infochk_wrap1 .check_list .ck_txt a {text-decoration:underline; color:#111;}
+.infochk_wrap1 .ck_txt01 {display:block; line-height:18px; margin:0 0 0 23px;}
+.infochk_wrap1 .ck_txt02 {float:left; width:92%; padding-left: 5px; display: inline-block; vertical-align: top; line-height: 18px; letter-spacing: -1px;}
+
+.pg_cont .pg_txt {font-size:12px; color:#999; margin:0 0 40px 0;}
+
+.edit_sbmit {margin: 70px 0 60px; text-align: center;}
+.edit_sbmit li {display: inline-block; }
+.edit_sbmit li:first-child {margin-right: 5px;}
+.edit_sbmit li a {width: 190px; line-height: 50px; border: 1px solid #707070; box-sizing: border-box; font-size: 17px; letter-spacing: -1px; font-family: 'notokrR'; background: #fff;}
+.edit_sbmit li a:hover {background: #000; color: #fff;}
+
+
+.privacy_edit .newsletter {padding:4px 0;}
+.privacy_edit .newsletter::after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.privacy_edit .newsletter p {display: inline-block; width: 140px; font-size: 15px; font-family: 'notokrR'; letter-spacing: -1px; float:left;}
+.privacy_edit .newsletter ul {display:inline-block; }
+.privacy_edit .newsletter ul::after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.privacy_edit .newsletter ul li {margin:0 0 4px 0; padding:0 20px; box-sizing:border-box; float:left;}
+.privacy_edit .newsletter ul li span {position: relative; cursor: pointer; margin-left: 5px; font-size: 15px; letter-spacing: -1px;}
+.privacy_edit .newsletter ul li span:before {content:''; position: absolute; left: -25px; top: 0; width: 18px; height: 18px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk.png) no-repeat; background-size: contain;}
+.privacy_edit .newsletter label {display: inline-block;}
+.privacy_edit .newsletter input[type="radio"]{display: none;}
+.privacy_edit .newsletter input[type="radio"]:checked + span:before {background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk_on.png) no-repeat; background-size: contain;}
+
+@media only screen and (max-width:1024px){
+    /* 스크랩 한 글 있을때 */
+    .pg_snb {width: 17%;}
+    
+    .pg_cont {width: 80%;}
+    .pg_cont .my_list li .txt_bx {width: 55%;}
+    .pg_cont .my_list li .date {padding-left: 7%;}
+    /* 개인정보수정 */
+    /*.privacy_edit .email p {width: 14.5%;}*/
+    .privacy_edit .email p {width: 114px;}
+    /*.privacy_edit .edit_inpt label {width: 14.5%;}*/
+    .privacy_edit .edit_inpt input {width: 80%;}
+    
+}
+@media only screen and (max-width:930px){
+    /* 스크랩 한 글 있을때 */
+    .pg_snb ul li a {font-size: 15px; line-height: 55px; text-indent: 15px;}
+    
+    .pg_cont .my_list li .thumb {width: 150px;}
+    .pg_cont .my_list li .txt_bx {width: 50%;}
+    .pg_cont .my_list li .txt_bx a .tit {font-size: 21px; margin-bottom: 7px;}
+    .pg_cont .my_list li .txt_bx a .txt {font-size: 15px;}
+    .pg_cont .my_list li .date {padding-left: 5%;}
+    .pg_cont .my_list li .btn_close {width: 15px; height: 15px;}
+    
+    /* 스크랩 한 글 없을때 */
+    .not_cont .list_wrap ul li a .txt_bx {padding: 15px; height: 120px;}
+    .not_cont .list_wrap ul li a .txt_bx span {margin-top: 13px;}
+}
+@media only screen and (max-width:860px){
+    /* 스크랩 한 글 있을때 */
+    .pg_cont .my_list li .date {padding-left: 3%;}
+    /* 개인정보수정 */
+    .privacy_edit .em_tit {width: 17.5%;}
+	.privacy_edit .newsletter p {width: 17.5%;}
+	.privacy_edit .em_tit02 {width: 17.5%;}
+	.privacy_edit .em_tit03 {width: 17.5%;}
+    .privacy_edit .edit_inpt label {width: 17.5%;}
+	.privacy_edit .em_div {width:22.5%}
+}
+@media only screen and (max-width:768px){
+    /* 스크랩 한 글 있을때 */
+    .mypage_wrap {margin-bottom: 20px; padding-top: 50px;}
+    .mypage_wrap h2 {margin-bottom: 15px; font-family: 'notokrR'; font-size: 21px;}
+    .mypage_wrap h2 span {display: block; margin: 5px 0 0; font-size: 15px;}
+    .mypage_wrap h2 span:after {display: none;}
+    
+    .pg_snb {float: none; width: 100%;}
+    .pg_snb ul {width: 100%;}
+    .pg_snb ul:after {content:'';display: block;clear: both;}
+    .pg_snb ul li {float: left; width: 50%; /*border: 1px solid #d9d9d9; border-left: 0;*/}
+    /*.pg_snb ul li:first-child {border-left: 1px solid #d9d9d9;}*/
+    .pg_snb ul li a {text-indent: -7px; text-align: center; border: 1px solid #d9d9d9; border-left: 0;}
+	.pg_snb ul li:nth-child(3) a {border-top:0;}
+	.pg_snb ul li:last-child a {border: 1px solid #d9d9d9; border-top:0;}
+    .pg_snb ul li:first-child a {border-left: 1px solid #d9d9d9;}
+    .pg_snb ul li:first-child  a.on {border: 1px solid #FF695C;}
+    
+    .pg_cont {float: none; margin: 30px 0 0; width: 100%; }
+    .pg_cont .my_list li .thumb {padding-right: 15px; width: 125px;}
+    .pg_cont .my_list li .txt_bx {width: 60%;}
+    .pg_cont .my_list li .txt_bx a .tit {white-space: normal; font-size: 19px; line-height: 23px;} 
+    .pg_cont .my_list li .txt_bx a .txt {display: none;}
+    .pg_cont .my_list li .date {display: block; position:absolute; left: 127px; bottom: 0; padding-left: 0; font-size: 12px;}
+    
+    .pg_cont .my_list li .btn_wrap .snspop {display: none;}
+    
+    /* 스크랩 한 글 없을때 */
+    .not_cont {margin-bottom: 40px;}
+    .not_cont h3 {font-size: 28px;}
+    .not_cont .list_wrap ul li {width: 49%;}
+    .not_cont .list_wrap ul li.second {margin: 0;}
+    .not_cont .list_wrap ul li:nth-child(odd),.not_cont .list_wrap ul li.odd {margin-right: 2%;}
+    /* 개인정보수정 */
+    .privacy_edit .em_tit {width: 23%;}
+	.privacy_edit .newsletter p {width: 23%;}
+	.privacy_edit .em_tit02 {width: 23%;}
+	.privacy_edit .em_tit03 {width: 23%;}
+	.privacy_edit .em_div {width:76.5%}
+    .privacy_edit .edit_inpt label {width: 23%;margin-right: -4px;}
+    .privacy_edit .edit_inpt input {width: 76.5%;}
+    .edit_sbmit {margin: 40px 0 50px;}
+    .edit_sbmit li a {width: 170px; font-size: 16px;}
+
+}
+@media only screen and (max-width:639px){
+    .mypage_wrap h2 {font-family: 'notokrM'}
+    .pg_cont > p b {font-size: 13px}
+    .pg_cont > p span {margin: 0 10px 0 5px;}
+	.table_privacy td .txt {margin: 0 20px 6px 0;}
+	.table_privacy td input.in_box {width:63%;}
+	.table_privacy td .btn_edit01 {padding: 0 8px; width:36%;}
+}
+@media only screen and (max-width:425px){
+    /* 스크랩 한 글 있을때 */
+    .mypage_wrap {margin-bottom: 0;}
+    .pg_snb ul li a {text-indent: 0; line-height: 50px;}
+    .pg_snb ul li a span:after {background: none;}
+    .pg_snb ul li a.on span:after {background: none;}
+    
+    .pg_cont > p {font-size: 19px;}
+    .pg_cont > p b {display: block; margin: 2px 0 10px; line-height: 1; }
+    .pg_cont .my_list li {margin-bottom: 10px;}
+    .pg_cont .my_list li .txt_bx a .tit {font-size: 17px; line-height: 22px;}
+    
+    .pg_cont .my_list li .btn_wrap {right: 0;}
+    /* 스크랩 한 글 없을때 */
+    .not_cont h3 {font-size: 24px;}
+    .not_cont p {font-size: 14px;}
+    .not_cont .list_wrap {margin-top: 50px;}
+    .not_cont .list_wrap ul li {border: 0 none; width: 48.5%;}
+    .not_cont .list_wrap ul li a .txt_bx {padding: 10px 10px 15px 0; height: auto;}
+    .not_cont .list_wrap ul li a .txt_bx span {margin-top: 5px; font-size: 18px;}
+    .not_cont .list_wrap ul li a .txt_bx .cate {font-size: 13px; line-height: 25px;}
+    .not_cont .list_wrap ul li:nth-child(odd),.not_cont .list_wrap ul li.odd {margin-right: 3%;}
+    /* 개인정보수정 */
+    .privacy_edit .em_tit {width: 27%;}
+	.privacy_edit .newsletter p {width: 27%;}
+	.privacy_edit .em_tit02 {width: 27%;}
+	.privacy_edit .em_tit03 {width: 27%;}
+	.privacy_edit .em_div {width:73%}
+    .privacy_edit .edit_inpt label {width: 27%;}
+    .privacy_edit .edit_inpt input {width: 71.5%; font-size: 14px; text-indent: 15px;}
+    .privacy_edit .edit_inpt input::placeholder {font-size: 13px; }
+    .edit_sbmit {margin-top: 35px;}
+    .edit_sbmit li {width: 48%;}
+    .edit_sbmit li a {width: 100%; line-height: 45px; font-size: 15px;}
+	
+	.table_privacy th {font-size:13px;}
+	.table_privacy td {font-size:13px;}    
+	.infochk_wrap1 .ck_txt02 {width:90%;}
+}
+@media only screen and (max-width:375px){
+    /* 스크랩 한 글 있을때 */
+    /*.pg_snb ul li a {text-indent: 12px;}*/
+    /*.pg_snb ul li:first-child a {text-indent: 15px;}*/
+    .pg_cont .my_list li .txt_bx {width: 55%;}
+
+	.table_privacy td input.in_box {width:100%; margin:0 0 1% 0;}
+	.table_privacy td .btn_edit01 {width:auto;}
+}
+@media only screen and (max-width:360px){
+    /* 스크랩 한 글 있을때 */
+    /*.pg_snb ul li a {text-indent: 10px;}*/
+    .pg_snb ul li a span {font-size: 13px;}
+    /*.pg_snb ul li a span:after {top: 6px; width: 5px; height: 11px; }*/
+    
+    .pg_cont .my_list li .thumb {width: 110px;}
+    .pg_cont .my_list li .txt_bx {width: 53%;}
+    .pg_cont .my_list li .txt_bx a .tit {font-size: 15px; line-height: 20px;}
+    .pg_cont .my_list li .date {left: 112px; bottom: -3px;}
+    .pg_cont .my_list li .btn_close {background-size: 15px; /*width: 15px; height: 15px;*/}
+    /* 개인정보수정 */
+    .privacy_edit .em_tit {width: 30%; font-size: 14px;}
+	.privacy_edit .newsletter p {width: 30%; font-size: 14px;}
+	.privacy_edit .em_tit02 {width: 30%; font-size: 14px;}
+	.privacy_edit .em_tit03 {width: 30%; font-size: 14px;}
+	.privacy_edit .em_div {width:70%}
+    .privacy_edit .edit_inpt label {width: 30%; font-size: 14px;}
+    .privacy_edit .edit_inpt input {width: 68.5%; font-size: 13px; text-indent: 10px;}
+    .privacy_edit .newsletter ul li:first-child {margin-right: 20px;}
+    .privacy_edit .newsletter ul li span {font-size: 14px;}
+    .privacy_edit .newsletter ul li span:before {width: 17px; height: 17px;}
+	.infochk_wrap1 .ck_txt02 {width:85%;}
+}
+@media only screen and (max-width:320px){
+    /* 스크랩 한 글 있을때 */
+    /*.pg_snb ul li a {text-indent: 5px;}*/
+    /*.pg_snb ul li:first-child a {text-indent: 10px;}*/
+    
+    .pg_cont > p {font-size: 18px;}
+    .pg_cont .my_list li .txt_bx {width: 48%;}
+    .pg_cont .my_list li .txt_bx a .tit {font-size: 16px;}
+    /* 스크랩 한 글 없을때 */
+    .not_cont h3 {font-size: 22px;}
+    .not_cont .list_wrap ul li a .txt_bx span {font-size: 16px;}
+    /*.not_cont .list_wrap ul li a .txt_bx .cate {font-size: 13px; line-height: 18px;}*/
+}
+
+
+
+
+
+
+
+
+
+
+

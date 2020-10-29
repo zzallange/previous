@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+body,html {margin: 0; padding: 0; position: relative; width: 100%; font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,'Noto Sans','Roboto-Light','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif; }
+div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,textarea,input,legend,table,th,td,button,figure,span {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal;}
+ul,li,ol,dl,dt,dd {list-style: none;}
+address,caption,cite,code,dfn,em,th {font-style:normal; font-weight:normal;}
+
+/* 링크 스타일 */
+a {display:inline-block; text-decoration: none; color: #111;-webkit-tap-highlight-color: rgba(0,0,0,0); }
+a::after, a::before {-webkit-tap-highlight-color: rgba(0,0,0,0);} 
+a:link,a:visited,a:active {text-decoration:none;}
+button {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+button::-moz-focus-inner{border:0;padding:0;}
+input:checked[type=checkbox]{-webkit-appearance:checkbox;}
+input[type=button],input[type=email],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=url],textarea,select{appearance:none; -webkit-appearance:none; -moz-appearance:none; border-radius:0; border:0 none;}
+input:focus,textarea:focus{outline:none;}
+
+fieldset, img, abbr, acronym,button {border:0 none;}
+button{border:0 none;background-color:transparent;cursor:pointer;outline:none;}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+table {border:0 none; border-collapse:collapse; border-spacing:0; vertical-align:top;}
+legend,.ir {width: 0; height: 0; text-indent: -999px; font-size: 0; line-height: 0; color: transparent;}
+.skip_navi {width: 0; height: 0; text-indent: -999px; font-size: 0; line-height: 0; color: transparent;}
+
+.dk_wrap {width: 100%; overflow: hidden; background: #fff;}
+.header {height: 80px; border-bottom: 1px solid #efefef;  box-sizing: border-box;}
+.header h1 {text-align: center;}
+.header h1 a {margin-top: 24px; display: inline-block; width: 110px; height: 24px;}
+.header h1 a img {width: 100%;}
+#container {width: 100%; height: auto;}
+.content {margin: 60px auto 150px; width: 400px;}
+.footer {padding-bottom: 20px; border-top: 1px solid #e1e1e1; box-sizing: border-box;}
+.footer .copyright {margin-top: 20px; text-align: center; font-size: 13px; font-family: 'notokrR'; color: #595959;}
+
+/* 로그인 페이지 */
+[class*="_pg"] {width: 100%; box-sizing: border-box; text-align: center;}
+[class*="_pg"] form {padding: 50px 0 100px; box-sizing: border-box;}
+[class*="_pg"] > h2 a {display: inline-block; position: relative; font-size: 50px; font-family:'notokrR'; letter-spacing: -3px; color: #FF695C;}
+[class*="_pg"] > h2 a:before {content:''; position: absolute; top: -47px; left: 54%; transform: translateX(-50%);width: 102px; height: 46px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/dk_join01.png) no-repeat; background-size: contain;}
+[class*="_pg"] b {margin-top: 20px; display: block; font-weight: normal; letter-spacing: -1px; line-height: 20px; font-family: 'notokrR'; font-size: 14px; color: #111;}
+
+.login_pg h2 {margin:100px 0 15px; line-height: 1;}
+
+/* 로그인 폼 */
+.login_box ,.input_box {width: 100%;}
+.login_box .txtinput,.input_box .txtinput{margin-bottom: 10px;}
+.login_box .txtinput label,.input_box .txtinput label {position: absolute; width: 0; height: 0; font-size: 0; line-height: 0; color: transparent; text-indent: -9999px;}
+.login_box input,.input_box input {text-indent: 20px; width: 100%; height: 50px;border: 1px solid #eee;  box-sizing: border-box; font-size: 15px; letter-spacing: -1px;}
+
+/* 따로 placeholder를 사용해야 버그 가능성이 적음 */
+.login_box input::-webkit-input-placeholder {font-size: 1.2rem; letter-spacing: 1px;}
+.login_box input::-moz-input-placeholder {font-size: 1.2rem; letter-spacing: 1px;}
+.login_box input::-ms-input-placeholder {font-size: 1.2rem; letter-spacing: 1px;}
+
+.input_box input::-webkit-input-placeholder {font-size: 1.2rem; letter-spacing: 1px;}
+.input_box input::-moz-input-placeholder {font-size: 1.2rem; letter-spacing: 1px;}
+.input_box input::-ms-input-placeholder {font-size: 1.2rem; letter-spacing: 1px;}
+
+.login_box input::placeholder,.input_box input::placeholder {font-size: 15px; letter-spacing: -1px; color: #999;} 
+/*.login_box input[type="password"],.input_box input[type="password"] {font-size: 1.2rem; letter-spacing: 1px;}*/
+
+
+
+
+/* 잘못 입력했을때 */
+.input_box .wrong input {border: 1px solid #D02727;}
+.input_box .wrong .wrong_txt {margin-top: 5px; text-align: left; display: block; color:#D02727; font-family: 'notokrR'; letter-spacing: -1px; font-size: 13px; }
+.input_box .right input {border: 1px solid #2db469;}
+.input_box .right .right_txt {margin-top: 5px; text-align: left; display: block; color:#2db469; font-family: 'notokrR'; letter-spacing: -1px; font-size: 13px; }
+/* //잘못 입력했을때 */
+
+.login_pg .submit_box {margin-bottom: 20px;}
+.login_pg .submit_box .login_btn {width: 100%; line-height: 50px; background: #000; color: #fff; font-family: 'notokrR'; font-size: 17px; letter-spacing: -1px;}
+
+/* //로그인 폼 */
+
+.join_help {clear: both;}
+.join_help li {display: inline-block;}
+.join_help li:first-child {position: relative; padding-right:20px; box-sizing: border-box;}
+.join_help li:first-child:after {content:'';position: absolute; top: 6px; right: 5px; width: 1px; height: 11px; background: #ddd;}
+.join_help li a {font-family:'notokrR'; font-size: 14px; line-height: 1; color: #595959; letter-spacing: -1px;}
+
+/* 소셜 로그인 */
+.sns_login {border-bottom: 1px solid #ddd; padding-bottom:50px; box-sizing: border-box;}
+.tit_link {margin:0 0 25px; font-size: 25px; letter-spacing: -1px; line-height: 1;}
+.sns_login .link {width: 100%;}
+.sns_login .link:after {content:''; display: block;clear: both;}
+.sns_login .link li {float: left; width: 49%;}
+.sns_login .link li span {display: inline-block; vertical-align: middle;}
+.sns_login .link li .txt {margin-left: 8px;}
+.sns_login .link .login_facebk {margin-right: 2%; background: #42659d;}
+.sns_login .link .login_naver {background:#2db400; margin-bottom: 2%;}
+.sns_login .link .login_google {margin-right: 2%; background: #F33A2C;}
+.sns_login .link .login_kakao {background: #ffcf00;}
+.sns_login .link .login_kakao .txt {color: #3E2723;}
+.sns_login .link li a { width: 100%; color: #fff; line-height: 45px; font-size: 14px; font-family: 'notokrR'; letter-spacing: -1px; text-align: left; text-indent: 25px;}
+.sns_login .link li .txt {display: inline; vertical-align: middle;}
+.sns_login .link .ico_facebk {width: 24px; height: 20px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/ico_fb.png) no-repeat; background-size: contain; background-position: 4px 1px;} 
+.sns_login .link .ico_naver {width: 24px; height: 20px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/ico_naver.png) no-repeat; background-size: 19px 17px; background-position: 0 1px} 
+.sns_login .link .ico_google {width: 24px; height: 20px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/ico_gg.png) no-repeat; background-size: contain;} 
+.sns_login .link .ico_kakao {width: 24px; height: 22px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/ico_kakao.png) no-repeat; background-size: contain;} 
+/* //소셜 로그인 */
+
+.login_pg .txt_join {margin: 10px 0 40px; font-size: 15px; letter-spacing: -1.5px; line-height: 1; font-family: 'notokrR'}
+.login_pg .txt_join a {margin-left: 7px; text-decoration: underline; color: #f25749;}
+
+/*소셜 회원가입 확인*/
+/*SNS회원가입 확인*/
+.join_pg>.ico_dk {display: inline-block; width: 134px; height: 76px; }
+.join_pg>.ico_info {background: url(https://cwstatic.asiae.co.kr/drinkeat/join/acct_info.png) no-repeat; background-size: contain;}
+
+/* join.html 회원가입페이지 */
+.join_pg > h2 {margin:100px 0 15px; line-height: 1;}
+.join_pg .login_back {margin: 10px 0 40px; font-size: 15px; letter-spacing: -1px; font-family:'notokrR';}
+.join_pg .login_back a {margin-left: 10px; text-decoration: underline; color:#f25749; }
+
+/* 2020.05.12 전체동의 추가 */
+.join_pg .all_agree {text-align: left;}
+.join_pg .all_agree input {opacity: 0; width: 0; height: 0; text-indent: -9999px; position: absolute;}
+.join_pg .all_agree .text {position: relative; padding-left: 30px; display: inline-block; font-size: 15px; color:#333; line-height: 25px; cursor: default;}
+.join_pg .all_agree .text:before {content:'';position: absolute; top: 5px; left: 0px; width: 18px; height: 18px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk.png) no-repeat; background-size: contain;} 
+.join_pg .all_agree .chk_all:before {background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk_on.png) no-repeat; background-size: contain;}
+
+.join_pg .all_agree input[type="checkbox"]:checked + .terms_box li .chk_on:before {background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk_on.png) no-repeat; background-size: contain;}
+
+.join_pg .terms_box {padding-left: 25px; text-align: left; box-sizing: border-box;}
+.join_pg .terms_box input {opacity: 0; width: 0; height: 0; text-indent: -9999px; position: absolute;}
+.join_pg .terms_box li {padding-bottom: 10px;}
+.join_pg .terms_box li:after {content:'';display: block;clear: both;}
+.join_pg .terms_box li:first-child {margin-top: 15px;}
+
+
+/* 2020.05.12 */
+.join_pg .terms_box li .text {position: relative; padding-left: 30px; display: inline-block; font-size: 13px; color:#999; line-height: 25px; cursor: default;}
+.join_pg .terms_box li .text:before {content:'';position: absolute; top: 5px; left: 0px; width: 18px; height: 18px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk.png) no-repeat; background-size: contain;}
+.join_pg .terms_box li .text strong {margin-right: 5px; font-size: 15px; letter-spacing: -1px; /*color:#FF695C;*/ color: #333;}
+.join_pg .terms_box li .btn_view {float: right; position: relative; margin-top: 3px; padding-right: 6px; font-size: 12px;color: #999; text-decoration: underline; box-sizing: border-box;}
+.join_pg .terms_box li .btn_view:after {content:'';position: absolute; right: 0; top: 4px; width: 4px; height: 9px; background: url(https://cwstatic.asiae.co.kr/drinkeat/article_arrR01.png) no-repeat; background-size: contain; }
+.join_pg .terms_box li .mail_agree {display: block; margin-left: 30px; font-size: 12px; letter-spacing: -1px; color: #999;}
+.join_pg .terms_box li .chk_on:before {background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk_on.png) no-repeat; background-size: contain;}
+/* //2020.05.12 */
+
+
+.join_pg .submit_join {margin-top: 25px;}
+.join_pg .submit_join .join_btn { width: 100%; line-height: 45px; background: #000; color: #fff; font-family: 'notokrR'; font-size: 17px; letter-spacing: -1.5px; cursor: pointer;}
+
+/* //join.html 회원가입페이지 */
+
+@media only screen and (max-width:768px){
+    [class*="_pg"] form {padding-bottom: 70px;}
+}
+
+@media only screen and (max-width:425px){
+    .header {height: 60px;}
+    .header h1 a {margin-top: 18px; width: 100px; height: 22px;}
+    .content {margin: 60px auto 90px; padding: 0 20px; width: 100%; box-sizing: border-box;}
+    [class*="_pg"] > h2 a {font-size: 40px;}
+    [class*="_pg"] > h2 a:before {width: 95px; height: 43px;}
+    [class*="_pg"] form {padding-bottom: 50px;}
+    .sns_login .tit_link {font-size: 23px;}
+    .sns_login .link li a {text-indent: 12%;}
+    .sns_login .link li .txt {margin-left: 2%;}
+    
+    .login_box input::placeholder,.input_box input::placeholder {font-size: 14px; text-indent: 15px;} 
+    /* 2020.05.12 전체동의 */
+    .join_pg .terms_box {margin-top: -5px;}
+    .join_pg .terms_box li .text {display: inline-block;}
+    
+}
+@media only screen and (max-width:375px){
+    .join_pg .terms_box li a {font-size: 14px;}
+    .join_pg .terms_box li a strong {font-size: 14px;}
+    
+    .tit_link {margin-bottom: 20px; font-size: 23px;}
+    .sns_login .link li a {text-indent: 10%; font-size: 13px;}
+    .sns_login .link li .txt {margin-left: 4%;}
+    .sns_login .link .ico_facebk { width: 9px; height: 18px; background-position: 0;}
+    .sns_login .link .ico_google {width: 18px; height: 18px;}
+    .sns_login .link .ico_naver {width: 18px; height: 18px; background-size: contain; background-position: 0;}
+    .sns_login .link .ico_kakao {width: 19px; height: 18px;}
+    /* 2020.05.12 전체동의 */
+    .join_pg .all_agree .text {padding-left: 25px; font-size: 14px;}
+    .join_pg .all_agree .text:before {width: 16px; height: 16px;}
+    .join_pg .terms_box {margin-top: -6px;}
+    .join_pg .terms_box li {padding-bottom: 6px;}
+    .join_pg .terms_box li .text {padding-left: 25px;}
+    .join_pg .terms_box li .text strong {font-size: 14px;}
+    .join_pg .terms_box li .text:before {width: 16px;height: 16px;}
+    .join_pg .terms_box li .mail_agree {margin-left: 25px;}
+}
+@media only screen and (max-width:320px){
+    .content {margin: 60px auto;}
+    .join_pg .terms_box {padding-left: 20px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

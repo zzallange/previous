@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+.container {position: relative; width: 100%; margin-top: 60px;}
+/*.content .drk_inner {margin: 0 auto; width: 730px;}*/
+.drk_footer .drk_fttop {display: none;}
+.drk_footer .drk_fttop .notice {display: none;}
+.drk_footer .drk_fttop .event {display: none;} 
+
+/* policyTerms */
+.policy_cont {position: relative; margin: 0 auto;width: 700px;}
+
+/* tab_list */
+.tab_terms {overflow:hidden;}
+.tab_terms:after {content:''; display: block; clear: both;}
+.tab_terms + .txt_article {padding-top:40px}
+.tab_terms li {position:relative;display:table;float:left;width:22.5%;height:48px;margin-right:-1px;border:1px solid #d4d4d4;text-align:center;line-height:48px; box-sizing: border-box;}
+.tab_terms li.on {border:0 none;}
+.tab_terms .lst {width:230px}
+.tab_terms .link_policy {display:table-cell;color:#595959;font-size:14px;line-height:20px;vertical-align:middle}
+.tab_terms .link_policy:hover {color:#1e1e1e;font-weight:bold;text-decoration:underline}
+.tab_terms .on .link_policy {position:relative;color:#fff;font-weight:bold;background-color:#ff695c;z-index:99}
+/* //tab_list */
+
+/* 회원약관 */
+.terms_index {position:relative; display:block;width: 100%;font-size:14px; line-height:1; margin:50px 0;}
+.terms_index:after {content:'';display: block;clear: both;} 
+.terms_index p {margin-bottom: 30px;/*padding-left:2%;*/font-size:13px;/*font-weight:bold;*/line-height: 1; color:#333;}
+.terms_index ul {float:left;}
+/*.terms_index .ul_left {padding-left: 2%;}*/
+.terms_index .ul_left, .terms_index .ul_right {width: 48%;}
+.terms_index .ul_right {padding-left: 4%;}
+.terms_index ul li {line-height: 25px; padding-bottom:  5px; font-size: 13px; letter-spacing: -1px; color: #595959;}
+.terms_index ul li a {display: inline; color:#000; padding-left:10px; font-weight:normal;}
+
+.privacy_index .ul_left{width: 44%;}
+.privacy_index .ul_right{width: 52%;}
+/* //회원약관 */
+
+/* 약관내용 */
+.wrap_policy {position:relative; display:block; width: 100%; padding-top: 50px;border-top: 2px solid #4d4d4d;}
+.wrap_policy p {margin-bottom:25px; line-height:21px;font-size:14px;font-weight:normal; color:#595959;}
+.wrap_policy p strong {display:block;}
+.wrap_policy strong {display: block; font-size: 16px;color: #111;}
+.wrap_policy em {display: block; padding-bottom: 7px;font-size: 14px;color: #111;font-weight:bold;}
+.wrap_policy .line {display: block; padding-top: 50px;font-size: 16px;color: #111;border-top: 1px solid #e8e8e8;}
+.wrap_policy a {color: #09b8a9;}
+
+table, th, td {border: 1px solid #ddd;}
+table {width: 100%; margin-bottom: 10px;}
+table.privacy_table .th01{width: 20%}
+table.privacy_table .th02{width: 30%}
+table.privacy_table .th03{width: 50%}
+th {text-align: center; color: #333; background-color: #fcf3f2;}
+th, td {padding: 12px; font-size: 14px;}
+td {position: relative; padding: 10px;line-height: 1.6; color: #595959;}
+td.center {padding: 0; text-align: center;}
+a.btn_pre {font-size: 13px; text-decoration: underline; }
+td .indent {position: relative; padding-left: 10px;}
+td .indent:before {content: '-'; display: block; position: absolute; top: 0; left: 0; font-size: 14px; }
+
+.indent {position: relative; padding-left: 25px;}
+.indent:before {content: '-'; display: block; position: absolute; top: 0; left: 15px; font-size: 14px; }
+
+.bottom_margin {margin-bottom: 50px !important;}
+/* //약관내용 */
+
+/* brand story */
+.brand_story .brand_br02 {display:block;}
+.brand_story .brand_br03 {display:block;}
+.brand_story {width:100%;overflow:hidden;}
+.brand_story .brand_visual {width:100%;height:840px;text-align:center;position:relative;background:url('https://cwstatic.asiae.co.kr/drinkeat/brand/img_brand_visual_bg_20191226.jpg') no-repeat center top;background-size:cover;}
+.brand_story .brand_visual .tit {width:100%;font-size:68px;line-height:68px;font-weight:700;letter-spacing:-1px;color:#fff;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%, -50%);}
+.brand_story .brand_visual .tit .txt {display: block;margin:40px auto 0;width: 460px;font-size:34px;font-weight:300;letter-spacing:-1px;color:#dfdfdf;background:url('https://cwstatic.asiae.co.kr/drinkeat/brand/ico_brand_underline.png') no-repeat 0 26px;}
+.brand_story .brand_visual .tit .txt span {font-weight:700;color:#fff;}
+.brand_story .brand_visual .brand_scroll {position:absolute;bottom:60px;left:50%;transform: translate(0,-50%);-webkit-transform: translate(0, -50%);width:30px;height:84px;background:url('https://cwstatic.asiae.co.kr/drinkeat/brand/ico_brand_mouse.png') no-repeat 0 0;font-size:0;line-height:0;animation:bounce-arrowY 0.8s alternate infinite ease-in-out;-webkit-animation:bounce-arrowY 0.8s alternate infinite ease-in-out;-moz-animation:bounce-arrowY 0.8s alternate infinite ease-in-out;-ms-animation:bounce-arrowY 0.8s alternate infinite ease-in-out;}
+.brand_story .brand_con01 {padding:120px 0;text-align:center;}
+.brand_story .brand_con01 .tit {font-size:40px;font-weight:300;line-height:40px;letter-spacing:-1px;margin-bottom:40px;}
+.brand_story .brand_con01 .tit span {font-weight:700;}
+.brand_story .brand_con01 .txt {display:block;font-size:20px;font-weight:300;letter-spacing:-1px;line-height:28px;margin-bottom:80px;}
+.brand_story .brand_con01 .brand_ui {width:1000px;margin:0 auto;}
+.brand_story .brand_con01 .brand_ui:after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.brand_story .brand_con01 .brand_ui li {float:left;width:33.33%;text-align:center;}
+.brand_story .brand_con01 .brand_ui li p {font-size:24px;font-weight:600;}
+.brand_story .brand_con01 .brand_ui li span {font-size:16px;font-weight:300;margin-top:20px;color:#747478;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_01 .thumb {text-align:center;margin-bottom:40px;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_01 .thumb img {width:auto;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_01 .thumb .move01 {display:block;margin-top:0;animation:bounce-arrowY02 0.8s alternate infinite ease-in-out;-webkit-animation:bounce-arrowY02 0.8s alternate infinite ease-in-out;-moz-animation:bounce-arrowY02 0.8s alternate infinite ease-in-out;-ms-animation:bounce-arrowY02 0.8s alternate infinite ease-in-out;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_02 {position:relative;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_02 .thumb {text-align:center;margin-bottom:40px;height:120px;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_02 .thumb img {width:auto;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_02 .thumb .move01 {display:block;margin:0 auto;width:116px;height:116px;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_02 .thumb .move02 {display:block;margin-top:0;position:absolute;top:0;right:60px;animation: fadeIn 1s infinite alternate;-moz-animation: fadeIn 1s infinite alternate;animation: fadeIn 1s infinite alternate;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_03 {position:relative;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_03 .thumb {text-align:center;margin-bottom:40px;height:120px;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_03 .thumb img {width:auto;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_03 .thumb .move01 {display:block;margin:0 auto;width:116px;height:116px;position:relative;-webkit-animation:spin 4s linear infinite;-moz-animation:spin 4s linear infinite;animation:spin 4s linear infinite;z-index:2;}
+.brand_story .brand_con01 .brand_ui li.brand_ui_03 .thumb .move02 {display:block;margin-top:0;position:absolute;bottom:130px;left:50%;transform: translate(-50%,0);-webkit-transform: translate(-50%, 0);z-index:1;}
+.brand_story .brand_con02 {padding:120px 0;text-align:center;background:url('https://cwstatic.asiae.co.kr/drinkeat/brand/img_brand_con02_bg_20191226.jpg') no-repeat center 50%;}
+.brand_story .brand_con02 .tit {font-size:48px;font-weight:300;line-height:48px;letter-spacing:-1px;color:#fff;margin-bottom:40px;font-family: 'Nanum Myeongjo','Noto Serif KR',serif;}
+.brand_story .brand_con02 .tit span {font-weight:700;}
+.brand_story .brand_con02 .txt {display:block;font-size:20px;font-weight:300;letter-spacing:-1px;line-height:28px;color:#fff;margin-bottom:80px;}
+.brand_story .brand_con02 .brand_share_btn {display:inline-block;margin:0 auto;font-size:16px;width:256px;height:60px;color:#fff;line-height:60px;border-radius:2px;border:1px solid #fff;box-sizing:border-box;}
+.brand_story .brand_con02 .brand_share_btn .btn_arrow {display:inline-block;width:16px;height:11px;background:url('https://cwstatic.asiae.co.kr/drinkeat/brand/ico_brand_share_arrow01.png') no-repeat 0 0;background-size:100%;vertical-align:middle;margin-top:-4px;animation:bounce-arrow 0.8s alternate infinite ease-in-out;-webkit-animation:bounce-arrow 0.8s alternate infinite ease-in-out;-moz-animation:bounce-arrow 0.8s alternate infinite ease-in-out;-ms-animation:bounce-arrow 0.8s alternate infinite ease-in-out;}
+.brand_story .brand_con02 .brand_share_btn:hover {text-decoration:underline;}
+.brand_story .drk_sns {padding:120px 0;}
+.brand_story .drk_sns .tit {font-size:40px;font-weight:300;letter-spacing:-1px;line-height:40px;margin-bottom:40px;}
+.brand_story .drk_sns .tit span {font-weight:700;}
+.brand_story .drk_sns .txt {display:block;font-size:20px;font-weight:300;letter-spacing:-1px;line-height:28px;margin-bottom:80px;}
+
+@keyframes bounce-arrow {
+0% {transform:translateX(0px); 
+-webkit-transform:translateX(0px); 
+-moz-transform:translateX(0px); 
+-ms-transform:translateX(0px);} 
+100%{transform:translateX(10px); 
+-webkit-transform:translateX(10px); 
+-moz-transform:translateX(10px); 
+-ms-transform:translateX(10px);}
+}
+@-webkit-keyframes bounce-arrow {
+0% { -webkit-transform:translateX(0px);} 
+100%{-webkit-transform:translateX(10px);}
+}
+
+@keyframes bounce-arrowY {
+0% {transform:translateY(0px); 
+-webkit-transform:translateY(0px); 
+-moz-transform:translateY(0px); 
+-ms-transform:translateY(0px);} 
+100%{transform:translateY(20px); 
+-webkit-transform:translateY(20px); 
+-moz-transform:translateY(20px); 
+-ms-transform:translateY(20px);}
+}
+@-webkit-keyframes bounce-arrowY {
+0% { -webkit-transform:translateY(0px);} 
+100%{-webkit-transform:translateY(20px);}
+}
+
+@keyframes bounce-arrowY02 {
+0% {transform:translateY(0px); 
+-webkit-transform:translateY(0px); 
+-moz-transform:translateY(0px); 
+-ms-transform:translateY(0px);} 
+100%{transform:translateY(-10px); 
+-webkit-transform:translateY(-10px); 
+-moz-transform:translateY(-10px); 
+-ms-transform:translateY(-10px);}
+}
+@-webkit-keyframes bounce-arrowY02 {
+0% { -webkit-transform:translateY(0px);} 
+100%{-webkit-transform:translateY(-10px);}
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes fadeIn { 
+from { opacity: 0; } }
+/* brand story */
+
+@media only screen and (max-width:1040px){
+	.brand_story .brand_con01 .brand_ui {width:100%;}
+}
+
+@media only screen and (max-width:812px){
+	.brand_story .brand_visual .tit {font-size:58px;line-height:62px;}
+	.brand_story .brand_visual .tit .txt {font-size:28px;margin-top:20px;width:380px;}
+	.brand_story .brand_con01 .brand_ui li {width:100%;margin:40px 0;}
+	.brand_story .brand_con01 .brand_ui li.brand_ui_02 .thumb .move02 {right:30%;transform: translateX(-30%); -webkit-transform: translateX(-30%);}
+}
+
+@media only screen and (max-width:768px){
+    .policy_cont {width: 100%;box-sizing: border-box;}
+    .terms_index {width: 100%;}
+    .terms_index:after {content:'';display: block;clear: both;}
+    .tab_terms li,.tab_terms .lst {width: 50%;}
+    .tab_terms li:first-child + li + li,.tab_terms li:first-child + li + li + li {margin-top: -1px;}
+    .terms_index ul li {font-size: 14px; padding-bottom: 23px;}
+    .terms_index ul li a {padding-left: 10px;}
+}
+@media only screen and (max-width:550px){
+    .tab_terms .link_policy {font-size: 13px;letter-spacing: -1px;}
+    .terms_index {margin: 40px 0;}
+    .terms_index p {padding: 0;line-height: 20px;}
+    .terms_index .ul_left, .terms_index .ul_right {display: none;}
+    .policy_index .ul_left, .policy_index .ul_right {display: none;}
+}
+@media only screen and (max-width:425px){
+    .wrap_policy p {margin-bottom: 20px;}
+    .wrap_policy .line {padding-top: 35px;}
+    
+    th, td {padding: 10px 5px; font-size: 12px;}
+    td {padding: 10px 5px;}
+    .policy_table02 .th01{width: 25%;}
+    .policy_table02 .th02{width: 40%;}
+    .policy_table02 .th03{width: 35%;}
+    .bottom_margin {margin-bottom: 25px !important;}
+	
+	.brand_story .brand_visual {height: 650px;}
+	.brand_story .brand_visual .tit {font-size:48px;line-height:52px;}
+	.brand_story .brand_visual .tit .txt {font-size:20px;margin-top:20px;width:280px;}
+	.brand_story .brand_visual .brand_scroll {display:none;}
+	.brand_story .brand_con01 {padding:60px 0;}
+	.brand_story .brand_con01 .tit {width:90%;margin:0 auto 20px;font-size:28px;line-height:28px;}
+	.brand_story .brand_con01 .txt {width:90%;margin:0 auto 20px;font-size:16px;line-height:24px;}
+	.brand_story .brand_con01 .brand_ui li span {margin-top:10px;}
+	.brand_story .brand_con01 .brand_ui li.brand_ui_01 .thumb {margin-bottom:20px;}
+	.brand_story .brand_con01 .brand_ui li.brand_ui_02 .thumb {margin-bottom:20px;}
+	.brand_story .brand_con01 .brand_ui li.brand_ui_02 .thumb .move02 {right:40px;}
+	.brand_story .brand_con01 .brand_ui li.brand_ui_03 .thumb {margin-bottom:20px;}
+	.brand_story .brand_con01 .brand_ui li.brand_ui_03 .thumb .move02 {bottom:100px;}
+	.brand_story .brand_con02 {padding:60px 0;}
+	.brand_story .brand_con02 .tit {font-size:27px;line-height:28px;width:90%;margin:0 auto 20px;}
+	.brand_story .brand_con02 .txt {font-size:16px;line-height:24px;width:90%;margin:0 auto 40px;}
+	.brand_story .brand_con02 .txt .brand_br01 {display:block;}
+	.brand_story .drk_sns {padding:60px 0;}
+	.brand_story .drk_sns .tit {font-size:28px;line-height:28px;margin-bottom:20px;}
+	.brand_story .drk_sns .txt {font-size:16px;line-height:24px;margin-bottom:40px;}
+	.brand_story .brand_br03 {display:inline;}
+}
+@media only screen and (max-width:375px){
+	.brand_story .brand_visual {height: 500px;}
+}
+@media only screen and (max-width:320px){
+    .tab_terms .link_policy {font-size: 12px;}
+	.brand_story .brand_visual {height: 450px;}
+	.brand_story .brand_visual .tit {font-size:42px;line-height:48px;}
+}
+/* //policyTerms */
+
+/* policyPrivacy */
+.terms_index .str_txt {margin-bottom:40px;font-size:13px;/*padding:0 15px 0 15px;*/font-weight:normal;color:#595959;line-height:21px;}
+@media only screen and (max-width:550px) {
+    .terms_index .str_txt {padding-left: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+

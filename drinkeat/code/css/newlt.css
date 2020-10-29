@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+.content {margin-top: 60px;}
+/* 드링킷 뉴스레터 */
+.newslt {padding-top: 60px; width: 100%; box-sizing: border-box;}
+.newslt .banr_area {margin-bottom: 6%; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/banr_bg.png) no-repeat; background-size: 1000px 250px; width: 100%; max-height: 250px;}
+.newslt .banr_tit {margin:0 auto; padding: 50px 0; max-width: 320px; width: 80%; max-height: 141px;}
+
+.newslt .cont_box {position: relative; width: 100%;}
+.newslt .cont_box:after {content:'';display: block;clear: both;}
+
+/* 구독하기 */
+.newslt #stb_subscribe {float: right; position: relative; right: 0; padding: 40px; width:  350px; border: 1px solid #ddd; box-sizing: border-box;}
+.newslt #stb_subscribe h2 {padding-bottom: 10px; font-size: 28px; font-family: 'notokrM'; letter-spacing: -1px;  text-align: center;}
+.newslt #stb_subscribe p {margin-bottom: 25px; padding-bottom: 25px; font-size: 17px; letter-spacing: -1px; font-family:'notokrDem'; line-height: 23px; text-align: center; border-bottom: 1px solid #ddd; box-sizing: border-box;}
+.newslt #stb_subscribe b {display: block; padding-top: 3px; color:#018C81; font-size: 14px; font-weight: 500; letter-spacing: -1px; }
+
+.newslt #stb_subscribe .stb_form_set {padding-bottom: 15px;}
+.newslt #stb_subscribe label {font-family:'notokrR'; letter-spacing: -1px;}
+.newslt #stb_subscribe .stb_form_set_input {border: 1px solid #ddd;}
+
+.newslt #stb_subscribe .stb_form_policy label {position: relative; padding-left: 30px;} 
+.newslt #stb_subscribe .stb_form_policy label:before {content:''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk.png) no-repeat; background-size: contain;}
+.newslt #stb_subscribe .stb_form_policy label.chk_on:before {background: url(https://cwstatic.asiae.co.kr/drinkeat/join/chk_on.png) no-repeat; background-size: contain;}
+.newslt #stb_subscribe .stb_form_policy label input[type="checkbox"] {display: none;}
+.newslt #stb_subscribe .stb_form_policy label button {color: #ff695c; text-decoration: none; letter-spacing: -1px;}
+
+.newslt #stb_subscribe .stb_form_set_submit {padding-top: 0;}
+.newslt #stb_subscribe .stb_form_submit_button {width: 100%; height: 50px; font-size: 17px; font-family: 'notokrR'; cursor: pointer;}
+
+#stb_subscribe .stb_form_msg_error {color:#ff695c; }
+
+input::placeholder {opacity: 0;}
+
+/* 지난 이야기 */
+.newslt .dk_story {float: left; width: 580px;}
+.newslt .dk_story > p {font-size: 21px; letter-spacing: -1px; font-family:'notokrM'; margin-bottom: 10px;}
+.newslt .dk_story ul {}
+.newslt .dk_story ul li {position: relative; margin-bottom: 30px;}
+.newslt .dk_story ul li .num {position: absolute; left: 1px; top: 1px; z-index: 1; padding: 3px 6px; background:#ff695c; color: #fff; font-family: 'notokrR'; font-size: 14px; box-sizing: border-box;}
+.newslt .dk_story ul li .thumb {position: relative; width: 100%;  cursor: pointer; overflow: hidden; font-size: 0; border: 1px solid rgba(0,0,0,.05); box-sizing: border-box;}
+/*.newslt .dk_story ul li .thumb a{border: 1px solid rgba(0,0,0,.05); box-sizing: border-box;}*/
+/*.newslt .dk_story ul li .thumb:after {content:'';position: absolute; left: 0; top: 0; bottom: 0; right: 0; border: 1px solid rgba(0,0,0,.05); box-sizing: border-box;}*/
+.newslt .dk_story ul li .thumb > img {width: 100%;}
+.newslt .dk_story ul li .text {width: 100%; overflow: hidden;}
+.newslt .dk_story ul li .text:after {content: '';display: block;clear: both;}
+.newslt .dk_story ul li .text .txt_bx {margin-top: 13px; float: left; width: 80%;}
+.newslt .dk_story ul li .text .txt_bx a {width: 100%;}
+.newslt .dk_story ul li .text .txt_bx p {width: 100%; font-size: 21px;font-family:'notokrM'; letter-spacing: -1px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.newslt .dk_story ul li:hover .text .txt_bx p {text-decoration: underline;}
+.newslt .dk_story ul li .text .txt_bx span {margin-top: 3px; width: 100%; font-size: 17px; color: #595959; letter-spacing: -1px; font-family:'notokrR'; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.newslt .dk_story ul li .text .date {margin-top: 15px; color: #595959; float: right; font-size: 15px; font-family: 'notokrR';}
+
+@media only screen and (max-width:1024px){
+    .newslt #stb_subscribe {width: 35%; padding: 40px 35px;}
+    .newslt #stb_subscribe h2 {font-size: 27px;}
+    .newslt .dk_story {width: 60%;}
+}
+@media only screen and (max-width:999px){
+    .newslt .dk_story {width: 58%;}
+    .newslt #stb_subscribe {width: 37%; padding: 40px 25px;}
+}
+@media only screen and (max-width:890px){
+    .newslt #stb_subscribe h2 {padding-bottom: 20px; font-size: 26px;}
+    .newslt #stb_subscribe p {margin-bottom: 22px; font-size: 16px; line-height: 22px;}
+    .newslt #stb_subscribe b {font-size: 13.5px;}
+    .newslt #stb_subscribe .stb_form_set {padding-bottom: 20px;}
+    #stb_subscribe .stb_form_msg_error {bottom: -4px;}
+}
+@media only screen and (max-width:860px){
+    .newslt .dk_story {width: 54%;}
+    .newslt #stb_subscribe {width: 40%; padding: 40px 20px;}
+}
+
+@media only screen and (max-width:767px){
+    .newslt .banr_tit {padding: 30px 0; max-width: 300px}
+    .newslt #stb_subscribe,.newslt .dk_story {float: none; width: 100%;}
+    .newslt #stb_subscribe .stb_form_policy label {font-size: 14px; color: #333;}
+    .newslt #stb_subscribe {padding: 30px;}
+    .newslt #stb_subscribe h2 {padding-bottom: 10px;font-size: 24px;}
+    .newslt #stb_subscribe p {display: none;}
+    .newslt #stb_subscribe label {font-size: 0; color: transparent;}
+    .newslt #stb_subscribe .stb_form_submit_button {font-size: 15px;}
+    .newslt #stb_subscribe .stb_form_set {padding-bottom: 5px;}
+    #stb_subscribe .stb_form_policy {padding: 10px 0 25px;}
+    #stb_subscribe .stb_form_set .stb_form_set_input {padding: 15px 10px;}
+    
+    .newslt .dk_story {margin-top: 40px;}
+    .newslt .dk_story ul li .text .txt_bx {width: 100%;}
+    .newslt .dk_story ul li .text .txt_bx span {display: block;}
+    .newslt .dk_story ul li .text .date {display: block;float: left; margin-top: 3px; font-size: 12px;}
+    
+    input::placeholder {opacity: 1;}
+}
+@media only screen and (max-width:639px){
+    .newslt {padding-top: 30px;}
+}
+
+@media only screen and (max-width:375px){
+    .newslt {padding-top: 20px;}
+    .newslt .banr_area {margin-bottom: 5%; }
+    .newslt #stb_subscribe {padding: 30px 20px;}
+    .newslt #stb_subscribe h2 {font-size: 23px;}
+    #stb_subscribe .stb_form_policy {padding-bottom: 20px;}
+    
+    
+    .newslt .dk_story > p {font-size: 19px;}
+    .newslt .dk_story ul li .text .txt_bx p {font-size: 20px;}
+    .newslt .dk_story ul li .text .txt_bx span {font-size: 15px;}
+}
+@media only screen and (max-width:320px){
+    .newslt .banr_tit {padding: 20px 0;}
+    .newslt #stb_subscribe h2 {font-size: 21px;}
+    .newslt #stb_subscribe {padding: 40px 20px;}
+    .newslt #stb_subscribe p {font-size: 15px; line-height: 21px;}
+    
+    .newslt #stb_subscribe .stb_form_policy label {padding-left: 25px;}
+}
+
+
+
+
+
+
+
+
+
