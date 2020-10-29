@@ -1,0 +1,438 @@
+@charset "utf-8";
+
+::selection {background-color: #ffddd9;}
+::-moz-selection {background-color: #ffddd9;}
+.container {padding-top: 90px;}
+
+.drk_sns {border-top: 1px solid #efefef;}
+.drk_article .at_head .at_title h2, .at_cont .qeout_box p, .at_cont .qeout_sub h3,.more_aticle .at_inmore .preview p,.more_aticle .at_inmore .next p {}
+.drk_article .at_head .at_title .sub_txt, .at_cont p, .at_cont .sub_tit h4,.more_aticle .at_intit .naming p {font-family:"notokrDem"}
+.at_cont .qeout_box p, .at_cont .qeout_sub h3, .at_cont .sub_tit {font-size: 23px;line-height: 1.4; letter-spacing: -1px;}
+.at_cont p, .at_cont .more_aticle .at_intit .naming span {font-size: 16px;letter-spacing: -0.3px;}
+.at_cont div {font-size: 17px;}
+
+/* float_sharebox */
+.content {position: relative; width: 100%;overflow: hidden;}
+.cont_article .share_box {position: absolute; top: 50px; width: 50px; height: 200px;}
+.cont_article .sharebox_fixed {position:fixed; display:block; top:100px; z-index:600;}
+.cont_article .sharebox_last {position: absolute; bottom: 0; top: 0; z-index: 700;}
+.cont_article .btn_sns {position: absolute;top: 0; left:0;}
+.cont_article .btn_sns li {width: 50px; height: 50px;}
+.cont_article .btn_sns li a {width: 100%; height: 100%;text-align: center; padding-top: 15px;  box-sizing: border-box; }
+.cont_article .btn_sns li a span {transition:all 0.5s; vertical-align: top;width: 25px; height: 25px;}
+.cont_article .btn_sns li a .facebk {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/at_facebk.png') no-repeat;}
+.cont_article .btn_sns li a:hover .facebk {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/onat_facebk.png') no-repeat;}
+.cont_article .btn_sns li a .twit { background: url('https://cwstatic.asiae.co.kr/drinkeat/article/at_twit.png') no-repeat;}
+.cont_article .btn_sns li a:hover .twit {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/onat_twit.png') no-repeat;}
+.cont_article .btn_sns li a .kakao {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/at_kakao.png') no-repeat;}
+.cont_article .btn_sns li a:hover .kakao {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/onat_kakao.png') no-repeat;}
+.cont_article .btn_sns li a .link {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/at_link.png') no-repeat;}
+.cont_article .btn_sns li a:hover .link{background: url('https://cwstatic.asiae.co.kr/drinkeat/article/onat_link.png') no-repeat;}
+.cont_article .btn_sns li a .cmtico {width: 24px; background: url('https://cwstatic.asiae.co.kr/drinkeat/comment/ico_cmt01_off.png') no-repeat; background-size:100%;}
+.cont_article .btn_sns li a:hover .cmtico{width: 24px; background: url('https://cwstatic.asiae.co.kr/drinkeat/comment/ico_cmt01_on.png') no-repeat; background-size:100%;}
+.cont_article .btn_sns li a:active {transform: scale(0.9)}
+/* //float_sharebox */
+
+/* article_head */
+.drk_article {margin: 0 auto; position: relative; max-width: 1000px; text-align: left; }
+
+.drk_article .at_head .at_title {padding:100px 0 50px;text-align: center;}
+.drk_article .at_head .at_title h2 {margin: 0 auto; width: 60%; font-size: 40px; line-height: 50px; letter-spacing: -1px;  color: #111;}
+.drk_article .at_head .at_title .sub_txt {margin: 20px 0 45px; font-size: 21px; letter-spacing: -1px; line-height: 25px; }
+.drk_article .at_head .at_title .tit_date {display: none;}
+.drk_article .at_head .at_title .user_views {margin-bottom: 10px;text-align: right;font-size: 13px; left: -1px; line-height: 15px; color: #595959;}
+.drk_article .at_head .at_thumb {position: relative; width: 100%;font-size: 0;}
+.drk_article .at_head .at_thumb .colorbar {position: absolute; left: 50%; top:-35px; z-index: 10; transform: translateX(-50%); width: 10px; height: 70px;background: #ff695c;}
+.drk_article .at_head .mat_thumb {display: none;}
+
+.cont_article {position: relative; max-width: 1000px; width: 100%; margin: 50px auto 0;}
+.cont_article .tit_date {position: absolute; top: 20px; right: 0;font-size: 13px; border-top: 2px solid #ddd;}
+.cont_article .tit_date p,.cont_article .tit_date span {text-align: right;}
+.cont_article .tit_date p {padding: 10px 0 5px;}
+
+/* content */
+.drk_article .at_cont {position: relative; margin: 0 auto; width: 70%; overflow: hidden;}
+.at_cont span {display: inline;}
+.at_cont .qeout_box {text-align: center;}
+.at_cont .qeout_box p {margin: 30px 0;}
+.at_cont .qeout_box .icon_qeout {display: inline-block; width: 35px;}
+.at_cont p {margin: 0; font-size: 17px; line-height: 30px; font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,'Noto Sans','Roboto-Light','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif ;  word-break: break-all; word-wrap: break-word;}
+/* 2019.12.05 기사입력기 스타일 */
+.at_cont .small_title01 {margin: 20px 0 10px; width: 100%;}
+.at_cont .small_title01 h5 {display: block; width: 100%; padding: 13px 0 16px; border-top: 1px solid #333; border-bottom: 1px solid #e8e8e8; box-sizing: border-box; font-family: 'notokrBold'; font-size: 17px; line-height: 1; color: #111;}
+/* 2019.12.05 기사입력기 스타일 */
+.at_cont .qeout_sub { padding-bottom: 35px; border-bottom: 1px solid #111;}
+.at_cont .qeout_sub span {display: inline-block; width: 35px;}
+.at_cont .qeout_sub h3 {margin-top: 35px;}
+.at_cont .sub_tit {margin-bottom: 0;}
+.at_cont .sub_tit h4 {position: relative; padding-left: 15px; height: 100%;letter-spacing: -1px; line-height: 30px;text-align: left;}
+.at_cont .sub_tit h4:before {content: ''; position: absolute; top: 0; left: 0; background: #4d4d4d; width: 5px; height: 100%;}
+
+/* 2019.12.17 기사이미지 */
+.at_cont .cont_thumb, .at_cont .sm_thumb, .at_cont .query_thumb {display: block;text-align: center;font-size: 0;}
+.at_cont .sm_thumb >img, .at_cont .query_thumb >img {width: auto;}
+/* //2019.12.17 기사이미지 */
+.at_cont .cont_thumb > span.thumb_caption,.at_cont .query_thumb > span.thumb_caption {display: block; /*margin-top: 10px;*/ text-align: left;font-size: 14px; line-height: 20px; color: #595959;}
+
+/* 2019.11.13 수정: 기사 입력기 */
+.at_cont .topline_tit { border-bottom: 1px solid #ddd;}
+.at_cont .midline_tit {margin: 0px auto ; width: 200px;border-bottom: 1px solid #ddd;}
+.at_cont .center_tit {margin: 0 auto; height: 10px; background: url('https://cwstatic.asiae.co.kr/drinkeat/txt_line.png') no-repeat bottom center;}
+.at_cont .boldline_tit {margin: 0px auto;width: 100px; border-bottom: 3px solid #111;}
+.at_cont .dot_tit {margin: 0 auto; width: 40px; border-bottom: 5px dotted #9d9d9d;}
+/* //2019.11.13 수정: 기사 입력기 */
+
+.at_cont .qst_area h4 {padding-left: 25px;font-size: 18px;line-height: 20px; letter-spacing: -1px; color: #ff695c; background: url('https://cwstatic.asiae.co.kr/drinkeat/question.png') no-repeat; background-size: 20px 20px;}
+.at_cont .qst_area h4 .ico {display: inline-block;margin:0 5px 0 0 ;width: 18px;}
+.at_cont .qst_area h4 .tit {margin-bottom: 3px;}
+.at_cont .qst_area .qst_sub p {/*margin-top: 15px;*/position: relative; padding-left: 20px;}
+.at_cont .qst_area .qst_sub p:before {content:''; position: absolute; top: 5px; left: 0; width: 2px; height: 95%; background: #ddd;}
+/* 이전글, 다음글 */
+
+.more_aticle {margin: 60px auto ; max-width: 700px; width: 70%; overflow: hidden}
+.more_aticle:after {content: ''; display: block; padding-bottom: 1px;clear: both;}
+.more_aticle .at_info {margin-bottom: 40px;}
+ .more_aticle .at_info:after {content: '';display: block;clear: both;}
+ .more_aticle .at_info .keyword {margin-top: 5px;}
+.more_aticle .at_info .keyword:after {content: '';display: block;clear: both;}
+ .more_aticle .at_info .keyword li {float: left; margin-right: 10px;}
+ .more_aticle .at_info .keyword li a {font-size: 15px; line-height: 34px; color: #018075;letter-spacing: -1px;}
+
+.more_aticle .at_info01 {margin:0 auto; padding:30px 0; text-align:center; box-sizing:border-box;}
+.more_aticle .at_info01:after {content: '';display: block;clear: both;}
+/*.more_aticle .at_info01 .keyword {position:absolute; top:0; left:50%; transform: translateX(-50%);}*/
+.more_aticle .at_info01 .keyword:after {content: '';display: block;clear: both;}
+.more_aticle .at_info01 .keyword li {float: left; margin-right: 10px;}
+.more_aticle .at_info01 .keyword li a {font-size: 15px; line-height: 34px; color: #018075;letter-spacing: -1px;}
+.more_aticle .at_info02 {width:210px; margin:0 auto;}
+
+/* 2019.12.10 라이브리 영역 히든처리 */
+.more_aticle .at_info .comment { margin-top: 20px; display: inline-block;}
+.more_aticle .at_info .comment .btn_cmt {position: relative; padding-left: 20px; width: 100px; height: 35px; line-height: 35px; border: 1px solid #ddd; border-radius: 35px; box-sizing: border-box; font-size: 15px; text-align: center; letter-spacing: -1px; color: #018075;}
+.more_aticle .at_info .comment .btn_cmt:before {position: absolute; left: 22px; top:7px; content: ''; width: 20px; height: 20px; }
+.more_aticle .at_info .comment .talk:before {background: url('https://cwstatic.asiae.co.kr/drinkeat/comment/ico_re03.png') no-repeat; background-size: contain;}
+
+/* 2020.04.13 스크랩버튼 추가 */
+.more_aticle .at_info .scrap {display: inline-block; margin-left: 5px}
+.more_aticle .at_info .btn_save {position: relative; display: block; padding-left: 18px; width: 100px; height: 35px; line-height: 35px; border: 1px solid #ddd; border-radius: 35px; box-sizing: border-box; font-size: 15px; text-align: center; letter-spacing: -1px; color: #111;}
+.more_aticle .at_info .btn_save:before {position: absolute; left: 22px; top:8px; content: ''; width: 13px; height: 17px;background: url('https://cwstatic.asiae.co.kr/drinkeat/article/scrap.png') no-repeat; background-size: contain;}
+.more_aticle .at_info .scrap:hover .btn_save:before {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/scrap_hover.png') no-repeat; background-size: contain;}
+.more_aticle .at_info .scrap.on .btn_save:before {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/scrap_on.png') no-repeat; background-size: contain;}
+
+/* 2020.05.08 링크로 수정 */
+.more_aticle .at_intit {padding:40px 0; }
+.more_aticle .at_intit .naming {} 
+.more_aticle .at_intit .naming .rpt_img {float: left; margin-right: 15px; display: block; width: 55px; height: 55px; border-radius: 50%; border: 1px solid rgba(0,0,0,.07); overflow: hidden;} 
+.more_aticle .at_intit .naming p {margin-bottom: 5px; padding-top: 3px; font-size: 25px; line-height:1;letter-spacing: -1px;vertical-align: top;}
+.more_aticle .at_intit .naming span {display: block;}
+/* //2020.05.08 링크로 수정 */
+
+ .more_aticle .at_inmore {position: relative; margin-bottom: 40px;overflow: hidden;}
+ .more_aticle .more_ct .arrow {position: absolute; top: 50%; transform: translateY(-50%); width: 18px; height: 32px;}
+ .more_aticle .at_inmore .preview .arr_prev {left:20px;  background: url('https://cwstatic.asiae.co.kr/drinkeat/article/article_arrl.png') no-repeat;}
+ .more_aticle .at_inmore .preview:hover .arr_prev {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/onarticle_arrl.png') no-repeat;}
+ .more_aticle .at_inmore .next .arr_next {right: 20px; background: url('https://cwstatic.asiae.co.kr/drinkeat/article/article_arrR.png') no-repeat;}
+ .more_aticle .at_inmore .next:hover .arr_next {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/onarticle_arrR.png') no-repeat;}
+ .more_aticle .at_inmore .more_ct {position: relative; float: left; width: 50%; height: 105px; border: 1px solid #ddd; box-sizing: border-box;}
+ .more_aticle .at_inmore .more_ct:hover {border: 1px solid #4c4c4c;}
+
+ .more_aticle .at_inmore .preview {padding: 23px 60px 0; z-index: 5;}
+ .more_aticle .at_inmore .preview:hover {z-index: 66;}
+
+ .more_aticle .at_inmore .next {padding: 23px 60px 0; text-align: right;margin-left: -1px; z-index: 6;}
+ .more_aticle .at_inmore .next:hover {z-index: 55;}
+
+ .more_aticle .at_inmore .preview span,  .more_aticle .at_inmore .next span {font-size: 14px;letter-spacing: -1px; color: #595959;}
+ .more_aticle .at_inmore .preview p, .more_aticle .at_inmore .next p {margin:8px 0 0 0; font-family:'Nanum Myeongjo','Noto Serif KR',serif; font-weight: 600; font-size: 19px;line-height: 25px;letter-spacing: -1px; color: #111; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+/* .more_aticle .at_inmore .next p {float: right;}*/
+ .more_aticle .at_inmore .preview:hover p, .more_aticle .at_inmore .next:hover p { color: #000;}
+/* 이전글 다음글이 없을때 */
+.more_aticle .at_inmore .no_ct {display: none;}
+.more_aticle .at_inmore .have_ct {width: 100%; margin-left: 0; }
+.more_aticle .at_inmore .have_ct.next p {position: absolute; right: 60px;}
+/* //이전글 다음글이 없을때 */
+
+.copyright {display: block; margin: 0 0 20px; font-size: 14px; line-height: 1; letter-spacing: -1px;color: #595959; text-align: left;}
+
+
+/* 라이브리 */
+.livere {margin: 0 auto 70px; padding: 0 20px; max-width:  700px;overflow: hidden;}
+/* 이 콘텐츠는 어때요? */
+.cons_wrap {position: relative; width: 1000px; margin: 0 auto;}
+.cons_wrap .consinbox {padding: 95px 0; width: 100%; box-sizing: border-box; border-top: 1px solid #efefef; }
+.cons_wrap .consinbox:after {content: '';display: block; clear: both;} 
+.cons_wrap .consinbox h3 {margin-bottom: 30px;text-align: center;font-size: 33px; letter-spacing: -2px; line-height: 40px;font-family: "notokrDem";}
+.cons_wrap .consinbox .thumblist {float: left;position: relative; max-width: 420px; width: 40%; height: 135px;}
+.cons_wrap .consinbox .thumblist .colorbar {position: absolute; left: 40px; top: -47px; z-index: 13; background:url('https://cwstatic.asiae.co.kr/drinkeat/article/dk_cha_article.png') no-repeat 0 0; width: 99px; height: 52px;}
+.cons_wrap .consinbox .thumblist .thm_bg1 {position: absolute; z-index: 6; left: 10px; top: 10px; max-width: 400px; width: 100%;}
+.cons_wrap .consinbox .thumblist .thm_bg2 {position: absolute; left: 20px; top: 20px; max-width: 400px; width: 100%;}
+.cons_wrap .consinbox .thumblist .thumb {position: absolute; left: 0; top: 0; max-width: 400px; width: 100%; z-index: 10;}
+.cons_wrap .consinbox .thumblist .thumb a {width: 100%; height: 100%;}
+.cons_wrap .consinbox .thumblist .thumb.tm01 {z-index: 11;}
+.cons_wrap .consinbox .thumblist .thumb[class*='_on'] {z-index: 11; left: 0; top: 0;}
+
+.cons_wrap .consinbox .conslist {float: left;padding-left: 5%; width: 55%; overflow: hidden;}
+.cons_wrap .consinbox .conslist ul {padding-top: 25px; box-sizing: border-box;}
+.cons_wrap .consinbox .conslist ul li {margin-bottom: 13px;}
+.cons_wrap .consinbox .conslist ul li a {font-size: 18px; line-height: 1.2; letter-spacing: -1px; width: 100%; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap; overflow: hidden;}
+.cons_wrap .consinbox .conslist ul li:hover a {text-decoration: underline;}
+.cons_wrap .consinbox .conslist ul li a span {font-style: italic; margin-right: 5px;}
+/* 인기콘텐츠 추천pick */
+.best_pick {margin:0 auto 100px; width:1000px; overflow: hidden;}
+.best {margin:20px auto 100px; width:1000px; overflow: hidden;}
+.best_pick > div {width: 100%;}
+
+/* float_bar */
+.drk_header .float_bar {display:none; width:100%; height:60px; border-bottom:1px solid #d8d8d8; background:#fff;}
+.drk_header .float_bar .area_floatbarn {height:60px;  text-align:center;}
+.drk_header .float_bar .area_floatbarn:after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.drk_header .float_bar .btn_allmenu {margin-top: 5px;}
+.drk_header .float_bar .btn_allmenu span {}
+.drk_header .float_bar .allmenu_wrap.visflt_m {top:22px;}
+.drk_header .float_bar .allmenu_wrap.visflt_m a.btn_allmenu {width:16px; height:16px; background:url('https://cwstatic.asiae.co.kr/asiae_v2/common/btn_close02.png') no-repeat 0 0;}
+.drk_header .float_bar .float_logo {position:absolute; top:17px; left:105px; }
+.drk_header .float_bar .float_logo a {display:block; width: 100%; height: 100%;}
+.drk_header .float_bar .float_logo span {width: 110px;}
+
+.drk_header .float_bar .txt_bar {display:inline-block; width:1px; height:16px; margin:2px 10px 0; font-size:0; line-height:0; color:transparent; vertical-align:middle; background:#c0c1c3;}
+.drk_header .float_bar h3.scont_tit, p.scont_txt {display:inline-block; vertical-align:middle;} 
+.drk_header .float_bar h3.scont_tit a, p.scont_txt {font-family:'notokrM'; font-size:17px; color:#111; font-weight:600; line-height:20px; letter-spacing:-1px}
+.drk_header .float_bar h3.scont_tit a:hover {color:#1e88e5; text-decoration:underline;}
+.drk_header .float_bar p.scont_txt {overflow:hidden; width:460px; height:20px; text-align:left; font-weight:normal; padding:0 0 0 2px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;}
+.drk_header .float_bar .float_sns {display: none;}
+.wrapsns_tit {display: none;}
+.drk_header .float_fixed {position:fixed; display:block; width:100%; top:0; left: 0; z-index:600;}
+/* //float_bar */
+
+/* bar_progress */
+.bar_progress {position: fixed; top: 61px; left: 0; height: 3px; background:#ff695c; z-index: 80; }
+
+/* 2020.05.12 드링킷팝업 */
+.art_popup {visibility: hidden; position: absolute; top:70%; right: 120px; z-index: 88; display: block; width: 350px; height: 135px;}
+.art_popup.on {visibility: visible; position: fixed;}
+
+.art_popup .hd {padding: 0 20px; width: 100%; height: 40px; background: #FF695C; box-sizing: border-box;}
+.art_popup .hd:after {content:'';display: block;clear: both;}
+.art_popup .hd p {float: left; font-size: 19px; font-family: 'notokrR';}
+.art_popup .hd p a {color: #fff; line-height: 40px;}
+.art_popup .hd p strong {color: #FFEB00;}
+.art_popup .hd .pop_close {float: right; margin-top: 10px; width: 15px; height: 15px;}
+
+.art_popup .ct {padding: 15px 20px;width: 100%; background: #f4efef; box-sizing: border-box; border: 1px solid rgba(0,0,0,0.05)}
+.art_popup .ct .thumb {display: table-cell; width: 100px; height: 65px; font-size: 0;}
+.art_popup .ct .thumb a {position: relative; width: 100%;}
+.art_popup .ct .thumb a:after {content:'';  position: absolute; left: 0; right: 0; top: 0; bottom: 0; border: 1px solid rgba(0,0,0,.05); box-sizing: border-box;}
+.art_popup .ct .txt {padding-left: 15px; display: table-cell; vertical-align: middle;}
+.art_popup .ct .txt a { font-size: 17px; font-family: 'notokrR'; letter-spacing: -1px; }
+
+@media only screen and (max-width:1040px){
+    .drk_header .float_bar .float_logo {left: 70px;top: 17px;}
+    /* 이 콘텐츠는 어때요? */
+    .cons_wrap {width: 100%; padding: 0 20px; box-sizing: border-box;}
+    .cons_wrap .consinbox .conslist ul {padding-top: 7%;}
+    /* 인기콘텐츠 추천 pick영역 */
+    .best_pick {width: 100%; padding: 0 20px; box-sizing: border-box;}
+    .best {width: 100%;padding: 0 20px; box-sizing: border-box;}
+    .best_pick > div {width: 100%;}
+    /* 2020.04.08 드링킷팝업 */
+    .art_popup.on {right: 20px;}
+}
+@media only screen and (max-width:1020px){
+    .drk_article .at_head .at_title {padding-top: 50px;}
+    .drk_header .drk_gnb {display: none;}
+    
+    .drk_article {padding: 0 20px;}
+    .drk_article .at_head .at_title h2 {font-size: 33px;line-height: 40px;}
+
+}
+@media only screen and (max-width:960px) {
+    /* 이콘텐츠는 어때요? */
+    .cons_wrap .consinbox h3 {font-size: 31px;}
+    .cons_wrap .consinbox .conslist ul {padding-top: 5%;}
+}
+@media only screen and (max-width:768px) {
+    .container {padding-top: 60px;}
+    .drk_header .float_bar .btn_allmenu {margin-left: 10px;}
+    /* top_area */
+    .drk_header .head_wrap {height: 60px;}
+    .drk_article .at_cont {width: 75%; }
+    .drk_article .at_head .at_title {padding: 45px 0;}
+    .drk_article .at_head .at_title h2 {font-size: 25px;line-height: 35px; width: 80%;}
+    .drk_article .at_head .at_title .sub_txt {margin: 15px 0 20px;font-size: 17px; }
+    /* cont_area */
+    .at_cont .more_aticle .at_inmore .preview p, .at_cont .more_aticle .at_inmore .next p {font-size: 18px; }
+    .more_aticle .at_intit {padding: 50px 0 40px;}
+    .more_aticle {padding: 0 20px;}
+    .more_aticle .at_inmore .preview .arr_prev,.more_aticle .at_inmore .preview:hover .arr_prev, .more_aticle .at_inmore .next .arr_next, .more_aticle .at_inmore .next:hover .arr_next {background-size: contain; width: 15px; height: 30px;}
+    .more_aticle .at_inmore .preview {padding: 20px 20px 0 50px;}
+    .more_aticle .at_inmore .next {padding: 20px 50px 0 20px;}
+    
+    /* 이콘텐츠는 어때요? */
+    .best_pick {margin: 0 auto 70px;}
+    .cons_wrap .consinbox {padding: 50px 0;}
+    .cons_wrap .consinbox h3 {font-size: 23px;font-family: 'notokrM'; letter-spacing: -1px;}
+    .cons_wrap .consinbox .thumblist {height: 145px;}
+    .cons_wrap .consinbox .thumblist .thumb {background-position: center center;}
+    .cons_wrap .consinbox .thumblist {width: 45%;}
+    .cons_wrap .consinbox .conslist  {padding-left: 5%; width: 50%;}
+    .cons_wrap .consinbox .conslist ul {padding-top: 7%;}
+    /* 2020.04.08 드링킷팝업 */
+    .art_popup.on {left: 0; bottom: 0; top: auto; width: 100%;}
+    .art_popup .hd {box-shadow: 0 -5px 7px 0 rgba(0,0,0,0.07); border-radius: 7px 7px 0 0;}
+    
+   /* 2020.05.12 추천기사 팝업 */
+    a.btn_top {bottom: 50px;}
+    .art_popup.on + a.btn_top {bottom: 150px;} 
+}
+@media only screen and (max-width:639px) {
+    .drk_article .at_cont {width: 100%;}
+    .drk_article .at_head .at_title .tit_date {display: block; margin-bottom: 30px;}
+    .drk_article .at_head .at_title .tit_date span {border-top: 2px solid #ddd; font-size: 12px; letter-spacing: -0.5px;line-height: 30px; color: #595959;}
+    .drk_article .at_head .at_title .sub_txt {font-size: 14px; color: #595959;}
+    
+    .drk_article .at_head .at_thumb {display: none;}
+    .drk_article .at_head .mat_thumb {display: block; position: relative; width: 100%;font-size: 0;}
+    .drk_article .at_head .mat_thumb .colorbar {position: absolute; left: 50%; top:-25px; z-index: 10; transform: translateX(-50%); width: 10px; height: 55px;background: #ff695c;}
+    .drk_article .at_head .at_title .user_views {margin-top: 30px;}
+    .drk_article .at_cont { width: 100%; box-sizing: border-box;}
+    .cont_article {padding: 0 20px;box-sizing: border-box;margin: 0 auto;}
+    
+    .at_cont .cont_thumb > span.thumb_caption,.at_cont .query_thumb > span.thumb_caption {font-size: 13px; line-height: 20px;}
+    
+    .drk_article {padding: 0;}
+    .drk_article .at_head .at_title {padding: 50px 20px 0;}
+    .drk_article .at_head .at_title h2 {width: 90%;}
+    
+    .cont_article .btn_sns{display: none;}
+    .cont_article .tit_date {display: none;}
+    
+    /* 기사뷰타이틀 sns공유팝업 */
+    .drk_header .float_bar .float_sns {display: block;position: absolute; top:10px; right:20px;}
+    .drk_header .float_bar .float_sns .btn_share {float: right;display:inline-block;padding-top:10px; width: 48px; height: 48px; box-sizing: border-box;}
+    .drk_header .float_bar .float_sns .btn_share span {float: right;width: 20px;}
+    .drk_header .float_bar .float_sns .btn_icocmt {float: right;display:inline-block;padding-top:10px; width: 40px; height: 48px; box-sizing: border-box;}
+    .drk_header .float_bar .float_sns .btn_icocmt span {float: right;width: 26px;}
+    
+    /* 이전글, 다음글 */
+    .more_aticle {width: 100%;padding: 0 20px; box-sizing: border-box;}
+    .more_aticle .at_intit .naming:before {width: 45px;height: 45px; background: url(https://cwstatic.asiae.co.kr/drinkeat/m_person.png) no-repeat;}
+    .more_aticle .at_intit .naming p {font-size: 20px; padding-top: 7px;}
+    .more_aticle .at_intit .naming span {font-size: 14px;}
+    .more_aticle .at_inmore .more_ct {padding-top: 15px;height: 95px;}
+    .more_aticle .at_inmore .more_ct:hover {border-color: #ddd;}
+    .more_aticle .at_inmore .more_ct.preview , .more_aticle .at_inmore .more_ct.next {padding:20px 50px 0 50px;}
+    .more_aticle .at_inmore .more_ct.next {margin:-1px 0 0 0;}
+    .more_aticle .at_inmore .more_ct.have_ct {margin:0;}
+    .more_aticle .at_inmore .more_ct.have_ct p {right: 50px;}
+    .more_aticle .at_inmore .next p {float: none;}
+    .more_aticle .at_inmore .more_ct {width: 100%;border-left: 1px solid #ddd;}
+    .more_aticle .at_inmore .preview p, .more_aticle .at_inmore .next p {width: 100%;}
+    /*.more_aticle .at_inmore .preview .arr_prev {top: 26%;}
+    .more_aticle .at_inmore .next .arr_next {top: 76%;}*/
+    /* 라이브리 */
+    .livere{width: 100%; padding: 0 20px; margin-bottom: 50px; box-sizing: border-box;}
+    /* 이콘텐츠는 어때요? */
+    .cons_wrap {padding: 0 20px;width: 100%;box-sizing: border-box;}
+    .cons_wrap .consinbox {padding: 50px 0 40px;}
+    .cons_wrap .consinbox h3 {text-align: center;}
+    .cons_wrap .consinbox h3 span {position: relative; padding-left: 15px;font-size: 21px; line-height: 1;}
+    .cons_wrap .consinbox h3 span:before {content: ''; position: absolute; left: 0px; top: -4px; width: 8px; height: 20px;background: #ff695c;}
+    .cons_wrap .consinbox .thumblist {display: none;}
+    .cons_wrap .consinbox .conslist {position: relative;padding-left: 0;width: 100%; box-sizing: border-box;}
+    .cons_wrap .consinbox .conslist ul{padding-top: 0;}
+    .cons_wrap .consinbox .conslist ul li a {width: 90%;}
+}
+@media only screen and (max-width:480px) {
+    .drk_header .float_bar .float_logo {left: 65px;}
+    .drk_header .float_bar .float_logo span {width: 100px;}
+}
+@media only screen and (max-width:425px) {
+    .drk_header .drk_gnb {display: none;}
+    .drk_header .float_bar .btn_allmenu {margin: 6px 0 0 10px;}
+    .drk_header .float_bar .float_logo {top: 17px;}
+    .drk_header .float_bar .float_logo span {width: 100px;}
+    .content .share_box {display: none;}
+    
+    .wrapsns_tit {display:none; overflow:hidden; position:fixed; top:0; left:0; width:100%; height:100%; z-index:800;}
+    .wrapsns_tit.active {display:block;}
+    .wrapsns_tit:before {content:''; position:fixed; top:10px; right:0; bottom:0; left:0; background-color:rgba(0,0,0,0.5);}
+    .wrapsns_tit .inner_bx {position:absolute; top:0; right:0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; z-index:40;}
+    .wrapsns_tit .inner_bx:after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+    .wrapsns_tit .inner_bx ul {width:50px; margin:75px 20px 0 0;}
+    .wrapsns_tit .inner_bx ul li {width:100%; height:50px; margin:12px 0 0 0;}
+    .wrapsns_tit .inner_bx ul li a {display:block; width:100%; height:100%; }
+    /*2019.12.19 원본,작은이미지 쿼리*/
+    .at_cont .query_thumb >img {width: 100%;}
+    /*2019.12.19 원본,작은이미지 쿼리*/
+    .at_cont p:first-child {margin-top: 0;}
+    .at_cont .qeout_box {margin-top: 0;padding: 0;box-sizing: border-box;}
+    .at_cont .qeout_box .icon_qeout {width: 20px;}
+    .at_cont .qeout_box p {margin: 20px 0;}
+    .at_cont .qeout_sub span {width: 20px;}
+    .at_cont .text {margin: 50px 0;}
+    .at_cont .qeout_sub{margin-bottom: 0;}
+    .at_cont .qeout_sub h3 {margin-top: 20px;}
+    .at_cont .sub_tit {margin-bottom: 0;}
+    .at_cont .more_aticle .at_info .comment {margin-top: 20px;float: left;}
+    
+    .more_aticle .at_intit {padding: 25px 0;}
+    /*.more_aticle .at_intit .naming span {width: 60%;}*/
+    .more_aticle .more_ct .arrow {height: 22px;}
+    .more_aticle .at_inmore .preview p, .more_aticle .at_inmore .next p {font-family:'Nanum Myeongjo','Noto Serif KR',serif; font-weight: 500;}
+    
+    /* 이전글 다음글이 없을때 */
+    .more_aticle .at_inmore .no_ct {display: none;}
+    .more_aticle .at_inmore .more_ct.next {margin-top: -1px;}
+    .more_aticle .at_inmore .more_ct.have_ct {margin: 0;} 
+    /* //이전글 다음글이 없을때 */
+    .more_aticle .at_inmore .preview .arr_prev {width: 12px; height: 21px; left: 20px;}
+    .more_aticle .at_inmore .preview:hover .arr_prev {width: 12px; height: 21px;}
+    .more_aticle .at_inmore .next .arr_next {width: 12px; height: 21px;right: 20px; }
+    .more_aticle .at_inmore .next:hover .arr_next {width: 12px; height: 21px;right: 20px;}
+    
+    .more_aticle .at_inmore .next {padding-right: 0;}
+    .more_aticle .at_inmore .preview p, .more_aticle .at_inmore .next p {margin-top: 5px;}
+    
+    .more_aticle .at_inmore .preview span, .more_aticle .at_inmore .next span {font-size: 12px; }
+    
+    /* copyright추가 */
+    .copyright {line-height: 25px;text-align: center;}
+    
+    /* 기사 입력기 */
+    .at_cont .area_view .sub {width: 150px;}
+    .at_cont .area_view .big {width: 250px;}
+    
+    .more_aticle .at_inmore .more_ct:hover {border-color: #ddd;} 
+
+    /* 인기콘텐츠 추천pick */
+    .best_pick {margin: 0 auto 50px;}
+    .best_pick div {display: block;padding-bottom: 50px;border-bottom: 1px solid #efefef;}
+    .best {margin: 50px auto;}
+    
+    /* 2020.04.08 드링킷팝업 */
+    .art_popup.on {width: 100%; left: 0;}
+    
+    /* 이콘텐츠는 어때요? */
+    .cons_wrap .consinbox {border-bottom: 1px solid #efefef;}
+    
+}
+@media only screen and (max-width:375px){
+    /* copyright추가 */
+    .at_cont .copyright {line-height: 25px;}
+}
+
+@media only screen and (max-width:320px) {
+    .drk_article .at_head .at_title h2 {width: 100%;}
+    .more_aticle .at_intit .naming p {margin-bottom: 10px;}
+    /* 2020.04.08 드링킷팝업 */
+    .art_popup .hd p {font-size: 16px;}
+}
+
+
+
+
+
+
+
+
+

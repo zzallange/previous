@@ -1,0 +1,623 @@
+@charset "utf-8";
+
+/* sunny:) */
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd,form,fieldset,input,select,table,th,td,button,span {margin: 0;padding: 0}
+html {height: 100vh;}
+/*body {width: 100%; font-family:'Nanum Gothic','나눔고딕','돋움',Dotum,굴림,Gulim,'Apple SD Gothic Neo',sans-serif} 
+
+1339 93577 328 37 / 52990 
+*/
+body {overflow-x: hidden; font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','Noto Sans',Dotum,'돋움',sans-serif; letter-spacing: -1px;}
+
+h1,h2,h3,h4,h5,h6 {font-size: 100%; font-weight: normal}
+address,caption,cite,code,dfn,em,th,strong,i {font-style:normal;font-weight:normal}
+
+ul,ol,dl,dt,dd,li {list-style: none}
+
+a {text-decoration: none; color: #111; -webkit-tap-highlight-color: rgba(0,0,0,0);display: inline-block}
+a::after,a::before {-webkit-tap-highlight-color: rgba(0,0,0,0)} 
+a:link,a:visited,a:active {text-decoration:none}
+button {-webkit-tap-highlight-color: rgba(0,0,0,0)}
+button::-moz-focus-inner{border:0;padding:0}
+
+input[type=button],input[type=email],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=url],textarea,select{appearance:none; -webkit-appearance:none; -moz-appearance:none; border-radius:0; border:0 none}
+input:focus,textarea:focus{outline:none}
+
+img,fieldset,button,table {border: 0 none}
+
+table {border-collapse:collapse;border-spacing:0;vertical-align:top}
+legend,caption {font-size: 0; line-height: 0; color: transparent}
+
+.skip_nav,.ir {overflow:hidden;position:absolute;top:0;left:0; width:1px;height:1px; font-size:0; line-height:0; clip:rect(0,0,0,0)}
+.skip_nav a {font-size: 0; line-height: 0; color: transparent}
+
+::selection {background-color: #d1ebe3;}
+::-moz-selection {background-color: #d1ebe3;}
+
+/* Layout */
+#wrap,#header,#container,#footer {position: relative; width: 100%}
+#container {background: url(https://cwstatic.asiae.co.kr/asiae_2009/common/event/2019women/bg_photo_20191007.png) no-repeat top center;}
+.inner {overflow: hidden; margin: 0 auto; max-width: 1120px}
+.side_inner {margin: 0 auto; max-width: 960px}
+
+#section01, #section02,#section03,#section04,#section05,#section06 {padding-top: 100px;}
+/*#section06 {padding-top: 220px;}*/
+[class*="section"] {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+
+/* Header */
+.header {border-top: 3px solid #e95b78}
+.header .m_menu {display: none;}
+.header .main_menu {display: block; height: 115px; border-bottom: 1px solid #ededed}
+.header .logo_area {float: left; margin-top: 35px; overflow: hidden; height: auto}
+.header .logo_area h1,.header .logo_area p {float: left}
+.header .logo_area h1 {width: 136px;height: 36px}
+.header .logo_area .btn_asiae {margin-top: 10px; width: 100%; height: 100%; background: url(https://cwstatic.asiae.co.kr/asiae_2009/common/event/2016women/logo_ak2.jpg) no-repeat; background-size: contain;}
+.header .logo_area p {display: inline-block; margin-left: 15px;width: 250px; height: 45px}
+.header .logo_area .btn_leader {width: 100%; height: 100%; background: url(https://cwstatic.asiae.co.kr/forum/women_leaders/2020/logo_women_pink.png) no-repeat; background-size: contain}
+
+.header .menu {float: right;}
+.header .menu .nav_ul li a {font-family: 'Noto Sans KR', sans-serif;}
+.header .menu_list {margin-top: 43px;}
+.header .menu_list .blank {display: none;}
+.header .menu_list .item {float: left;}
+.header .menu_list .item .menu_link {margin: 0 20px; font-family: 'Noto Sans KR', sans-serif; font-size: 19px; font-weight: bold; letter-spacing: -1.4px; color: #111;}
+.header .menu_list .item.last .menu_link {margin-right: 0}
+.header .menu_list .item:hover .menu_link, .header .menu_list .item.on .menu_link {color: #e95b78}
+
+.header .float_menu {display: none;position:fixed; width:100%; height: 75px; top:0; left: 0; z-index:600; border-top: 3px solid #e95b78; border-bottom: 1px solid #ededed; background: #fff;}
+.header .float_menu.on {display: block;}
+.header .float_menu .logo_area {margin-top: 18px;}
+.header .float_menu .btn_asiae {margin-top: 6px;}
+.header .float_menu .menu_list {display: inline-block; margin: 23px 0 0 65px; float: right;}
+.header .float_menu .menu_list .item:hover .menu_link,.header .float_menu .menu_list .item .menu_link.active {color: #e95b78}
+.header .float_menu .menu_list .item .menu_link {margin: 0 0 0 40px;}
+.header .float_menu .menu_list .item:first-child .menu_link {margin-left: 0;}
+.header .float_menu .menu_list .item.last .menu_link {margin-right: 0;}
+/* Header box-sizing */
+.header,.header .main_menu,.header .float_menu.fixed {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+/* Header clear */
+.main_menu:after, .header .logo_area:after, .header .menu_list:after,.float_menu:after {content:'';display: block;clear: both}
+
+/* leaders_common */
+[class*="leaders_"] {display: block; background: #fff;}
+[class*="leaders_"] h4.title {position: relative; padding-top: 40px; margin: 0 auto 50px; text-align: center; font-family: 'Noto Sans KR', sans-serif; font-size: 43px; letter-spacing: -3px; line-height: 1; border-top: 2px solid #eee; color: #333}
+[class*="leaders_"] h4.title:before {content:''; position: absolute; left: 50%; top: -13px; transform: translateX(-50%);width: 35px; height: 28px; background: url(https://cwstatic.asiae.co.kr/asiae_2009/common/event/2019women/simbol.jpg) no-repeat; background-size: contain;}
+[class*="leaders_"] [class*="tit_info"] {margin-bottom: 10px; font-family: 'dotum'; font-size: 20px; font-weight: 600; letter-spacing: -1px; }
+[class*="leaders_"]:not(.leaders_main) {display: block;}
+[class*="leaders_"] {display: block; /*margin-top: 30px;*/}
+
+/* leaders_clear */
+.leaders_apply .apply_box:after,.leaders_speaker .table_speaker .co-author:after,.leaders_speaker .mento_list:after,.leaders_speaker .mento_list .item:after,.leaders_mento .mento_list:after,.leaders_mento .mento_list .item:after,.leaders_info .forum_info:after,.leaders_photo .photo_list:after {content:'';display: block;clear: both}
+
+/* leader_main */
+.leaders_main {margin-top: 60px; width: 100%; height: auto; background: url(https://cwstatic.asiae.co.kr/forum/women_leaders/2020/women_mainbg_pink.jpg) no-repeat;}
+.leaders_main .main_top {text-align: center;}
+.leaders_main .main_top .title_forum {padding-top: 170px; font-family: 'Noto Sans KR', sans-serif; font-size: 28px; letter-spacing: -3.6px; color: #fff}
+.leaders_main .main_top .title_forum strong {font-weight: bold;}
+.leaders_main .main_top .title_big {padding: 20px 0 60px; /*margin: 0 auto 60px; */font-family: 'Noto Sans KR', sans-serif; letter-spacing: -9px; color: #fff;/*border-bottom: 2px solid #ccc*/}
+.leaders_main .main_top .title_big [class*="color_txt"] {display: inline-block; font-size: 80px;}
+/*.leaders_main .main_top .title_big .color_txt01 {margin-right: 15px; color: #61b172}
+.leaders_main .main_top .title_big .color_txt02 {color:#91bd44}*/
+.leaders_main .main_top .title_big .color_txt02 {margin-left: 10px;}
+.leaders_main .main_top .title_big [class*="color_txt"] strong { display: inline-block; color: #fff;}
+.leaders_main .main_top .title_big .color_txt01 strong {/*margin: 0 5px 0 10px; background: #61b172*/}
+.leaders_main .main_top .title_big .color_txt02 strong {/*margin-left: 15px; background: #91bd44*/}
+/*[class*="color_txt"] strong em {display: block; padding: 10px 10px 5px 5px;font-size: 85px; line-height: 1;}*/
+[class*="color_txt"] strong em {font-weight: 600;}
+
+.leaders_main .main_cont {/*margin-bottom: 50px; */background: #fff}
+.leaders_main .main_cont .desc {margin: 0 auto; font-family: 'notokrR'; line-height: 28px; letter-spacing: -1.6px; color: #333;}
+/* main box-sizing */
+.leaders_main .main_top .title_forum,.leaders_main .main_top .title_big,[class*="color_txt"] strong em {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+
+/* leaders_apply */
+.leaders_apply .table_apply {width: 100%;}
+.leaders_apply .table_apply tr:first-child {border-top: 2px solid #111}
+.leaders_apply .table_apply tr.last {border-bottom: 2px solid #111}
+.leaders_apply .table_apply tr {border-bottom: 1px solid #cecece}
+.leaders_apply .table_apply th {padding: 20px 0; font-size: 17px; font-weight: 700; letter-spacing: -2px; background:#f7f7f7; color: #595959;}
+.leaders_apply .table_apply td {padding-left: 35px;font-size: 14px; line-height: 1.6;}
+.leaders_apply .table_apply .last td {padding-top: 20px; padding-bottom: 20px; }
+.leaders_apply .table_apply td .event_info {font-size: 14px; font-weight: 700; text-decoration: underline; color: #26802e}
+.leaders_apply .table_apply td.mg_20 {padding-top: 20px; padding-bottom: 20px;}
+
+.leaders_apply .apply_box {margin-top: 60px; width: 100%;}
+.leaders_apply .apply_box .tit_info {margin-bottom: 5px;line-height: 1;}
+.leaders_apply .apply_box > div {float: left; font-size: 15px;  line-height: 1.5}
+.leaders_apply .apply_box [class*="tit_apply"] {display: inline-block; margin-top: 15px; margin-bottom: 7px; font-size: 17px; font-weight: 600; box-shadow: inset 0 -5px 0 #d1ebe3; color: #404040; letter-spacing: -0.5px;}
+.leaders_apply .apply_box .forum_process {width: 57%; margin-right: 3%;}
+.leaders_apply .apply_box .forum_process dd {font-size: 17px; color: #666;}
+.leaders_apply .apply_box .forum_process dd .desc {/*margin: 10px 0;*/ padding-left: 20px; font-size: 13px;}
+.leaders_apply .apply_box .forum_process .desc strong {font-size: 12px; line-height: 1.6; font-weight: 700; color: #26802e;}
+.leaders_apply .apply_box .forum_quest {padding-left: 60px; border-left: 1px solid #d9d9d9; width: 40%;}
+.leaders_apply .apply_box .forum_quest ul li {margin-top: 10px; font-size: 17px; color: #666;}
+.leaders_apply .apply_box .forum_quest ul li:first-child {margin-top: 0;}
+.leaders_apply .apply_box .forum_quest ul li em {display: block; font-size: 13px; font-weight: 600; color: #111}
+.leaders_apply .apply_box .forum_quest ul li .mail {text-decoration: underline; color: #666; letter-spacing: 0;}
+.leaders_apply .apply_box .forum_quest .btn_apply {margin-top: 10px; padding: 20px 53px; font-size: 18px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-shadow: 1px 1px rgba(0,0,0,.1); color: #fff; background: #cca91f;}
+/* apply_box-sizing */
+[class*="leaders_"],[class*="leaders_"] h4.title,.leaders_apply .table_apply tr,.leaders_apply .table_apply th,.leaders_apply .table_apply td,.leaders_apply .apply_box,.leaders_apply .apply_box .forum_process dl.second .desc,.leaders_apply .apply_box .forum_quest,.leaders_apply .apply_box .forum_quest .btn_apply {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+
+
+/* leaders_program */
+/*.leaders_program {padding-bottom: 85px;}*/
+.leaders_program .tit_desc {display: block; font-size: 14px; line-height: 1; color: #595959}
+.leaders_program [class*="program_part"]{margin-top: 15px; width: 100%;}
+.leaders_program .program_part1 {margin-bottom: 10px; text-align: center;}
+.leaders_program .program_part1 thead th {padding: 20px 0; font-size: 20px; font-weight: 600; color: #fff; background: #45994c;}
+.leaders_program .program_part1 .highlight {background:#f2f2f2}
+.leaders_program .program_part1 .highlight td {color: #333;}
+.leaders_program .program_part1 td {padding: 20px 0; font-size: 13px; line-height: 20px; border-bottom: 1px solid #ccc; color: #595959;}
+.leaders_program .program_part1 td.name {text-align: left; padding-left: 20px;}
+.leaders_program .program_part1 td.name span {font-weight: 700;}
+.leaders_program .program_part1 .time {letter-spacing: 0;}
+.leaders_program .program_part1 .time,.leaders_program .program_part1 .col_line {border-right: 1px solid #ccc;}
+.leaders_program .program_part1 .session td {padding: 20px 0; border-bottom: 1px solid #ccc; font-size: 13px; font-weight: 700; line-height: 20px; color:#ffb700; background: #595959;}
+
+.leaders_program .program_part2 .moto {padding: 20px 0; margin: 15px 0 20px; text-align: center; font-size: 18px; line-height: 1; color: #fff; background:#45994c}
+.leaders_program .program_part2 .target_desc {font-size: 15px; line-height: 22px; color: #595959;}
+
+.leaders_program .program_part2 .procedure_list {margin-top: 30px;}
+.leaders_program .program_part2 .procedure_list li {margin-top: 7px; font-size: 16px; line-height: 1.6; color: #111}
+.leaders_program .program_part2 .procedure_list li .color_point {color:#45994c }
+.leaders_program .program_part2 .procedure_list li strong {font-weight: 600;}
+/* program_box-sizing */
+.leaders_program,.leaders_program .program_part1 td,.leaders_program .program_part1 .session td,.leaders_program .program_part2 .moto{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+.leaders_program p {text-align: right; font-size: 13px; color: #595959;}
+.leaders_program p.tit_info {text-align: left; }
+
+/* leaders_speaker 기존 연사*/
+/*.leaders_speaker {margin-bottom: 80px;}*/
+.leaders_speaker .table_speaker{width: 100%;text-align: center;}
+.leaders_speaker .table_speaker tr {border-bottom: 1px solid #ccc; font-size: 12px; color: #777}
+.leaders_speaker .table_speaker tr:first-child {border-top: 1px solid #ccc;}
+.leaders_speaker .table_speaker th{font-size: 18px; font-weight: 600; color: #5a801a; background:#f2f2f2; }
+.leaders_speaker .table_speaker .spk_session {background:#eef2e6 }
+
+.leaders_speaker .table_speaker td {padding: 26px 5px; vertical-align: top;}
+.leaders_speaker .table_speaker .co-author {overflow: auto; display: inline-block; margin: 0 auto; text-align: center;}
+.leaders_speaker .table_speaker .co-author [class*="author"]{float: left;}
+.leaders_speaker .table_speaker .co-author .author_vs {margin: 50px 20px;}
+/*.leaders_speaker .table_speaker .co-author .author1 {margin-right: 23px;}*/
+.leaders_speaker .table_speaker .co-author .book {clear: both;}
+.leaders_speaker .table_speaker .thumb {margin: 0 auto; width: 110px; height: 110px; font-size: 0;}
+.leaders_speaker .table_speaker .thumb > img {width: 100%;}
+.leaders_speaker .table_speaker .name {margin-top: 23px; line-height: 16px;}
+.leaders_speaker .table_speaker .name.noimg {margin-top: 0;}
+.leaders_speaker .table_speaker .name span {display: block; margin-bottom: 10px; font-weight: bold;line-height: 1; color: #111;}
+ /*speaker_box-sizing */
+.leaders_speaker .table_speaker tr,.leaders_speaker .table_speaker td{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+
+
+/* leaders_mento */
+/*.leaders_mento {margin-bottom: 80px;}*/
+.mento_list {width: 100%;}
+.leaders_mento .mento_list .item{float: left; padding: 50px 0; width: 46%; min-height: 400px; border-top: 1px dashed #cecece;}
+.leaders_mento .mento_list .item:first-child{ padding-top: 0; border-top: none;}
+.leaders_mento .mento_list .item:nth-child(2){ padding-top: 0; border-top: none;}
+.leaders_mento .mento_list .odd {margin-right: 8%;}
+.leaders_mento .mento_list .item .thumb {float: left; width: 116px; font-size: 0;}
+.leaders_mento .mento_list .item .name {margin: 24px 0 12px; font-size: 20px; font-weight: 700; line-height: 1; color: #634739;}
+.leaders_mento .mento_list .item .name_card {font-size: 12px; line-height: 16px; color: #777}
+
+.leaders_mento .mento_list .item .task {float: left; max-width: 289px; /*height: 400px;*/}
+.leaders_mento .mento_list .item .task li {position: relative; margin-left: 30px; font-size: 12px; line-height: 22px; color: #777}
+.leaders_mento .mento_list .item .task li:before {content:''; position: absolute; left: -10px; top: 9px; width: 2px; height: 2px; background: url(https://cwstatic.asiae.co.kr/asiae_2009/common/event/2019women/dot.png) no-repeat;}
+/* mento_box-sizing */
+.leaders_mento .mento_list .item,.leaders_mento .mento_list .item{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+
+/* leaders_info */
+.leaders_info {margin-bottom: 50px;}
+.leaders_info .forum_map {width: 100%;}
+.leaders_info .forum_info {margin-top: 50px;}
+.leaders_info .forum_info [class*="tit"] {display: inline-block;margin-bottom: 20px; font-size: 19px; letter-spacing: -2px; font-weight: 600; box-shadow: inset 0 -7px 0 #d1ebe3; color: #404040;}
+.leaders_info .forum_info [class*="text"] {font-size: 24px; letter-spacing: -1px; color:#404040 }
+.leaders_info .forum_info > div {float: left;}
+.leaders_info .forum_info .location {margin-right: 130px;}
+.leaders_info .forum_info .location .text {letter-spacing: -1.5px;}
+
+/* leaders_photo */
+.leaders_photo {margin-bottom: 80px;}
+.leaders_photo .notice { margin-bottom: 17px; text-align: right; font-size: 14px; font-weight: bold; letter-spacing: -1px; color: #595959}
+.leaders_photo .notice:before {content:''; display: inline-block; width: 10px; height: 10px; background: url(https://cwstatic.asiae.co.kr/asiae_2009/common/event/2019women/dot.png) no-repeat; background-position: 3px;}
+
+.leaders_photo .photo_list li {float: left; margin: 0 18px 30px 0; font-size: 0;}
+.leaders_photo .photo_list li:nth-child(4) {margin-right: 0;}
+.leaders_photo .photo_list li img {width: 100%;}
+/*.leaders_photo .photo_list li.last {margin-right: 0;}*/
+.leaders_photo .photo_list li a {position: relative; display: block;}
+.leaders_photo .photo_list li a .thumb {font-size: 0;}
+.leaders_photo .photo_list li a .text_down {position: absolute; left: 0; right: 0; bottom: 0; padding: 7px 0; text-indent: 20px; font-size: 14px; font-weight: bold; letter-spacing: -1px; color: #fff; background: rgba(0,0,0,.7); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+.leaders_photo .photo_list li a .text_down:after {content:''; position: absolute; top: 7.5px; right: 20px; width: 14px; height: 14px; background: url(https://cwstatic.asiae.co.kr/asiae_2009/common/event/2019women/down_load.png) no-repeat;}
+
+/* footer */
+.footer .copyright {padding: 30px 0; border-top: 1px solid #ededed; text-align: center; font-size: 11px; font-family: 'Tahoma'; color: #595959;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+
+/* top버튼 */
+a.btn_top {visibility:hidden; position:fixed; bottom:50px; right:20px; z-index:90; width:48px; height:48px; vertical-align:top; opacity: 0; font-size: 0; line-height: 0; color: transparent; cursor:pointer; -webkit-transition: all .3s; transition: all .3s; background: url(https://cwstatic.asiae.co.kr/drinkeat/upup.png) no-repeat; background-size: contain;}
+a.btn_top.on {visibility:visible; opacity:1;}
+
+@media only screen and (max-width:1220px){
+    .inner {padding: 0 50px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+    .side_inner {padding: 0 30px; width: 100%;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box}
+    
+    .header .main_menu {height: 100px;}
+    .header .logo_area {margin-top: 34px;}
+    .header .logo_area h1 {width: 115px; height: 22px;}
+    .header .logo_area .btn_asiae {margin-top: 6px;}
+    .header .logo_area p {width: 195px; height: 35px;}
+    
+    .header .menu_list {margin-top: 39px;}
+    .header .menu_list .item .menu_link {margin: 0 12px; font-size: 18px; letter-spacing: -1.5px;}
+    
+    .header .float_menu .btn_leader {width: 100%; height: 100%;}
+    .header .float_menu .menu_list {margin: 25px 0 0; float: right;}
+    .header .float_menu .menu_list .item .menu_link {margin: 0 0 0 24px;}
+    
+    [class*="leaders_"] {display: block; margin-bottom: 50px;}
+    .leaders_main {background-size: cover;}
+    .leaders_main .main_top .title_forum {padding-top: 15%;}
+    
+    .leaders_apply .apply_box .forum_quest .btn_apply {padding: 20px 35px;}
+    
+    /*.leaders_info {margin-bottom: 100px;}*/
+    .leaders_info .forum_map iframe {width: 100%;}
+}
+@media only screen and (max-width:1120px){
+    .leaders_photo .photo_list li {width: 23%;}
+    .leaders_photo .photo_list li:nth-child(4) {margin-right: 0;}
+ 
+}
+@media only screen and (max-width:1010px){
+    .inner {padding: 0 30px;}
+    .header {text-align: center;}
+    .header .main_menu {height: auto;}
+    .header .main_menu .inner {font-size: 0;}
+    .header .m_menu {display: block; position: relative; height: 51px; border-bottom: 1px solid #ededed; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+    
+    .header .m_menu .nav_wrap {position: relative; width: 100%;}
+    .header .m_menu .nav_slide {position: relative; padding: 0 10px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; background: #fff;}
+    .header .m_menu .nav_inner {width: 100%; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+    .header .m_menu .scroll_wrap {overflow: hidden;}
+    .header .m_menu .scroller {overflow: hidden; overflow-x: auto; width: 100%;}
+    
+    .header .m_menu .nav_ul {width: 100%; height: 100%; font-size: 0; white-space: nowrap;}
+    .header .m_menu .nav_ul li {display: inline-table; height: 100%;}
+    .header .m_menu .nav_ul li a {position: relative; display: table-cell; padding: 0 15px; height: 100%; text-align: center; font-size: 17px; font-weight: bold; letter-spacing: -1.8px; line-height: 50px; vertical-align: middle; white-space: nowrap; color: #111;}
+    .header .m_menu .nav_ul li a:hover,.header .m_menu .nav_ul li a.active {color:#e95b78}
+    
+    .header .logo_area {float: none; display: inline-block;}
+    .header .logo_area {margin:15px 0;}
+    .header .logo_area h1 {width: 110px; height: 30px;}
+    .header .logo_area p {width: 200px; height: 35px;}
+    .header .logo_area .btn_asiae {margin-top: 8px;}
+    .header .main_menu .menu {display: none;}
+    .header .float_menu.on {display: none;}
+    
+    #section01, #section02, #section03, #section04, #section05, #section06 {padding-top: 0;}
+    /* :not 익스에서는 안먹힘 */
+    
+    .content .inner {padding-bottom: 60px;}
+    [class*="leaders_"]:not(.leaders_main):not(.leaders_apply) {display: none;}
+    [class*="leaders_"] {display: none; margin-top: 30px; margin-bottom: 0;}
+    [class*="leaders_"] h4.title {position: relative; padding-top: 25px; border-top: 0 none; font-size: 35px; color: #699916; /*text-shadow: 2px 2px rgba(0,0,0,.07);*/}   
+    [class*="leaders_"] h4.title:before {display: none;}
+    
+    .leaders_main {display: block;}
+    /*.leaders_main .main_cont {margin-bottom: 100px;}*/
+    .leaders_main .main_cont .desc {padding: 0 20px; line-height: 27px; letter-spacing: -1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+    
+    .leaders_apply .apply_box {margin: 60px 0 0;}
+    .leaders_apply .apply_box .forum_quest {padding-left: 55px;}
+    .leaders_apply .apply_box .forum_quest .btn_apply {padding: 20px 30px;}
+    
+    /*.leaders_program {padding-bottom: 100px;}*/
+    
+    .leaders_mento .mento_list .item {border-bottom: 0 none;}
+    .leaders_mento .mento_list .item .thumb,.leaders_mento .mento_list .item .task {float: none;}
+    .leaders_mento .mento_list .item .thumb {position: relative;}
+    .leaders_mento .mento_list .mento {position: absolute; left: 136px; top: 0; width: 100%;}
+    .leaders_mento .mento_list .item .task {margin-top: 20px; height: auto;}
+    .leaders_mento .mento_list .item .task li {margin-left: 10px;}
+    .leaders_mento .mento_list .item .name {margin-top: 10px;}
+    
+    .leaders_info .forum_info > div {float: none;}
+    .leaders_info .forum_info .location {margin-right: 0;}
+    .leaders_info .forum_info .tel {margin-top: 20px;}
+    .leaders_info .forum_info [class*="text"] {font-size: 21px; letter-spacing: -2px;}
+    
+    .photo_list {}
+    .leaders_photo .photo_list li:nth-child(4) {margin-right: 0;}
+}
+@media only screen and (max-width:925px){ 
+    .leaders_main .main_top .title_big [class*="color_txt"] {font-size: 65px;}
+    /*[class*="color_txt"] strong em {font-size: 73px;}*/
+    
+    .leaders_photo .photo_list li {width: 32%; margin-right: 2%;}
+    .leaders_photo .photo_list li:nth-child(3) {margin-right: 0;}
+    .leaders_photo .photo_list li:nth-child(4) {margin-right: 18px;}
+    
+    
+}
+@media only screen and (max-width:768px){    
+    .inner {padding: 0;}
+    .side_inner {padding: 0 50px;}
+    [class*="leaders_"] h4.title {padding-top: 0; margin: 0 auto 25px; font-size: 30px;}
+    .leaders_main {margin-top: 0;}
+    .leaders_main .main_top .title_forum {font-size: 22px;}
+    .leaders_main .main_top .title_big {padding: 20px 0 50px;}
+    
+    
+    .leaders_apply .table_apply th {letter-spacing: -1px;}
+    .leaders_apply .table_apply td {padding-left: 25px; }
+    
+    .leaders_apply .apply_box {margin: 50px 0 0;}
+    /*.leaders_apply .apply_box .forum_process {width: 59%;}*/
+    .leaders_apply .apply_box .forum_process dd {margin-bottom: 10px; font-size: 15px; letter-spacing: -1px;}
+    .leaders_apply .apply_box .forum_process dd .desc {margin: 5px 0 10px; padding-left: 10px;}
+    .leaders_apply .apply_box .forum_quest {padding-left: 32px; width: 40%;}
+    .leaders_apply .apply_box .forum_quest ul li {font-size: 15px;}
+    .leaders_apply .apply_box .forum_quest .btn_apply {font-size: 15px;}
+    
+    .leaders_program .program_part1 thead th {padding: 15px 0; font-size: 17px; letter-spacing: -1px;}
+    .leaders_program .program_part1 td.name {text-indent: 0; padding: 20px;}
+    .leaders_program .program_part1 td.name span {margin-right: 5px;}
+    .leaders_program .program_part2 .moto {font-weight: bold;}
+    
+    .leaders_mento .mento_list .mento {left:125px;}
+    .leaders_mento .mento_list .item {padding: 30px 0;}
+    .leaders_mento .mento_list .item .task {width: auto;}
+    .leaders_mento .mento_list .item .name {font-size: 18px;}
+    
+    .leaders_info .forum_map iframe {height: 400px;}
+    
+    .leaders_photo .notice {margin-bottom: 15px; font-size: 12px; letter-spacing: -1.5px;}
+    .leaders_photo .notice:before {right: 370px;}
+    .leaders_photo .photo_list li,.leaders_photo .photo_list li.last {margin: 0 2% 20px 0;}
+    /* IE에서는 클래스가 필요함 */
+    .leaders_photo .photo_list li:nth-child(3){margin: 0 0 20px 0;}
+    .leaders_photo .photo_list li a .thumb {max-width: 208px;}
+    .leaders_photo .photo_list li a .thumb > img {width: 100%;}
+    
+    .leaders_info .forum_info [class*="text"] {font-size: 15px; font-weight: 300;}
+    
+}
+@media only screen and (max-width:745px){
+    .side_inner {padding: 0 20px;}
+    .leaders_main {margin-bottom: 0;}
+    .leaders_main .main_top .title_big [class*="color_txt"] {font-size: 60px; }
+    /*.leaders_main .main_top .title_big .color_txt01 strong {margin: 0 1px 0 10px;}
+    .leaders_main .main_top .title_big .color_txt02 strong {margin: 0 1px 0 10px;}
+    [class*="color_txt"] strong em {padding:0 8px 10px 0; font-size: 65px;}*/
+    
+    .leaders_apply .apply_box .tit_info {margin-bottom: 15px;}
+    .leaders_apply .apply_box [class*="tit_apply"] {margin-bottom: 15px; font-size: 16px;}
+    .leaders_apply .apply_box .forum_process {width: 47%;}
+    .leaders_apply .apply_box .forum_quest {width: 47%; padding-left: 5%; }
+    .leaders_apply .apply_box .forum_process dd .desc {/*margin-left: 5px;*/}
+    .leaders_apply .table_apply td {padding: 0 25px;}
+    
+    .leaders_speaker .table_speaker tr {font-size: 13px;}
+    /*.leaders_speaker .table_speaker th {font-size: 15px;}*/
+    .leaders_speaker .table_speaker .thumb {width: 80px; height: 80px;}
+    .leaders_speaker .table_speaker .name {margin-top: 15px;}
+    .leaders_speaker .table_speaker .name span {margin-bottom: 7px; font-size: 14px;}
+    .leaders_speaker .table_speaker .co-author .author_vs {margin: 25px 0px;}
+    
+    .leaders_mento .mento_list .item {width: 47%;}
+    .leaders_mento .mento_list .odd {margin-right: 5%;}
+    .leaders_mento .mento_list .item .thumb img {width: 90px;}
+    .leaders_mento .mento_list .mento {left: 100px;}
+    
+    .leaders_info .forum_info [class*="tit"] {font-size: 16px; margin-bottom: 15px;}
+    
+    .leaders_photo .photo_list li a .text_down {text-indent: 10px;}
+    .leaders_photo .photo_list li a .text_down:after {right: 10px;}
+}
+@media only screen and (max-width:640px){
+    .content .inner {padding-bottom: 40px;}
+    .leaders_main .main_top .title_big [class*="color_txt"] {font-size: 45px;}
+    /*[class*="color_txt"] strong em {padding:0 8px 10px 0; font-size: 50px;}*/
+    
+    .leaders_mento .mento_list .item .task li {font-size: 13px;}
+    
+    .leaders_info .forum_info {margin-top: 30px;}
+}
+@media only screen and (max-width:450px){
+    .leaders_main .main_top .title_big [class*="color_txt"] {font-size: 45px;}
+    [class*="leaders_"] h4.title {margin-bottom: 20px; font-weight: 500;}
+    /*[class*="color_txt"] strong em {padding:0 8px 10px 0; font-size: 45px;}*/
+    
+    .leaders_speaker .table_speaker .name {margin-top: 15px;}
+    .leaders_speaker .table_speaker .author1 .name {width: 95px;}
+    .leaders_speaker .table_speaker th {width: 10%; font-size: 15px; letter-spacing: -1px;}
+    .leaders_speaker .table_speaker td {display: block; padding: 20px 5px;}
+    .leaders_speaker .table_speaker td:nth-child(3) {padding-top: 0;}
+    .leaders_speaker .table_speaker td:nth-child(4) {padding-top: 0;}
+    
+    .leaders_photo .photo_list li {width: 49%;}
+    .leaders_photo .photo_list li:nth-child(2),.leaders_photo .photo_list li:nth-child(4),.leaders_photo .photo_list li.last {margin-right: 0;}
+    .leaders_photo .photo_list li:nth-child(3) {margin-right: 2%;}
+    .leaders_photo .photo_list li a .thumb {max-width: 210px;}
+}
+@media only screen and (max-width:425px){
+    .header .menu_list .item .menu_link {margin: 0;}
+    .header .main_menu .inner {padding: 0;}
+    .header .menu {overflow: hidden;}
+    .header .menu .scroller {overflow: hidden; overflow-x: auto; width: 100%;}
+    .header .menu .scroller .menu_list {width: 100%; height: 100%; white-space: nowrap;}
+    
+    .header .m_menu {height: 49px;}
+    .header .m_menu .nav_ul li a {font-size: 15px; line-height: 48px;}
+    
+    [class*="leaders_"] h4.title {font-size: 25px;}
+    [class*="leaders_"] [class*="tit_info"] {font-size: 18px; line-height: 1;}
+    /*[class*="color_txt"] strong em {padding: 3px 10px 8px 5px;font-size: 30px;}*/
+    .leaders_main .main_top .title_big [class*="color_txt"] {font-size: 35px;}
+    .leaders_main .main_top .title_forum {font-size: 22px;}
+    .leaders_main .main_top .title_big {margin: 0 auto 30px; padding: 20px 0 30px; letter-spacing: -5px;}
+    .leaders_main .main_cont .desc {padding: 0;}
+    
+    .leaders_apply .table_apply th {font-size: 14px; letter-spacing: -2px;}
+    .leaders_apply .table_apply td {padding: 15px 20px; }
+    .leaders_apply .table_apply td.mg_20 { padding: 15px 20px;}
+    .leaders_apply .table_apply .last td {padding-top: 10px; padding-bottom: 10px; letter-spacing: -1px;}
+    
+    .leaders_apply .apply_box {margin-top: 40px;}
+    .leaders_apply .apply_box > div {float: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+    .leaders_apply .apply_box .tit_info {margin-bottom: 5px;}
+    .leaders_apply .apply_box [class*="tit_apply"] {margin: 5px 0 10px; font-size: 15px;}
+    .leaders_apply .apply_box .forum_process,.leaders_apply .apply_box .forum_quest {/*padding: 0 20px;*/ width: 100%; padding-left: 10px;}
+    .leaders_apply .apply_box .forum_process .desc strong {font-size: 14px;}
+    .leaders_apply .apply_box .forum_quest {margin-top: 30px; padding-top: 25px; padding-left: 0; border-top: 1px solid #ededed; border-left: 0 none;}
+    .leaders_apply .apply_box .forum_quest .tit_apply, .leaders_apply .apply_box .forum_quest ul {margin-left: 10px;}
+    .leaders_apply .apply_box .forum_quest .btn_apply {display: block; padding: 16px 20px; font-size: 16px; text-align: center;}
+    
+    .leaders_program .tit_desc {letter-spacing: -.5px;}
+    .leaders_program .program_part1 thead th {padding: 15px 0; font-size: 14px;}
+    .leaders_program .program_part1 .time {padding: 10px 20px; line-height: 1;}
+    .leaders_program .program_part1 td {padding: 10px 0;}
+    .leaders_program .program_part1 td.name span {display: block;}
+    .leaders_program .program_part1 .session td {padding: 15px 0;}
+    
+    .leaders_program .program_part2 .moto {margin: 20px 0; padding: 20px; font-size: 16px; line-height: 22px;}
+    .leaders_program .program_part2 .target_desc {font-size: 14px; letter-spacing: -.5px; line-height: 20px;}
+    .leaders_program .program_part2 .procedure_list li {font-size: 15px; letter-spacing: -1px; line-height: 22px}
+    .leaders_program p {font-size: 12px;}
+ 
+    /*.leaders_mento .mento_list {padding: 0 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}*/
+    .leaders_mento .mento_list .item {float: none; padding: 20px 0 30px; width: 100%; height: auto; min-height: 100%;}
+    .leaders_mento .mento_list .item:nth-child(2) {padding: 20px 0 30px; border-top: 1px dashed #cecece;}
+/*    .leaders_mento .mento_list .item .thumb {width: 200px;}
+    .leaders_mento .mento_list .item .thumb img {width: 116px;}*/
+    .leaders_mento .mento_list .item .task {margin-top: 15px;}
+    .leaders_mento .mento_list .mento {left: 100px;}
+    
+    .leaders_info .forum_map iframe {width: 100%; height: 300px;} 
+    .leaders_info .forum_info [class*="tit"] {font-size: 15px; margin: 0 0 10px;}
+    
+    .leaders_photo .notice {text-align: left; }
+    /*.leaders_photo .photo_list {margin: 0 auto; width: 226px;}
+    .leaders_photo .photo_list li:nth-child(3) {margin: 0 0 20px 0;}*/
+    .leaders_photo .photo_list li a .thumb {max-width: 226px;}
+    .leaders_photo .photo_list li a .text_down {padding: 10px 0;}
+
+}
+
+@media only screen and (max-width:375px){
+    .header .logo_area h1 {width: 100px;}
+    .header .logo_area p {width: 175px; height: 31px;}
+    
+    .side_inner {padding: 0 15px;}
+    .header .m_menu .nav_ul li a {font-size: 16px;}
+    
+    [class*="leaders_"] {margin-top: 25px;}
+    .leaders_main {margin-top: 0;}
+    .leaders_main .main_top .title_big [class*="color_txt"] {font-size: 31px}
+    
+    .leaders_apply .table_apply td {padding: 15px;}
+    .leaders_speaker .table_speaker .thumb {width: 60px; height: 60px;}
+    
+    .leaders_photo .notice {font-weight: normal;}
+    .leaders_photo .photo_list li {margin-bottom: 10px;}
+
+}
+@media only screen and (max-width:320px){
+    .header .main_menu .inner {padding: 0 10px;}
+    .header .m_menu .nav_slide {padding: 0;}
+    
+    .leaders_main .main_top .title_big {margin-bottom: 0; padding-bottom: 20px;}
+    [class*="leaders_"] h4.title {font-size: 23px;}
+    [class*="leaders_"] [class*="tit_info"] {font-size: 17px;}
+    
+    .leaders_apply .table_apply th, .leaders_apply .table_apply td {font-size: 13px;}
+    
+    .leaders_apply .apply_box .forum_process dd {font-size: 13px;}
+    .leaders_apply .apply_box .forum_process dd .desc {font-size: 13px;}
+    .leaders_apply .apply_box .forum_process dd {font-size: 13px;}
+    
+    .leaders_speaker .table_speaker th {font-size: 14px;}
+    
+    .leaders_info .forum_info .location .text {font-size: 13px; font-weight: 300;}
+    .leaders_info .forum_info [class*="text"] {font-size: 13px; font-weight: 300;}
+    
+    leaders_main .main_top .title_big [class*="color_txt"] {font-size: 31px;}
+    /*.[class*="color_txt"] strong em {font-size: 50px;}*/
+}
+
+/* popup */
+.popup { position:relative; left:50%; bottom:0; transform: translateX(-50%); max-width:880px; padding:30px 40px 0; background:#fff; border:1px solid #000; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+.popup .popup_from { width: 100%;}
+.popup .entry_w { float:left; width:47%; border-right:1px solid #d9d9d9; padding-right:2.5%; margin-right:2.5%; margin-bottom:20px;}
+.popup .mentor_w { float:left; width:47%; }
+
+.popup h3 { width:100%; height: 50px; line-height: 50px; font-size: 20px; text-align: center; color: #fff; font-family: 'Noto Sans KR', sans-serif; font-weight: 500;}
+.popup h3 span{ font-size: 17px;}
+.popup .entry_w h3 {background: #45994c; }
+.popup .entry_w h3 span { color: #c3d83d; }
+.popup .mentor_w h3{background: #252525; }
+.popup .from { width:100%; margin-top:30px; overflow:hidden; }
+.popup .from > div { width:100%; height:49px; }
+.popup .from > div .label { float:left; width:27%; height:49px; background:#f8f8f8; border-top:1px solid #dfdfdf; }
+.popup .from > div .label label { line-height:49px; font-size:12px; color:#404040; font-weight:bold; margin-left:10px; letter-spacing:-1px; }
+.popup .from > div .label label em { font-size:11px; font-weight:normal; }
+.popup .from > div .label.last { border-bottom:1px solid #dfdfdf; }
+.popup .from > div .inp_box { float:left; width:73%; height:49px; border-top:1px solid #e5e5e5; }
+.popup .from > div .inp_box.last { border-bottom:1px solid #e5e5e5; }
+.popup .from > div .inp_box .inp1 { width:83%; height:32px; line-height:32px; font-size:12px; color:#404040; border:1px solid #ccc; margin:8px 0 0 12px; padding:0 10px; }
+.popup .from > div.mentor .select1 { margin:11px 0 0 12px; padding:4px 7px; }
+.popup .from > div.mentor .select1 option { height:28px; }
+.popup .from > div.pay .select1 {width:91%;height:32px; line-height:32px; font-size:12px; color:#404040; border:1px solid #ccc; margin:10px 0 0 12px; padding:0 10px; }
+.popup .from > div.pay .select1 option { height:32px; }
+.popup .from > div.reason .label { height:149px; }
+.popup .from > div.reason .label label { display:block; line-height:19px; margin-top:50px; }
+.popup .from > div.reason .inp_box { height:149px; }
+.popup .from > div.reason .tarea1 { width:89%; height:128px; border:1px solid #ccc; margin:10px 0 0 12px; }
+
+.popup .txt { clear:both; margin:28px 0 0 20px; }
+.popup .txt li { width:100%; line-height:18px; font-size:13px; color:#404040; margin-bottom:22px; background:url('https://cwstatic.asiae.co.kr/asiae_2009/common/event/2016women/bul_01.gif') 0 6px no-repeat; padding-left:10px; }
+.popup .txt li:last-child {margin-bottom: 0;}
+.popup .txt li span { display:block; margin-top:6px; }
+.popup .txt li .str01 { font-weight:bold; color:#26802e; }
+.popup .txt li .str02 { font-weight:bold; color:#404040; }
+.popup .txt li .str03 { font-weight:bold; color:#26802e;}
+
+.popup .form_btn { clear:both; width:100%; border-top:2px solid #000; padding:0 0 40px 0;}
+.form_btn .inp_check { display:block; margin-top:15px; letter-spacing:-1px; color:#333; }
+.form_btn .inp_check input { margin-right:4px; }
+.form_btn .inp_check label { font-size: 13px; }
+.form_btn .btn_ok { display:block; width:190px; height:58px; margin:40px auto 0 auto; }
+.popup .btn_close { display: none; position:absolute; right:20px; top:0;  width:31px; height:30px; padding:20px; }
+
+@media only screen and (max-width:768px){
+    .popup { padding:20px 20px 0;}
+    
+    .popup h3 {font-size: 19px;}
+    .popup h3 span {font-size: 14px;}
+    
+    .popup .from {margin-top: px;}
+    .popup .from > div .inp_box .inp1 {width: 75%;}
+    .popup .from > div.pay .select1 {width: 87%;}
+    .popup .from > div.reason .tarea1 {width: 84%;}
+    
+    .popup .txt {margin-left: 0;}
+    .popup .txt li {margin-bottom: 10px;}
+    .popup .txt li:last-child {margin-bottom: 0;}
+}
+
+@media only screen and (max-width:640px){
+    .popup .entry_w { float:left; width:100%; border-right:none; padding-right:0; margin-right:0; margin-bottom:20px;}
+    .popup .mentor_w { float:left; width:100%; }
+}
+
+@media only screen and (max-width:425px){
+    .popup { padding: 20px 15px 0;}
+    .popup .from > div .inp_box .inp1 {width: 78%;}
+}
+
+/*end*/
+
+
+
+
+

@@ -1,0 +1,37 @@
+.content article .codeGuide .pc-monitor .pc-screen::-webkit-scrollbar-thumb {
+  background: #5e8438;
+}
+
+.content article .codeGuide [class*="table"] thead {
+  background: #5e8438;
+}
+
+.content article .codeGuide .table-code tbody td ul .co-style {
+  background: #ffe7e7;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.basic {
+  background: #a1a1a1;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.highlihgt {
+  background: #5da147;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.sub {
+  background: #E5E5E5;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.sub2 {
+  background: #489B45;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.sub3 {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.content article .codeGuide .table-file .file-link a:hover {
+  color: #5e8438;
+}
+/*# sourceMappingURL=lkCode.css.map */

@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+.content {width: 100%; height: auto; background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/bg_t.png) center top no-repeat;}
+
+/* 톡까총선 */
+.talk_wrap {position: relative; padding-top: 50px; background-size: contain;box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.talk_wrap .talk_tit {margin: 0px auto 170px; max-width: 720px; height: 115px; }
+.talk_wrap .talk_tit_m {display: none;}
+
+.vote_talk {position: relative; width: 100%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+.talk_wrap .vote_talk .what_talk {position: absolute; top: -10rem; right: 0; width:118px; height: 120px;}
+.talk_wrap .vote_talk .what_talk a {display: block; width: 100%; height: 100%; background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/what_t.png) no-repeat; background-size: contain;}
+
+.vote_talk .talk_bx:first-child {margin-top: 0;}
+.vote_talk .talk_bx {margin-top: 60px; display: block; width: 100%; text-align: center; border: 3px solid #dedde9; border-radius: 30px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.vote_talk .talk_hd {position: relative; top: -20px; display: inline-block; padding: 0 15px; font-size: 32px; font-family: 'notokrR'; line-height: 1; letter-spacing: -2.4px; color: #ff7d6b; background: #fff; box-sizing: border-box;}
+.vote_talk .talk_hd span {display: inline; box-shadow: inset 0 -15px 0 #ffebe8;}
+
+.vote_talk .talk_ct {position: relative; width: 100%; padding: 20px 50px 40px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.vote_talk .talk_ct:after {content:'';display: block;clear: both;}
+.vote_talk .talk_ct li {margin-top: 20px; text-align: left;}
+.vote_talk .talk_ct li:after {content:'';display: block;clear: both;}
+.vote_talk .talk_ct li:first-child {margin-top: 0;}
+.vote_talk .talk_ct li > span { width: 67px; height: 67px; line-height: 65px; border-radius: 50%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+/* nickname01:정알못 */
+.vote_talk .talk_ct li > span.nickname01 {background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/nick01.png) no-repeat; background-size: contain;}
+/* nickname02:돌파 */
+.vote_talk .talk_ct li > span.nickname02 {background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/nick02.png) no-repeat; background-size: contain;}
+/* nickname03:정치3단 */
+.vote_talk .talk_ct li > span.nickname03 {background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/nick03.png) no-repeat; background-size: contain;}
+/* nickname04:국회불주먹 */
+.vote_talk .talk_ct li > span.nickname04 {background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/nick04.png) no-repeat; background-size: contain;}
+/* nickname05:서울사람 */
+.vote_talk .talk_ct li > span.nickname05 {background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/nick05.png) no-repeat; background-size: contain;}
+/* nickname06:여의도tmi */
+.vote_talk .talk_ct li > span.nickname06 {background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/nick06.png) no-repeat; background-size: contain;}
+/* nickname07:모두까기인형 */
+.vote_talk .talk_ct li > span.nickname07 {background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/nick07.png) no-repeat; background-size: contain;}
+
+.vote_talk .talk_ct li p {position: relative; display: inline-block;padding: 20px 50px; max-width: 60%; min-width: 20%;  border-radius: 10px; font-size: 18px; font-family: 'notokrR'; letter-spacing: -1.35px; text-overflow: ellipsis; word-break: break-all; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.vote_talk .talk_ct li p:before {content:'';position: absolute; top: 15px; width: 50px; height: 20px; }
+.vote_talk .talk_ct li p > span {width: 400px; text-align: left;}
+/* 더보기 */
+.vote_talk .talk_ct li p em.tmr {margin-left: 15px; font-size: 14px; letter-spacing: -1px; color: #595959; text-decoration: underline;}
+
+.vote_talk .talk_ct .t_left {}
+.vote_talk .talk_ct .t_left:after{content:'';display: block;clear: both;}
+.vote_talk .talk_ct .t_left > span {float: left;}
+.vote_talk .talk_ct .t_left p {margin-left: 30px; background: #f4f4f4;}
+.vote_talk .talk_ct .t_left p:before {left: -25px;background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/talk.png) no-repeat; background-size: contain;}
+.vote_talk .talk_ct .t_right {text-align: right;}
+.vote_talk .talk_ct .t_right > span {float: right;}
+.vote_talk .talk_ct .t_right p { margin-right: 25px; background: #F4F4F4; text-align: left;}
+.vote_talk .talk_ct .t_right p:before {right: -25px;background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/talk.png) no-repeat; background-size: contain;}
+
+.vote_talk .talk_mr {position: relative; width: 360px; height: 45px; line-height: 45px; text-align: center; font-size: 15px; font-family: 'notokrR'; line-height: 45px; color: #fff; border-radius: 40px 40px 0 0; background: #595590;}
+.vote_talk .talk_mr:after {content:''; position: absolute; right: 105px; top:16px; width: 8px; height: 13px; background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/more_arr.png) no-repeat; background-size: contain;}
+.vote_talk .talk_mr:hover {text-decoration: underline;}
+
+.vote_talk .more_vote {margin-top: 40px; text-align: center;}
+.vote_talk .more_vote a {color: #595959; font-size: 17px; font-family: 'notokrR';}
+
+/* 톡까총선 팝업 */
+.what_popup.active {display:block;}
+
+.what_popup {display:none; overflow:hidden; position:fixed; top:0; left:0; width:100%; height:100%; z-index:110;}
+.what_popup:before {content:''; position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(51,51,51,0.6); z-index:100;}
+
+.what_popup .pop_bx {overflow: hidden; display:block; position:absolute; top:50%; left:50%; width:400px; max-height:465px; border-radius: 20px; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); z-index:300; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.what_popup .pop_bx .inner {position:relative; padding:50px 40px; width: 400px; max-height:465px; background:#fff; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+.what_popup .pop_bx .inner:after {content:'';display: block;clear: both;}
+
+.what_popup .pop_bx .tit {margin-bottom: 20px; float: left; display: inline-block; font-size: 25px; font-family: 'notokrR'; color: #6256FF; letter-spacing: -1px; box-shadow: inset 0 -10px rgba(98,86,255,.3);}
+.what_popup .pop_bx .btn_close {margin-top: 5px; float: right;display:block; width: 30px; height: 30px; }
+.what_popup .pop_bx .btn_close span {margin-top: 3px; vertical-align:bottom; width: 25px; height: 25px; background:url(https://cwstatic.asiae.co.kr/election2020/v_talk/close.png) no-repeat 0 0; background-size: contain;}
+
+.what_popup .pop_bx .txt {clear: both;font-size:18px; color: #595959; font-family: 'notokrR';}
+
+@media only screen and (max-width:1100px){
+    .talk_wrap {width: 100%; padding: 50px 20px 0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+}
+@media only screen and (max-width:860px){
+    .talk_wrap .vote_talk .what_talk {width: 100px; height: 102px;}
+    .vote_talk .talk_hd {font-size: 30px;}
+    .vote_talk .talk_ct li p {padding: 20px 30px;}
+    .vote_talk .talk_ct li span {width: 65px; height: 65px;}
+}
+@media only screen and (max-width:767px){
+    .talk_wrap .talk_tit {display: none;}
+    .talk_wrap .talk_tit_m {display: block; max-width: 500px; margin: 0 auto 8rem; }
+    .talk_wrap .vote_talk .what_talk {top: -7.5rem; width: 252px; height: 67px;}
+    .talk_wrap .vote_talk .what_talk a {background: url(https://cwstatic.asiae.co.kr/election2020/v_talk/m_what_t.png) no-repeat; background-size: contain;}
+    
+    .vote_talk .talk_hd {width: 65%; line-height: 35px; top: -23px;}
+    .vote_talk .talk_ct {padding: 20px 30px 40px;}
+}
+@media only screen and (max-width:620px){
+    .talk_wrap {padding: 40px 20px 0;}
+    .talk_wrap .vote_talk .what_talk {width: 225px; height: 60px;}
+    .vote_talk .talk_hd {width: 75%;}
+    .vote_talk .talk_ct {padding: 0 25px 40px;}
+    .vote_talk .talk_ct li p {max-width: 65%;}
+    .vote_talk .more_vote {margin-top: 20px;}
+}
+@media only screen and (max-width:585px){
+    .content {width: 100%; height: auto; background: url(https://cwstatic.asiae.co.kr/election2020/main/mobile/mobile_bg_0309.png) no-repeat 0 0; background-size: contain;}
+}
+@media only screen and (max-width:425px){
+    .content {background: url(https://cwstatic.asiae.co.kr/election2020/main/mobile/mobile_bg_0309.png) no-repeat 0 0; background-size: contain;}
+    /* 말풍선 타이틀 */
+    .vote_talk .talk_hd {top: -20px; font-size: 22px; line-height: 27px; width: 75%;}
+    
+    /* 톡까총선이 뭐예요? */
+    .talk_wrap {padding-top: 30px;}
+    .talk_wrap .vote_talk .what_talk {top: -5.5rem; width: 210px; height: 56px;}
+    .talk_wrap .talk_tit_m {margin-bottom:  6rem; }
+    
+    /* 말풍선 */
+    .vote_talk .talk_ct {padding:0 20px 20px;}
+    .vote_talk .talk_ct li span {width: 55px; height: 55px; line-height: 54px; font-size: 13px;}
+    .vote_talk .talk_ct li p {padding: 20px; max-width: 65%; font-size: 16px; line-height: 21px;}
+    .vote_talk .talk_ct li p:before {width: 35px; height: 15px;}
+    .vote_talk .talk_ct .t_right p:before {right: -18px;}
+    .vote_talk .talk_ct .t_left p:before {left: -18px;}
+    
+    .vote_talk .talk_ct .t_right p {margin-right: 20px;}
+    .vote_talk .talk_ct .t_left p {margin-left: 20px;}
+    
+    /* 톡까내용 모두보기 */
+    .vote_talk .talk_mr {width: 260px;}
+    .vote_talk .talk_mr:after {right: 59px; top: 17px; width: 7px;}
+    
+    /* 톡까총선 팝업 */
+    .what_popup .pop_bx {width: 360px;}
+    .what_popup .pop_bx .inner {padding: 30px 40px; width: 360px;}
+    .what_popup .pop_bx .btn_close span {margin-left: 10px;}
+}
+@media only screen and (max-width:375px){
+    /* 톡까총선 팝업 */
+    .what_popup .pop_bx {width: 80%;}
+    .what_popup .pop_bx .inner {padding: 25px 30px; width: 100%;}
+    .what_popup .pop_bx .tit {margin-bottom: 15px; font-size: 22px;}
+    .what_popup .pop_bx .btn_close {margin-top: 0;}
+    .what_popup .pop_bx .txt {font-size: 16px; line-height: 22px; letter-spacing: -1px;}
+}
+@media only screen and (max-width:335px){
+    /* 톡까총선이 뭐예요? */
+    .talk_wrap .vote_talk .what_talk {width: 195px; height: 52px;}
+    
+    /* 말풍선 타이틀 */
+    .vote_talk .talk_hd {font-size: 20px; line-height: 25px;}
+    
+    /* 말풍선 */
+    .vote_talk .talk_ct {padding: 0 15px 20px;}
+    .vote_talk .talk_ct .t_right p {margin-right: 15px;}
+    .vote_talk .talk_ct .t_left p {margin-left: 15px;}
+    /* 톡까내용 모두보기 */
+    .vote_talk .talk_mr {width: 230px; height: 40px; line-height: 40px;}
+    .vote_talk .talk_mr:after {top: 13.5px; right: 45px;}
+    /* 더보기 */
+    .vote_talk .more_vote {margin-top: 15px;}
+    
+}
+@media only screen and (max-width:320px){
+    .what_popup .pop_bx {width: 85%;}
+    .what_popup .pop_bx .tit {font-size: 20px;}
+    .what_popup .pop_bx .txt {font-size: 15px; line-height: 21px;}
+}
+
+
+
+

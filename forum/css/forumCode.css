@@ -1,0 +1,32 @@
+.content article .codeGuide .pc-monitor .pc-screen::-webkit-scrollbar-thumb {
+  background: #e95d7a;
+}
+
+.content article .codeGuide [class*="table"] thead {
+  background: #e95d7a;
+}
+
+.content article .codeGuide .table-code tbody td ul .co-style {
+  background: #ffe7e7;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.basic {
+  background: #111;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.highlihgt {
+  background: #e95d7a;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.sub {
+  background: #1a1a1a;
+}
+
+.content article .codeGuide .table-code tbody td .color-circle.sub2 {
+  background: #595959;
+}
+
+.content article .codeGuide .table-file .file-link a:hover {
+  color: #e95d7a;
+}
+/*# sourceMappingURL=forumCode.css.map */

@@ -1,0 +1,44 @@
+.content { 
+    article {
+        .codeGuide {
+            .pc-monitor { 
+                .pc-screen { 
+                    &::-webkit-scrollbar-thumb { background: #5e8438;}
+                }//pc-screen
+            }//pc-monitor
+            //table-common
+            [class*="table"]{ 
+                thead { background: #5e8438; }//thead
+            }//table-common
+            .table-code {
+                tbody { 
+                    td { 
+                        ul {
+                            .co-style { background: #ffe7e7; }
+                        }//ul
+                        .color-circle { 
+                            &.basic {background: #a1a1a1;}
+                            &.highlihgt {background: #5da147}
+                            &.sub {background: #E5E5E5;}
+                            &.sub2 {background: #489B45;}
+                            &.sub3 {background: #fff; border: 1px solid rgba(0,0,0,.2);}
+                        }//color-circle
+                    }
+                }//tbody
+            }//table-code
+            .table-file {
+                .file-link {
+                    a { 
+                        &:hover {color: #5e8438;}
+                    }
+                }//file-link
+            }//table-file
+        }//codeGuide
+    }//article
+}//Content
+
+
+
+
+
+

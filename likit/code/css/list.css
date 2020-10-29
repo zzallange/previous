@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/* common css */
+.content {padding-top: 90px;}
+.lik_sns {border-top: 1px solid #efefef;}
+.lik_footer .ft_top {display: none;}
+/* //common css */
+
+/* List 영역 */
+.lik_list {margin-top: 80px;}
+.lik_list .title {margin-bottom: 3%;text-align: center;font-size: 33px;line-height: 1;letter-spacing: -2px;font-family: 'notokrLig';}
+.lik_list .list_wrap {overflow: hidden; position: relative; width: 100%;}
+.lik_list ul:after {content:''; display: block; clear: both;}
+.lik_list ul li{float: left; overflow: hidden;position: relative; margin-bottom: 2%; width: 32%; border: 1px solid rgba(0,0,0,.07); box-sizing: border-box;}
+.lik_list ul li:hover {border-color: rgba(0,0,0,.4);}
+.lik_list ul li.second {margin: 0 2%;}
+
+.lik_list ul .list .thumb {font-size: 0;font-size: 0;overflow: hidden;}
+.lik_list ul .list .thumb img {transition: all .2s ease-in-out;}
+.lik_list ul li:hover .list .thumb img {transform: scale(1.1);}
+.lik_list ul .list .txt_bx {padding:5px 0 0 20px; margin-top: -4px; width: 100%; height: 100px;  box-sizing: border-box; color: #111; background: #fff; overflow: hidden;}
+.lik_list ul .list .txt_bx em {display: inline-block;font-size: 15px;line-height: 20px;letter-spacing: -1px; font-family: 'notorkR';color: #595959;text-decoration: underline;}
+.lik_list ul .list .txt_bx span {margin-top: 15px;width:90%;overflow: hidden; text-overflow: ellipsis;font-size: 19px; font-family:'nanumSquare'; line-height: 25px; letter-spacing: -1px;}
+
+.lik_list ul li .more_ico {display: none;position: absolute; right: 10px; bottom: 75px; text-align: center; width: 48px; height: 48px;}
+.lik_list ul li .more_ico span {line-height: 40px; width: 50%;}
+
+.lik_sns {border-top: 1px solid #efefef;}
+/* //List 영역 */
+
+/* sub_gnb : hidden 처리 */
+.body_on {overflow-y:hidden;position:fixed;height:100%;}
+.sub_gnb {display: none; position: fixed; left: 0; top: 91px; width: 100%; height: 65px; border-bottom: 1px solid #ddd; box-sizing: border-box; background: #fff;}
+.gnb_fixed {position: fixed;top: 0;left: 0;}
+.sub_gnb .inner_wrap {position: relative; margin: 0 auto; max-width: 960px;}
+.sub_gnb .mod_title {overflow: hidden; font-size: 0; line-height: 0; color: transparent; text-indent: -9999px;}
+.sub_gnb .mod_title:after {content: '';display: block;clear: both;}
+.sub_gnb .inner_inbox {position: relative;}
+.sub_gnb .m_sub {display: none;}
+.sub_gnb .pc_sub {position: relative; text-align: center;}
+.sub_gnb .pc_sub ul {display: inline-block; position: relative;height: 65px;line-height: 65px;}
+.sub_gnb .pc_sub ul:after {content:'';display: block; clear: both;}
+/* gnb_menu hidden */
+.sub_gnb .pc_sub ul.sub_eat {display: none;}
+.sub_gnb .pc_sub ul.sub_enjoy {display: none;}
+.sub_gnb .pc_sub ul.sub_wellife {display: none;}
+/* //gnb_menu hidden */
+.sub_gnb .pc_sub ul li {float: left;margin: 0 15px;}
+.sub_gnb .pc_sub ul li a {font-family: 'notokrR'; font-size: 16px; color: #666; letter-spacing: -1px; transition: color .1s ease-in-out;}
+.sub_gnb .pc_sub ul li a:hover {color: #ff5b4c;}
+.sub_gnb .pc_sub ul li a.active {color:#ff5b4c; }
+/* //sub_gnb : hidden 처리 */
+
+@media only screen and (max-width:820px){
+    .lik_list {margin-top: 70px;}
+    .lik_list .title {font-size: 32px;}
+    .lik_list ul .list .txt_bx {padding: 15px 0 0 15px; height: 120px;}
+    .lik_list ul .list .txt_bx span {margin-top: 13px;font-size: 18px;}
+    .lik_list ul li .more_ico {bottom: 70px;}
+    
+}
+
+@media only screen and (max-width:768px) {  
+    .content {padding-top: 60px;}
+    .lik_header {height: 60px;}
+    .sub_gnb {top: 60px;}
+    .gnb_fixed {top: 0;}
+    .lik_list {margin-top: 60px;}
+    .lik_list .title {font-size: 30px;}
+    .lik_list ul .list .txt_bx em {font-size: 13px;}
+    .lik_list ul .list .txt_bx span {width: 93%; font-size: 19px;}
+    .lik_list ul li .more_ico {right: 5px;}
+
+}
+/* 3개리스트는 640밑으로 모바일 화면 */
+@media only screen and (max-width:639px) {  
+    .lik_list {margin-top: 50px;}
+    .lik_list .title {margin-bottom: 5%;line-height: 1; font-size: 23px; font-family: 'notokrM'}
+    .lik_list ul li {margin: 0 0 5% 0; width: 100%; border: 0 none;}
+    .lik_list ul li.second {margin: 0 0 5% 0;}
+    .lik_list ul li a {width: 100%;}
+    .lik_list ul .list .thumb {width: 100%;}
+    .lik_list ul .list .txt_bx {padding: 5px 0 0; height: auto;}
+    .lik_list ul .list .txt_bx em {display: block;}
+    .lik_list ul .list .txt_bx span {margin-top: 10px; width: 95%;}
+    .lik_list ul li:hover .list .thumb img {transform: none;}
+    .lik_list ul li .more_ico {bottom: 3%;right: 0;}
+    
+    .sub_gnb .pc_sub {display: none;}
+    .sub_gnb .m_sub {display: block;position: relative;}
+    .sub_gnb .m_sub .nav_dim {display: none; overflow: hidden; width: 100%; height: 100%; position: fixed;z-index: 5;}
+    .sub_gnb .m_sub .nav_dim:before {content: '';position: fixed;top: 0;left: 0;bottom: 0;right: 0; background: rgba(0,0,0,.4);}
+    .sub_gnb .m_sub .nav_dim.on {display: block;}
+    .sub_gnb .nav_bx {position: absolute; top: 0; left: 0; z-index: 10;width: 100%;background: #fff;}
+    .sub_gnb .nav_bx .tit {padding: 0 20px; border-bottom: 1px solid #ddd; box-sizing: border-box; height: 45px;line-height: 45px;}
+    .sub_gnb .nav_bx .tit.scroll {height: 59px;padding: 10px 20px 0;}
+    .sub_gnb .nav_bx .tit a {position: relative; width: 100%; height: 100%;font-size: 15px; color: #595959;}
+    .sub_gnb .nav_bx .tit a:before {content:'';display: block; clear: both;position: absolute; right: 0; top: 15px; width: 15px;height: 15px;background: url('https://cwstatic.asiae.co.kr/drinkeat/btn_nav01.png') no-repeat;}
+    .sub_gnb .nav_bx .tit.on a:before {content:'';display: block; clear: both;position: absolute; right: 0; top: 15px; width: 15px;height: 15px;background: url('https://cwstatic.asiae.co.kr/drinkeat/btn_onnav.png') no-repeat;}
+    .sub_gnb .nav_bx .menu {display: none; background: #fff;padding: 0 20px;box-sizing: border-box;}
+    .sub_gnb .nav_bx .menu ul {}
+    .sub_gnb .nav_bx .menu ul li {border-bottom: 1px solid #ddd;}
+    .sub_gnb .nav_bx .menu ul li:last-child {border: 0;}
+    .sub_gnb .nav_bx .menu ul li a {padding: 20px 0; box-sizing: border-box; font-size: 17px;line-height: 25px;letter-spacing: -1px;color: #111;}
+    .sub_gnb .nav_bx .menu ul li a.on {color: #ff695c;}
+    
+    .lik_sns .sub_tit {font-size: 23px; margin-bottom: 25px;}
+    .lik_sns ul li a > div > div {font-size: 14px;}
+}
+@media only screen and (max-width:425px) {  
+    .dk_head .dkt_logo {top: 20px;}
+    .dk_head .btn_search .ico {margin-top: 5px;}
+    .visual_menu .visu_top .visu_logo {width: 85px; margin-top: 5px;}
+    .visual_search .visu_top .visu_logo{width: 85px;margin-top: 35px;}
+    .trd_inwrap .inbox {margin-top: 100px;}
+    .layer_open {overflow: hidden;}
+    .sub_gnb {top: 60px; height: 45px;}
+    .gnb_fixed {top: 0;}
+    .sub_gnb .inner_wrap {width: 100%;}
+    
+    
+    .lik_sns h3 {padding:0 0 20px 0;}
+    /* btn_top dim안으로 */
+    a.btn_top {z-index: 0;}
+} 
+
+@media only screen and (max-width:320px){
+    .lik_list ul li .more_ico {bottom: 4%;}
+}
+
+/* event_list 영역 */
+/*.e_container {padding-top: 60px;}*/
+.event_list {margin-top: 50px;}
+.event_list .list_head {position: relative; margin-bottom: 40px; }
+.event_list .list_head:after {content:''; display: block; clear: both;}
+.event_list .list_head a {position: absolute; top: 0; right: 0; padding: 7px 20px; border: 1px solid #5da147; box-sizing: border-box; text-align: center; font-size: 17px; letter-spacing: -2px; color: #5da147; font-family: 'notokrM'; background: #fff; transition: all .2s ease-in-out;}
+.event_list .list_head a:hover {background: #5da147; color: #fff;}
+.event_list .list_head a .txt {margin-right: 5px;}
+.event_list .list_head a .ico {vertical-align: middle; margin-bottom: 1px;width: 8px; height: 13px; background: url('https://cwstatic.asiae.co.kr/likit/arrow/spc_arr.png') no-repeat; background-size: contain; transition: all .2s ease-in-out;}
+.event_list .list_head a:hover .ico {background: url('https://cwstatic.asiae.co.kr/likit/arrow/onspc_arr.png') no-repeat; background-size: contain;}
+
+/* 이벤트가없을때 당첨자발표 버튼숨김 : 클래스 no_win 추가 */
+.event_list .list_head a.no_win {display: none;}
+/* //이벤트가없을때 당첨자발표 버튼숨김 : 클래스 no_win 추가 */
+
+.event_list .no_event {position: relative; width:100%; height:400px; margin: 20px auto 50px; background: url('https://cwstatic.asiae.co.kr/likit/event.jpg') center 0px no-repeat; background-size: 180px 280px;}
+.event_list .no_event span {position: absolute; width: 100%; top:75%; text-align: center; font-size: 19px; line-height: 30px; letter-spacing: -1px; color: #595959; }
+
+
+.event_list .list_wrap {overflow: hidden; position: relative; width: 100%;}
+.event_list ul:after {content:''; display: block; clear: both;}
+.event_list ul li{float: left; overflow: hidden;position: relative; margin-bottom: 2%; width: 32%; border: 1px solid rgba(0,0,0,.07); box-sizing: border-box;}
+.event_list ul li.second {margin: 0 2%;}
+.event_list ul .list {position: relative; width: 100%; height: 100%;}
+.event_list ul .list .thumb {font-size: 0; overflow: hidden;}
+.event_list ul .list .txt_bx {padding:30px 20px 0; margin-top: -4px; width: 100%; height: 135px; font-size: 19px; line-height: 25px; letter-spacing: -1px; box-sizing: border-box; color: #111; background: #fff;}
+.event_list ul .list .txt_bx .title {width: 100%;overflow: hidden;}
+.event_list ul .list .txt_bx .title:after {content: '';display: block; clear: both;}
+.event_list ul .list .txt_bx .tit {float: left; margin-bottom: 10px; display: inline-block; vertical-align: top; font-family: 'notokrR'; line-height: 25px;letter-spacing: -1px; width:65%;overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
+.event_list ul .list:hover .txt_bx .tit {text-decoration: underline;}
+/* 이벤트배너색상 */
+.event_list ul .list .txt_bx .banbar {float: right;width: 60px; height: 25px; line-height: 25px; font-size: 13px; text-align: center;letter-spacing: -1px; color: #fff; background: #a6a6a6;}
+.event_list ul .list .txt_bx .banbar_b {background: #00b1b7;}
+.event_list ul .list .txt_bx .banbar_y {background:#faa700; }
+.event_list ul .list .txt_bx .banbar_p {background: #6c00d9;}
+/* //이벤트배너색상 */
+.event_list ul .list .txt_bx .date {display: block;font-size: 14px; line-height: 20px; color: #595959;}
+.event_list ul .list .txt_bx .date.coming {margin-top: 5px;}
+.event_list ul li .winner {position: absolute; bottom: 25px;left: 20px; }
+.event_list ul li .winner a {vertical-align: top; font-size: 14px; line-height: 20px; letter-spacing: -1px; color: #ff695c; }
+.event_list ul li .winner a .ico {margin-left: 2px;width: 5px;}
+.event_list ul li .winner:hover a {text-decoration: underline;}
+
+
+@media only screen and (max-width:1040px) {
+    .event_list .list_head {margin-bottom: 35px;}
+    .event_list ul .list .txt_bx {padding: 25px 15px 0;}
+    .event_list ul .list .txt_bx .tit {width: 65%;}
+}
+@media only screen and (max-width:768px) {
+    .event_list {margin-top: 80px;}
+    .event_list .list_head {margin-bottom: 30px;}
+    .event_list .list_head a.btn_win {top:-50px}
+    
+    .event_list ul li{width: 49%;}
+    .event_list ul li.second {margin: 0 0 2% 0;}
+    .event_list ul li.odd {margin: 0 2% 2% 0;}
+    .event_list ul .list .txt_bx .tit {width: 75%;}
+    .event_list ul li .winner {bottom: 5px; width: 80px; height: 50px;}
+    .event_list ul li .winner a {width: 100%;height: 100%; line-height: 35px;}
+    .event_list ul li .winner a:hover {text-decoration: none;}
+    .event_list ul .list .thumb {width: 100%;}
+    .event_list ul .list .txt_bx {padding: 25px 20px 0;}
+    
+} 
+
+/* 3개리스트는 640밑으로 모바일 화면 */
+@media only screen and (max-width:639px) {
+    .event_list .list_head a.btn_win {padding: 5px 10px; font-size: 12px; letter-spacing: -1px;}
+    .event_list .list_head a.btn_win .ico {margin-bottom: 2px;width: 6px; height: 10px; }
+    
+    .event_list ul li {width: 100%;}
+    .event_list ul li,.event_list ul li.second, .event_list ul li.odd {margin: 0 0 5% 0;}
+    
+    .paging_comm {margin: 10px 0 50px;}
+} 
+@media only screen and (max-width:425px) {
+    /*.event_list .list_head {padding-bottom: 30px;}*/
+    .event_list .list_head a.btn_win {top: -30px;}
+    .event_list {margin-top: 50px;}
+    .event_list ul .list .txt_bx {height: 120px; padding: 20px 20px 0;}
+    .event_list ul li .winner {bottom: -5px;}
+
+} 
+@media only screen and (max-width:320px){
+    .event_list ul .list .txt_bx .tit {width: 70%;}
+    .event_list ul .list .txt_bx {padding: 20px 15px 0;}
+    .event_list ul li .winner {left: 15px;bottom: 0; height: 45px;}
+    .event_list .no_event {position: relative; width:100%; height:400px; margin: 20px auto 50px; background: url('https://cwstatic.asiae.co.kr/likit/event.jpg') center 0px no-repeat; background-size: 180px 280px;}
+    .event_list .no_event span {position: absolute; width: 100%; top:75%; text-align: center; font-size: 17px; line-height: 24px; letter-spacing: -1px; color: #595959; }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
