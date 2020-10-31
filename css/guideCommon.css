@@ -78,8 +78,8 @@
   position: relative;
   margin: 0 auto;
   width: 822px;
-  height: 695px;
-  background: url(../../img/pc-img.png) center no-repeat;
+  height: 694px;
+  background: url(../img/pc-img.png) center no-repeat;
 }
 
 .content article .codeGuide .pc-monitor .ico-scroll {
