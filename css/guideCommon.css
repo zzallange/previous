@@ -369,6 +369,7 @@
   }
   .content header .site-link {
     font-size: 19px;
+    word-break: break-all;
   }
   .content article .codeGuide .pc-monitor {
     width: 100%;
